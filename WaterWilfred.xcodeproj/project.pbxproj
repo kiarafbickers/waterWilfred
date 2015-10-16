@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		E9CF9FE01BD15B4A00D53079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FDF1BD15B4A00D53079 /* main.m */; };
 		E9CF9FE31BD15B4A00D53079 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FE21BD15B4A00D53079 /* AppDelegate.m */; };
-		E9CF9FE61BD15B4A00D53079 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FE51BD15B4A00D53079 /* ViewController.m */; };
 		E9CF9FE91BD15B4A00D53079 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CF9FE71BD15B4A00D53079 /* Main.storyboard */; };
 		E9CF9FEC1BD15B4A00D53079 /* WaterWilfred.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FEA1BD15B4A00D53079 /* WaterWilfred.xcdatamodeld */; };
 		E9CF9FEE1BD15B4A00D53079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CF9FED1BD15B4A00D53079 /* Assets.xcassets */; };
 		E9CF9FF11BD15B4A00D53079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CF9FEF1BD15B4A00D53079 /* LaunchScreen.storyboard */; };
 		E9CF9FFC1BD15B4A00D53079 /* WaterWilfredTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FFB1BD15B4A00D53079 /* WaterWilfredTests.m */; };
 		E9CFA0071BD15B4A00D53079 /* WaterWilfredUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CFA0061BD15B4A00D53079 /* WaterWilfredUITests.m */; };
+		E9CFA0161BD16A3700D53079 /* WWANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CFA0151BD16A3700D53079 /* WWANavigationController.m */; settings = {ASSET_TAGS = (); }; };
+		E9CFA0191BD1748A00D53079 /* WWAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CFA0181BD1748A00D53079 /* WWAViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +41,6 @@
 		E9CF9FDF1BD15B4A00D53079 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9CF9FE11BD15B4A00D53079 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E9CF9FE21BD15B4A00D53079 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E9CF9FE41BD15B4A00D53079 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E9CF9FE51BD15B4A00D53079 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E9CF9FE81BD15B4A00D53079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9CF9FEB1BD15B4A00D53079 /* WaterWilfred.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WaterWilfred.xcdatamodel; sourceTree = "<group>"; };
 		E9CF9FED1BD15B4A00D53079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,10 @@
 		E9CFA0021BD15B4A00D53079 /* WaterWilfredUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterWilfredUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CFA0061BD15B4A00D53079 /* WaterWilfredUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterWilfredUITests.m; sourceTree = "<group>"; };
 		E9CFA0081BD15B4A00D53079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9CFA0141BD16A3700D53079 /* WWANavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWANavigationController.h; sourceTree = "<group>"; };
+		E9CFA0151BD16A3700D53079 /* WWANavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWANavigationController.m; sourceTree = "<group>"; };
+		E9CFA0171BD1748A00D53079 /* WWAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WWAViewController.h; path = ../WWAViewController.h; sourceTree = "<group>"; };
+		E9CFA0181BD1748A00D53079 /* WWAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WWAViewController.m; path = ../WWAViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +108,10 @@
 			children = (
 				E9CF9FE11BD15B4A00D53079 /* AppDelegate.h */,
 				E9CF9FE21BD15B4A00D53079 /* AppDelegate.m */,
-				E9CF9FE41BD15B4A00D53079 /* ViewController.h */,
-				E9CF9FE51BD15B4A00D53079 /* ViewController.m */,
+				E9CFA0171BD1748A00D53079 /* WWAViewController.h */,
+				E9CFA0181BD1748A00D53079 /* WWAViewController.m */,
+				E9CFA0141BD16A3700D53079 /* WWANavigationController.h */,
+				E9CFA0151BD16A3700D53079 /* WWANavigationController.m */,
 				E9CF9FE71BD15B4A00D53079 /* Main.storyboard */,
 				E9CF9FED1BD15B4A00D53079 /* Assets.xcassets */,
 				E9CF9FEF1BD15B4A00D53079 /* LaunchScreen.storyboard */,
@@ -273,9 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9CF9FE61BD15B4A00D53079 /* ViewController.m in Sources */,
+				E9CFA0161BD16A3700D53079 /* WWANavigationController.m in Sources */,
 				E9CF9FEC1BD15B4A00D53079 /* WaterWilfred.xcdatamodeld in Sources */,
 				E9CF9FE31BD15B4A00D53079 /* AppDelegate.m in Sources */,
+				E9CFA0191BD1748A00D53079 /* WWAViewController.m in Sources */,
 				E9CF9FE01BD15B4A00D53079 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

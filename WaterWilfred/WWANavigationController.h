@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WWANavigationController.h
 //  WaterWilfred
 //
 //  Created by Kiara Robles on 10/16/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WWANavigationController : UINavigationController
 
 @end
-
