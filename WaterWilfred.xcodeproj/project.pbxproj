@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9CF9FE01BD15B4A00D53079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FDF1BD15B4A00D53079 /* main.m */; };
+		E9CF9FE31BD15B4A00D53079 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FE21BD15B4A00D53079 /* AppDelegate.m */; };
+		E9CF9FE61BD15B4A00D53079 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FE51BD15B4A00D53079 /* ViewController.m */; };
+		E9CF9FE91BD15B4A00D53079 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CF9FE71BD15B4A00D53079 /* Main.storyboard */; };
+		E9CF9FEC1BD15B4A00D53079 /* WaterWilfred.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FEA1BD15B4A00D53079 /* WaterWilfred.xcdatamodeld */; };
+		E9CF9FEE1BD15B4A00D53079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CF9FED1BD15B4A00D53079 /* Assets.xcassets */; };
+		E9CF9FF11BD15B4A00D53079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CF9FEF1BD15B4A00D53079 /* LaunchScreen.storyboard */; };
+		E9CF9FFC1BD15B4A00D53079 /* WaterWilfredTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FFB1BD15B4A00D53079 /* WaterWilfredTests.m */; };
+		E9CFA0071BD15B4A00D53079 /* WaterWilfredUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CFA0061BD15B4A00D53079 /* WaterWilfredUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9CF9FF81BD15B4A00D53079 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9CF9FD31BD15B4900D53079 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9CF9FDA1BD15B4900D53079;
+			remoteInfo = WaterWilfred;
+		};
+		E9CFA0031BD15B4A00D53079 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9CF9FD31BD15B4900D53079 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9CF9FDA1BD15B4900D53079;
+			remoteInfo = WaterWilfred;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E9CF9FDB1BD15B4900D53079 /* WaterWilfred.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterWilfred.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9CF9FDF1BD15B4A00D53079 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9CF9FE11BD15B4A00D53079 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9CF9FE21BD15B4A00D53079 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9CF9FE41BD15B4A00D53079 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E9CF9FE51BD15B4A00D53079 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E9CF9FE81BD15B4A00D53079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9CF9FEB1BD15B4A00D53079 /* WaterWilfred.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WaterWilfred.xcdatamodel; sourceTree = "<group>"; };
+		E9CF9FED1BD15B4A00D53079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9CF9FF01BD15B4A00D53079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9CF9FF21BD15B4A00D53079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9CF9FF71BD15B4A00D53079 /* WaterWilfredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterWilfredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9CF9FFB1BD15B4A00D53079 /* WaterWilfredTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterWilfredTests.m; sourceTree = "<group>"; };
+		E9CF9FFD1BD15B4A00D53079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9CFA0021BD15B4A00D53079 /* WaterWilfredUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterWilfredUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9CFA0061BD15B4A00D53079 /* WaterWilfredUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterWilfredUITests.m; sourceTree = "<group>"; };
+		E9CFA0081BD15B4A00D53079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9CF9FD81BD15B4900D53079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9CF9FF41BD15B4A00D53079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9CF9FFF1BD15B4A00D53079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9CF9FD21BD15B4900D53079 = {
+			isa = PBXGroup;
+			children = (
+				E9CF9FDD1BD15B4900D53079 /* WaterWilfred */,
+				E9CF9FFA1BD15B4A00D53079 /* WaterWilfredTests */,
+				E9CFA0051BD15B4A00D53079 /* WaterWilfredUITests */,
+				E9CF9FDC1BD15B4900D53079 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9CF9FDC1BD15B4900D53079 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9CF9FDB1BD15B4900D53079 /* WaterWilfred.app */,
+				E9CF9FF71BD15B4A00D53079 /* WaterWilfredTests.xctest */,
+				E9CFA0021BD15B4A00D53079 /* WaterWilfredUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9CF9FDD1BD15B4900D53079 /* WaterWilfred */ = {
+			isa = PBXGroup;
+			children = (
+				E9CF9FE11BD15B4A00D53079 /* AppDelegate.h */,
+				E9CF9FE21BD15B4A00D53079 /* AppDelegate.m */,
+				E9CF9FE41BD15B4A00D53079 /* ViewController.h */,
+				E9CF9FE51BD15B4A00D53079 /* ViewController.m */,
+				E9CF9FE71BD15B4A00D53079 /* Main.storyboard */,
+				E9CF9FED1BD15B4A00D53079 /* Assets.xcassets */,
+				E9CF9FEF1BD15B4A00D53079 /* LaunchScreen.storyboard */,
+				E9CF9FF21BD15B4A00D53079 /* Info.plist */,
+				E9CF9FEA1BD15B4A00D53079 /* WaterWilfred.xcdatamodeld */,
+				E9CF9FDE1BD15B4A00D53079 /* Supporting Files */,
+			);
+			path = WaterWilfred;
+			sourceTree = "<group>";
+		};
+		E9CF9FDE1BD15B4A00D53079 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9CF9FDF1BD15B4A00D53079 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9CF9FFA1BD15B4A00D53079 /* WaterWilfredTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9CF9FFB1BD15B4A00D53079 /* WaterWilfredTests.m */,
+				E9CF9FFD1BD15B4A00D53079 /* Info.plist */,
+			);
+			path = WaterWilfredTests;
+			sourceTree = "<group>";
+		};
+		E9CFA0051BD15B4A00D53079 /* WaterWilfredUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9CFA0061BD15B4A00D53079 /* WaterWilfredUITests.m */,
+				E9CFA0081BD15B4A00D53079 /* Info.plist */,
+			);
+			path = WaterWilfredUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9CF9FDA1BD15B4900D53079 /* WaterWilfred */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9CFA00B1BD15B4A00D53079 /* Build configuration list for PBXNativeTarget "WaterWilfred" */;
+			buildPhases = (
+				E9CF9FD71BD15B4900D53079 /* Sources */,
+				E9CF9FD81BD15B4900D53079 /* Frameworks */,
+				E9CF9FD91BD15B4900D53079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterWilfred;
+			productName = WaterWilfred;
+			productReference = E9CF9FDB1BD15B4900D53079 /* WaterWilfred.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9CF9FF61BD15B4A00D53079 /* WaterWilfredTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9CFA00E1BD15B4A00D53079 /* Build configuration list for PBXNativeTarget "WaterWilfredTests" */;
+			buildPhases = (
+				E9CF9FF31BD15B4A00D53079 /* Sources */,
+				E9CF9FF41BD15B4A00D53079 /* Frameworks */,
+				E9CF9FF51BD15B4A00D53079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9CF9FF91BD15B4A00D53079 /* PBXTargetDependency */,
+			);
+			name = WaterWilfredTests;
+			productName = WaterWilfredTests;
+			productReference = E9CF9FF71BD15B4A00D53079 /* WaterWilfredTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9CFA0011BD15B4A00D53079 /* WaterWilfredUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9CFA0111BD15B4A00D53079 /* Build configuration list for PBXNativeTarget "WaterWilfredUITests" */;
+			buildPhases = (
+				E9CF9FFE1BD15B4A00D53079 /* Sources */,
+				E9CF9FFF1BD15B4A00D53079 /* Frameworks */,
+				E9CFA0001BD15B4A00D53079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9CFA0041BD15B4A00D53079 /* PBXTargetDependency */,
+			);
+			name = WaterWilfredUITests;
+			productName = WaterWilfredUITests;
+			productReference = E9CFA0021BD15B4A00D53079 /* WaterWilfredUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9CF9FD31BD15B4900D53079 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Kiara Robles";
+				TargetAttributes = {
+					E9CF9FDA1BD15B4900D53079 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					E9CF9FF61BD15B4A00D53079 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E9CF9FDA1BD15B4900D53079;
+					};
+					E9CFA0011BD15B4A00D53079 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E9CF9FDA1BD15B4900D53079;
+					};
+				};
+			};
+			buildConfigurationList = E9CF9FD61BD15B4900D53079 /* Build configuration list for PBXProject "WaterWilfred" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9CF9FD21BD15B4900D53079;
+			productRefGroup = E9CF9FDC1BD15B4900D53079 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9CF9FDA1BD15B4900D53079 /* WaterWilfred */,
+				E9CF9FF61BD15B4A00D53079 /* WaterWilfredTests */,
+				E9CFA0011BD15B4A00D53079 /* WaterWilfredUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9CF9FD91BD15B4900D53079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9CF9FF11BD15B4A00D53079 /* LaunchScreen.storyboard in Resources */,
+				E9CF9FEE1BD15B4A00D53079 /* Assets.xcassets in Resources */,
+				E9CF9FE91BD15B4A00D53079 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9CF9FF51BD15B4A00D53079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9CFA0001BD15B4A00D53079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9CF9FD71BD15B4900D53079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9CF9FE61BD15B4A00D53079 /* ViewController.m in Sources */,
+				E9CF9FEC1BD15B4A00D53079 /* WaterWilfred.xcdatamodeld in Sources */,
+				E9CF9FE31BD15B4A00D53079 /* AppDelegate.m in Sources */,
+				E9CF9FE01BD15B4A00D53079 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9CF9FF31BD15B4A00D53079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9CF9FFC1BD15B4A00D53079 /* WaterWilfredTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9CF9FFE1BD15B4A00D53079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9CFA0071BD15B4A00D53079 /* WaterWilfredUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9CF9FF91BD15B4A00D53079 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9CF9FDA1BD15B4900D53079 /* WaterWilfred */;
+			targetProxy = E9CF9FF81BD15B4A00D53079 /* PBXContainerItemProxy */;
+		};
+		E9CFA0041BD15B4A00D53079 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9CF9FDA1BD15B4900D53079 /* WaterWilfred */;
+			targetProxy = E9CFA0031BD15B4A00D53079 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9CF9FE71BD15B4A00D53079 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9CF9FE81BD15B4A00D53079 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9CF9FEF1BD15B4A00D53079 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9CF9FF01BD15B4A00D53079 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9CFA0091BD15B4A00D53079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9CFA00A1BD15B4A00D53079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9CFA00C1BD15B4A00D53079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WaterWilfred/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KiaraRobles.WaterWilfred;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9CFA00D1BD15B4A00D53079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WaterWilfred/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KiaraRobles.WaterWilfred;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E9CFA00F1BD15B4A00D53079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WaterWilfredTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KiaraRobles.WaterWilfredTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterWilfred.app/WaterWilfred";
+			};
+			name = Debug;
+		};
+		E9CFA0101BD15B4A00D53079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WaterWilfredTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KiaraRobles.WaterWilfredTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterWilfred.app/WaterWilfred";
+			};
+			name = Release;
+		};
+		E9CFA0121BD15B4A00D53079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WaterWilfredUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KiaraRobles.WaterWilfredUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WaterWilfred;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E9CFA0131BD15B4A00D53079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WaterWilfredUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KiaraRobles.WaterWilfredUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WaterWilfred;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9CF9FD61BD15B4900D53079 /* Build configuration list for PBXProject "WaterWilfred" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9CFA0091BD15B4A00D53079 /* Debug */,
+				E9CFA00A1BD15B4A00D53079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9CFA00B1BD15B4A00D53079 /* Build configuration list for PBXNativeTarget "WaterWilfred" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9CFA00C1BD15B4A00D53079 /* Debug */,
+				E9CFA00D1BD15B4A00D53079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E9CFA00E1BD15B4A00D53079 /* Build configuration list for PBXNativeTarget "WaterWilfredTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9CFA00F1BD15B4A00D53079 /* Debug */,
+				E9CFA0101BD15B4A00D53079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E9CFA0111BD15B4A00D53079 /* Build configuration list for PBXNativeTarget "WaterWilfredUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9CFA0121BD15B4A00D53079 /* Debug */,
+				E9CFA0131BD15B4A00D53079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E9CF9FEA1BD15B4A00D53079 /* WaterWilfred.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E9CF9FEB1BD15B4A00D53079 /* WaterWilfred.xcdatamodel */,
+			);
+			currentVersion = E9CF9FEB1BD15B4A00D53079 /* WaterWilfred.xcdatamodel */;
+			path = WaterWilfred.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E9CF9FD31BD15B4900D53079 /* Project object */;
+}
