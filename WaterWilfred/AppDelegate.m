@@ -27,12 +27,8 @@
     // Override point for customization after application launch.
     
     self.numberOfTimesAlertedToDrinkWater = 0;
-    
-    
     self.currentWeight = 128;
-    
     [self calculateWaterIntake:self.currentWeight];
-    
     [self createWaterTimerThatAlertsYouOverInterval:1];
     
     return YES;

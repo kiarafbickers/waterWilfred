@@ -1,0 +1,10 @@
+PODS:
+  - ACPReminder (1.0.2)
+
+DEPENDENCIES:
+  - ACPReminder (~> 1.0.2)
+
+SPEC CHECKSUMS:
+  ACPReminder: 67e475fe4d2a67da4c24e453b0a2c9acc53dd2c3
+
+COCOAPODS: 0.38.2

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2550588525A979388FBE48A8 /* libPods-WaterWilfred.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A700DE07E92BC1CC6122B7 /* libPods-WaterWilfred.a */; };
 		E9CF9FE01BD15B4A00D53079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FDF1BD15B4A00D53079 /* main.m */; };
 		E9CF9FE31BD15B4A00D53079 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FE21BD15B4A00D53079 /* AppDelegate.m */; };
 		E9CF9FE91BD15B4A00D53079 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CF9FE71BD15B4A00D53079 /* Main.storyboard */; };
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		368BA2917B2B36F79B912DCE /* Pods-WaterWilfred.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterWilfred.release.xcconfig"; path = "Pods/Target Support Files/Pods-WaterWilfred/Pods-WaterWilfred.release.xcconfig"; sourceTree = "<group>"; };
+		B2A700DE07E92BC1CC6122B7 /* libPods-WaterWilfred.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WaterWilfred.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E826E97FC22D1A178D95A78F /* Pods-WaterWilfred.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterWilfred.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WaterWilfred/Pods-WaterWilfred.debug.xcconfig"; sourceTree = "<group>"; };
 		E9CF9FDB1BD15B4900D53079 /* WaterWilfred.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterWilfred.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CF9FDF1BD15B4A00D53079 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9CF9FE11BD15B4A00D53079 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2550588525A979388FBE48A8 /* libPods-WaterWilfred.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C05AFFD29EA0175D270ECC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2A700DE07E92BC1CC6122B7 /* libPods-WaterWilfred.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34C2D0EAE7C700A6735C68DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E826E97FC22D1A178D95A78F /* Pods-WaterWilfred.debug.xcconfig */,
+				368BA2917B2B36F79B912DCE /* Pods-WaterWilfred.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E9CF9FD21BD15B4900D53079 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +112,8 @@
 				E9CF9FFA1BD15B4A00D53079 /* WaterWilfredTests */,
 				E9CFA0051BD15B4A00D53079 /* WaterWilfredUITests */,
 				E9CF9FDC1BD15B4900D53079 /* Products */,
+				34C2D0EAE7C700A6735C68DE /* Pods */,
+				0C05AFFD29EA0175D270ECC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9CFA00B1BD15B4A00D53079 /* Build configuration list for PBXNativeTarget "WaterWilfred" */;
 			buildPhases = (
+				3326C7E68A3CE93C402CC65B /* Check Pods Manifest.lock */,
 				E9CF9FD71BD15B4900D53079 /* Sources */,
 				E9CF9FD81BD15B4900D53079 /* Frameworks */,
 				E9CF9FD91BD15B4900D53079 /* Resources */,
+				81139337B6807CD4BE47387F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,6 +298,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3326C7E68A3CE93C402CC65B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81139337B6807CD4BE47387F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WaterWilfred/Pods-WaterWilfred-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9CF9FD71BD15B4900D53079 /* Sources */ = {
@@ -419,6 +478,7 @@
 		};
 		E9CFA00C1BD15B4A00D53079 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E826E97FC22D1A178D95A78F /* Pods-WaterWilfred.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WaterWilfred/Info.plist;
@@ -430,6 +490,7 @@
 		};
 		E9CFA00D1BD15B4A00D53079 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 368BA2917B2B36F79B912DCE /* Pods-WaterWilfred.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WaterWilfred/Info.plist;
@@ -506,6 +567,7 @@
 				E9CFA00D1BD15B4A00D53079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9CFA00E1BD15B4A00D53079 /* Build configuration list for PBXNativeTarget "WaterWilfredTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +576,7 @@
 				E9CFA0101BD15B4A00D53079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9CFA0111BD15B4A00D53079 /* Build configuration list for PBXNativeTarget "WaterWilfredUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +585,7 @@
 				E9CFA0131BD15B4A00D53079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

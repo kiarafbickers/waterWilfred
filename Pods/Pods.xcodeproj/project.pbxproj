@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58CFD1A944272747A7FD6C871DFF8F7D /* ACPReminder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D68081E8349A57CA24D22D7DB977F291 /* ACPReminder-dummy.m */; };
+		73E52DFD8529A755C75DB1F402D878D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F813C7C4F57056B7E57E9F2A010BF2F3 /* Foundation.framework */; };
+		796293A9818B722B41BD4D552638F2CD /* Pods-WaterWilfred-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A89EEC012C6218502C419BAAF5D60F2D /* Pods-WaterWilfred-dummy.m */; };
+		931ADE0DF2603999BC4665DF3407BEFE /* ACPReminder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FA49C0803018DF819125E4AFB2BF5D0 /* ACPReminder.h */; };
+		A81765E3DF7375438DB67D98CC87739C /* ACPReminder.m in Sources */ = {isa = PBXBuildFile; fileRef = 026F7FD6F3D43B7985B56F5056AF56AB /* ACPReminder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B080240D263A0867754D9E4BD52B0F4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F813C7C4F57056B7E57E9F2A010BF2F3 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BFFE410F0F150A1F630C495BCC7E7D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0E8FC983590831321B9400F05E4F56F;
+			remoteInfo = ACPReminder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		026F7FD6F3D43B7985B56F5056AF56AB /* ACPReminder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACPReminder.m; path = ACPReminder/ACPReminder.m; sourceTree = "<group>"; };
+		0FB4286EDF27F10C78651FAF2691A881 /* Pods-WaterWilfred.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterWilfred.release.xcconfig"; sourceTree = "<group>"; };
+		17155DB9E01BA0DEC573856D36F6E6BE /* libPods-WaterWilfred.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WaterWilfred.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38F6C501244D1564CEE3C661D6231643 /* Pods-WaterWilfred.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterWilfred.debug.xcconfig"; sourceTree = "<group>"; };
+		5C4E5BFD6ACBDDC6E95520E4AC41AD2E /* ACPReminder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPReminder.xcconfig; sourceTree = "<group>"; };
+		5C6EC48D12184BA04C05A569A6C92271 /* Pods-WaterWilfred-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WaterWilfred-resources.sh"; sourceTree = "<group>"; };
+		6FA49C0803018DF819125E4AFB2BF5D0 /* ACPReminder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPReminder.h; path = ACPReminder/ACPReminder.h; sourceTree = "<group>"; };
+		7619ADAD6EED2AAA50CDD1479EEB949D /* Pods-WaterWilfred-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WaterWilfred-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93E39739231A3BF365CD36479FD76667 /* ACPReminder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPReminder-prefix.pch"; sourceTree = "<group>"; };
+		94C4D54F2A7638626FDEA23E6DBAE482 /* ACPReminder-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ACPReminder-Private.xcconfig"; sourceTree = "<group>"; };
+		992A063B2E41206745F94B7E240A178C /* libACPReminder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libACPReminder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2205BDD3530EA686ED8D6F0D341035A /* Pods-WaterWilfred-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterWilfred-acknowledgements.plist"; sourceTree = "<group>"; };
+		A89EEC012C6218502C419BAAF5D60F2D /* Pods-WaterWilfred-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WaterWilfred-dummy.m"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D68081E8349A57CA24D22D7DB977F291 /* ACPReminder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPReminder-dummy.m"; sourceTree = "<group>"; };
+		F813C7C4F57056B7E57E9F2A010BF2F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BAAB4F450B296127C064BAA8F332AAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B080240D263A0867754D9E4BD52B0F4A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		722121513162FCD9D667FA2DE3743321 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73E52DFD8529A755C75DB1F402D878D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39501785F323531BD50A7FBEA03AADEC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F0F32FB5D45719B4604602D873B6900 /* Pods-WaterWilfred */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F813C7C4F57056B7E57E9F2A010BF2F3 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		574C1908C92C231FDDC06BDA481C9EDE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C4E5BFD6ACBDDC6E95520E4AC41AD2E /* ACPReminder.xcconfig */,
+				94C4D54F2A7638626FDEA23E6DBAE482 /* ACPReminder-Private.xcconfig */,
+				D68081E8349A57CA24D22D7DB977F291 /* ACPReminder-dummy.m */,
+				93E39739231A3BF365CD36479FD76667 /* ACPReminder-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ACPReminder";
+			sourceTree = "<group>";
+		};
+		7078A214F6047746C85403F2A51CB24A /* ACPReminder */ = {
+			isa = PBXGroup;
+			children = (
+				6FA49C0803018DF819125E4AFB2BF5D0 /* ACPReminder.h */,
+				026F7FD6F3D43B7985B56F5056AF56AB /* ACPReminder.m */,
+				574C1908C92C231FDDC06BDA481C9EDE /* Support Files */,
+			);
+			path = ACPReminder;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				C71CA44B13B961BFAD6CB11883C99C96 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				39501785F323531BD50A7FBEA03AADEC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9F0F32FB5D45719B4604602D873B6900 /* Pods-WaterWilfred */ = {
+			isa = PBXGroup;
+			children = (
+				7619ADAD6EED2AAA50CDD1479EEB949D /* Pods-WaterWilfred-acknowledgements.markdown */,
+				A2205BDD3530EA686ED8D6F0D341035A /* Pods-WaterWilfred-acknowledgements.plist */,
+				A89EEC012C6218502C419BAAF5D60F2D /* Pods-WaterWilfred-dummy.m */,
+				5C6EC48D12184BA04C05A569A6C92271 /* Pods-WaterWilfred-resources.sh */,
+				38F6C501244D1564CEE3C661D6231643 /* Pods-WaterWilfred.debug.xcconfig */,
+				0FB4286EDF27F10C78651FAF2691A881 /* Pods-WaterWilfred.release.xcconfig */,
+			);
+			name = "Pods-WaterWilfred";
+			path = "Target Support Files/Pods-WaterWilfred";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C71CA44B13B961BFAD6CB11883C99C96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7078A214F6047746C85403F2A51CB24A /* ACPReminder */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				992A063B2E41206745F94B7E240A178C /* libACPReminder.a */,
+				17155DB9E01BA0DEC573856D36F6E6BE /* libPods-WaterWilfred.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		765EBFE32EE7CF28297C94E0EC193B1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931ADE0DF2603999BC4665DF3407BEFE /* ACPReminder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		55242F992D080665D92877AE3F86AE44 /* Pods-WaterWilfred */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EBA99E1DA2E611CCCB63C10E4EF0CB7 /* Build configuration list for PBXNativeTarget "Pods-WaterWilfred" */;
+			buildPhases = (
+				AB56E513DFA825CE9447E4193248005D /* Sources */,
+				722121513162FCD9D667FA2DE3743321 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				949842CEA8885F9491E37D4929B3D615 /* PBXTargetDependency */,
+			);
+			name = "Pods-WaterWilfred";
+			productName = "Pods-WaterWilfred";
+			productReference = 17155DB9E01BA0DEC573856D36F6E6BE /* libPods-WaterWilfred.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C0E8FC983590831321B9400F05E4F56F /* ACPReminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDBE0B17E69F6045F4A141B1316E149C /* Build configuration list for PBXNativeTarget "ACPReminder" */;
+			buildPhases = (
+				84AFC6F1086AC73EEA086D29887CBB5B /* Sources */,
+				4BAAB4F450B296127C064BAA8F332AAB /* Frameworks */,
+				765EBFE32EE7CF28297C94E0EC193B1D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ACPReminder;
+			productName = ACPReminder;
+			productReference = 992A063B2E41206745F94B7E240A178C /* libACPReminder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0E8FC983590831321B9400F05E4F56F /* ACPReminder */,
+				55242F992D080665D92877AE3F86AE44 /* Pods-WaterWilfred */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84AFC6F1086AC73EEA086D29887CBB5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58CFD1A944272747A7FD6C871DFF8F7D /* ACPReminder-dummy.m in Sources */,
+				A81765E3DF7375438DB67D98CC87739C /* ACPReminder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB56E513DFA825CE9447E4193248005D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796293A9818B722B41BD4D552638F2CD /* Pods-WaterWilfred-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		949842CEA8885F9491E37D4929B3D615 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPReminder;
+			target = C0E8FC983590831321B9400F05E4F56F /* ACPReminder */;
+			targetProxy = 3BFFE410F0F150A1F630C495BCC7E7D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12A1CB903B2D38BD644F641A7CE82F6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94C4D54F2A7638626FDEA23E6DBAE482 /* ACPReminder-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ACPReminder/ACPReminder-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		22BB415E53591704000DAB6A2A9FD995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FB4286EDF27F10C78651FAF2691A881 /* Pods-WaterWilfred.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		713889E934FB865392A9168693FFAB90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94C4D54F2A7638626FDEA23E6DBAE482 /* ACPReminder-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ACPReminder/ACPReminder-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		946A7CB39AC4F61791D354130BF7FD3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38F6C501244D1564CEE3C661D6231643 /* Pods-WaterWilfred.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
+				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EBA99E1DA2E611CCCB63C10E4EF0CB7 /* Build configuration list for PBXNativeTarget "Pods-WaterWilfred" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				946A7CB39AC4F61791D354130BF7FD3B /* Debug */,
+				22BB415E53591704000DAB6A2A9FD995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDBE0B17E69F6045F4A141B1316E149C /* Build configuration list for PBXNativeTarget "ACPReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12A1CB903B2D38BD644F641A7CE82F6E /* Debug */,
+				713889E934FB865392A9168693FFAB90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
