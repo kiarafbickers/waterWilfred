@@ -8,7 +8,15 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
+@property (nonatomic)NSUInteger currentWeight;
+
+@property (nonatomic, strong) NSTimer *waterTimer;
+
+@property (nonatomic) NSInteger numberOfTimesAlertedToDrinkWater;
+
+//@property (nonatomic)NSUInteger waterIntake;
 
 @end
 
@@ -17,8 +25,60 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.numberOfTimesAlertedToDrinkWater = 0;
+    
+    
+    self.currentWeight = 128;
+    
+    [self calculateWaterIntake:self.currentWeight];
+    
+    [self createWaterTimerThatAlertsYouOverInterval:1];
+    
     return YES;
 }
+
+- (void)alertTheUserToDrinkWater {
+    
+    NSLog(@"Hey!, drink some water.");
+    
+    
+    ++self.numberOfTimesAlertedToDrinkWater; // this adds 1 to that property
+    
+    if (self.numberOfTimesAlertedToDrinkWater == 5) {
+        
+        [self stopAlertingTheUserAboutWater];
+    }
+    
+}
+
+- (void)createWaterTimerThatAlertsYouOverInterval:(NSTimeInterval)interval {
+    
+    self.waterTimer = [NSTimer timerWithTimeInterval:interval
+                                              target:self
+                                            selector:@selector(alertTheUserToDrinkWater)
+                                            userInfo:nil
+                                             repeats:YES];
+}
+
+- (void)stopAlertingTheUserAboutWater {
+    
+    self.numberOfTimesAlertedToDrinkWater = 0;
+    [self.waterTimer invalidate];
+}
+
+-(NSUInteger)calculateWaterIntake:(NSUInteger)currentWeight
+{
+    
+    self.numberOfOunces = currentWeight/2;
+    self.numberOfCups = self.numberOfOunces/8;
+    NSLog(@"You need to drink %lu cups of water per day",self.numberOfCups);
+    
+    
+    return self.numberOfCups;
+}
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
