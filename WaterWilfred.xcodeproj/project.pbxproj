@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2550588525A979388FBE48A8 /* libPods-WaterWilfred.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A700DE07E92BC1CC6122B7 /* libPods-WaterWilfred.a */; };
+		E9268A211BE16FF7004FA45F /* WWAUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = E9268A201BE16FF7004FA45F /* WWAUserData.m */; settings = {ASSET_TAGS = (); }; };
 		E9CF9FE01BD15B4A00D53079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FDF1BD15B4A00D53079 /* main.m */; };
 		E9CF9FE31BD15B4A00D53079 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FE21BD15B4A00D53079 /* AppDelegate.m */; };
 		E9CF9FE91BD15B4A00D53079 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CF9FE71BD15B4A00D53079 /* Main.storyboard */; };
@@ -41,6 +42,8 @@
 		368BA2917B2B36F79B912DCE /* Pods-WaterWilfred.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterWilfred.release.xcconfig"; path = "Pods/Target Support Files/Pods-WaterWilfred/Pods-WaterWilfred.release.xcconfig"; sourceTree = "<group>"; };
 		B2A700DE07E92BC1CC6122B7 /* libPods-WaterWilfred.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WaterWilfred.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E826E97FC22D1A178D95A78F /* Pods-WaterWilfred.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterWilfred.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WaterWilfred/Pods-WaterWilfred.debug.xcconfig"; sourceTree = "<group>"; };
+		E9268A1F1BE16FF7004FA45F /* WWAUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWAUserData.h; sourceTree = "<group>"; };
+		E9268A201BE16FF7004FA45F /* WWAUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWAUserData.m; sourceTree = "<group>"; };
 		E9CF9FDB1BD15B4900D53079 /* WaterWilfred.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterWilfred.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CF9FDF1BD15B4A00D53079 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9CF9FE11BD15B4A00D53079 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 			children = (
 				E9CF9FE11BD15B4A00D53079 /* AppDelegate.h */,
 				E9CF9FE21BD15B4A00D53079 /* AppDelegate.m */,
+				E9268A1F1BE16FF7004FA45F /* WWAUserData.h */,
+				E9268A201BE16FF7004FA45F /* WWAUserData.m */,
 				E9CFA0171BD1748A00D53079 /* WWAViewController.h */,
 				E9CFA0181BD1748A00D53079 /* WWAViewController.m */,
 				E9CFA0141BD16A3700D53079 /* WWANavigationController.h */,
@@ -337,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9268A211BE16FF7004FA45F /* WWAUserData.m in Sources */,
 				E9CFA0161BD16A3700D53079 /* WWANavigationController.m in Sources */,
 				E9CF9FEC1BD15B4A00D53079 /* WaterWilfred.xcdatamodeld in Sources */,
 				E9CF9FE31BD15B4A00D53079 /* AppDelegate.m in Sources */,
