@@ -7,6 +7,7 @@
 //
 
 #import "WWAViewController.h"
+#import <ACPReminder/ACPReminder.h>
 
 @interface WWAViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSLog(@"Testing");
+
 }
 
 - (void)didReceiveMemoryWarning {
