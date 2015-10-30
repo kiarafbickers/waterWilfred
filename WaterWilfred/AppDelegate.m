@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "WWAUserData.h"
 #import <ACPReminder/ACPReminder.h>
+#import "WWAUserData.h"
 
 
 
@@ -30,7 +31,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
     WWAUserData *Kiara = [[WWAUserData alloc] init];
     //ask user for permission to receive notifications- it will happen once
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
@@ -42,21 +42,41 @@
 
 -(void)applicationDidEnterBackground:(UIApplication *)application
 {
+    
+    WWAUserData *notificationFrequency = [[WWAUserData alloc]init];
+    
+    NSUInteger frequency = [notificationFrequency calculateWaterIntake:128];
+    NSLog(@" you will be reminded %lu times",frequency);
+    NSUInteger delay = frequency/2;
+    NSLog(@"you will be reminded every %lu seconds",delay);
+    
     // Hydrate Notification Code
     ACPReminder *localNotifications = [ACPReminder sharedManager];
-    localNotifications.messages = @[@"Hey - Time to hydrate!"];
-    localNotifications.timePeriods = @[@(7),@(10)];
-
-    // can find appDomain in project settings / info
-    localNotifications.appDomain = @"com.KiaraRobles.WaterWilfred";
-    
-    //Making randomMessages TRUE will randomly select messages from array/ not what we want need OFF
-    localNotifications.randomMessage = YES;
     
     //Making circularTimePeriods TRUE when last element is taken, the next one will be first
     localNotifications.circularTimePeriod = YES;
     localNotifications.testFlagInSeconds = YES; // default is NO (days), this makes it seconds.
     
+    localNotifications.messages = @[@"Hey - Time to hydrate!"];
+    localNotifications.timePeriods = @[@(2),@(8)];
+
+    // can find appDomain in project settings / info
+    localNotifications.appDomain = @"com.KiaraRobles.WaterWilfred";
+    
+    //Making randomMessages TRUE will randomly select messages from array/ not what we want need OFF
+    localNotifications.randomMessage = NO;
+    
+    //Making circularTimePeriods TRUE when last element is taken, the next one will be first
+    localNotifications.circularTimePeriod = YES;
+    localNotifications.testFlagInSeconds = YES; // default is NO (days), this makes it seconds.
+    
+    [localNotifications createLocalNotification];
+}
+
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    NSLog(@"did receive notification");
+    ACPReminder *localNotifications = [ACPReminder sharedManager];
     [localNotifications createLocalNotification];
 }
 
