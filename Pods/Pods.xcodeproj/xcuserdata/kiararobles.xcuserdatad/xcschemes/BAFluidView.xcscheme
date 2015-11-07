@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2317D84B36407ACD16C5C8E2"
-               BuildableName = "libACPReminder.a"
-               BlueprintName = "ACPReminder"
+               BlueprintIdentifier = "7D1CD9C56B00C66F40556707"
+               BuildableName = "libBAFluidView.a"
+               BlueprintName = "BAFluidView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

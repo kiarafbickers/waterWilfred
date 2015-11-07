@@ -4,6 +4,7 @@
 target 'WaterWilfred' do
 
     pod 'ACPReminder', '~> 1.0.2'
+	pod "BAFluidView"
 
 end
 

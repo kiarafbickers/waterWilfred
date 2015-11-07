@@ -29,13 +29,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     // Override point for customization after application launch.
     
-    WWAUserData *Kiara = [[WWAUserData alloc] init];
-    //ask user for permission to receive notifications- it will happen once
-    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
-        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
-    }
+    
+    WWAUserData *hi = [[WWAUserData alloc]initWithCurrentWeight:125];
+    
     
     return YES;
 }

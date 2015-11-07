@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>BAFluidView-BAFluidView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>BAFluidView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-WaterWilfred.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>55242F992D080665D92877AE3F86AE44</key>
+		<key>1F1A50334A4C71683596ECC8FA439A52</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C0E8FC983590831321B9400F05E4F56F</key>
+		<key>42354B20024B66DA34F95A93F69C0906</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71FE26E6ACD492B1564789C1E4ADD19B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B9B5AD34415784F2487C87CD73BE253D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
