@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nsk-Ye-7qb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rt2-KO-Wgd">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -54,7 +55,6 @@
         <!--View Controller-->
         <scene sceneID="Kf4-zc-34R">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2Fk-wZ-heU" sceneMemberID="firstResponder"/>
                 <viewController id="bH8-95-udM" customClass="WWAViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mS6-Xu-NeO"/>
@@ -99,8 +99,92 @@
                         <outlet property="swipeForNextExampleLabel" destination="Byl-p7-GcQ" id="RfH-aL-MC1"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Fk-wZ-heU" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2126" y="394"/>
+        </scene>
+        <!--Cups Collection View Controller-->
+        <scene sceneID="I2L-eB-umE">
+            <objects>
+                <collectionViewController id="rt2-KO-Wgd" customClass="WWACupsCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="r8r-Ff-5OZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eSF-9v-i1t">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ucn-Dy-pvG">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellsIdentifier" id="HEW-2T-CHO" customClass="WWACustomCell">
+                                <rect key="frame" x="61" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glass.png" translatesAutoresizingMaskIntoConstraints="NO" id="aMo-9H-GP3" userLabel="Cup Of Water Image">
+                                            <rect key="frame" x="8" y="8" width="84" height="84"/>
+                                            <color key="backgroundColor" red="0.98039215690000003" green="0.68627450980000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTR-pG-HVZ" customClass="BEMCheckBox">
+                                            <rect key="frame" x="8" y="8" width="84" height="84"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                                    <color key="value" red="0.98039215690000003" green="0.68627450980000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                                    <color key="value" red="0.98039215690000003" green="0.68627450980000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                    <real key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="tintColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="aMo-9H-GP3" firstAttribute="leading" secondItem="HEW-2T-CHO" secondAttribute="leadingMargin" id="2TZ-6f-Sb3"/>
+                                    <constraint firstItem="aMo-9H-GP3" firstAttribute="top" secondItem="HEW-2T-CHO" secondAttribute="topMargin" id="Hsl-2d-OVm"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="aMo-9H-GP3" secondAttribute="trailing" id="Ih2-dg-m8M"/>
+                                    <constraint firstItem="eTR-pG-HVZ" firstAttribute="top" secondItem="HEW-2T-CHO" secondAttribute="topMargin" id="LZA-di-Itl"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="eTR-pG-HVZ" secondAttribute="bottom" id="M2b-WM-yTh"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="aMo-9H-GP3" secondAttribute="bottom" id="NF9-ef-d34"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="eTR-pG-HVZ" secondAttribute="trailing" id="R7v-GK-mIK"/>
+                                    <constraint firstItem="eTR-pG-HVZ" firstAttribute="leading" secondItem="HEW-2T-CHO" secondAttribute="leadingMargin" id="nWw-dD-0Jc"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="checkBox" destination="eTR-pG-HVZ" id="etN-a5-z3T"/>
+                                    <outlet property="cupOfWaterImage" destination="aMo-9H-GP3" id="sBI-PQ-kXX"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="rt2-KO-Wgd" id="oa6-Ur-TsK"/>
+                            <outlet property="delegate" destination="rt2-KO-Wgd" id="Yds-Ol-scE"/>
+                        </connections>
+                    </collectionView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RTt-fA-FdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2126" y="1260"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OLo-6b-5Zq">
@@ -122,4 +206,7 @@
             <point key="canvasLocation" x="1000" y="394"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="glass.png" width="512" height="512"/>
+    </resources>
 </document>

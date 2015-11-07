@@ -14,9 +14,10 @@
 @property (nonatomic) NSUInteger alertToDrinkWater;
 @property (nonatomic) NSUInteger glasses;
 @property (nonatomic) NSNumber *currentWaterLevel;
+@property (nonatomic, strong) NSArray *glassesArrayTest;
 
 - (instancetype)initWithCurrentWeight:(NSUInteger)currentWeight;
-- (NSUInteger)calculateWaterIntake:(NSUInteger)currentWeight;
+- (NSArray *)calculateWaterIntake:(NSUInteger)currentWeight;
 
 // Overiding the setter and getter
 - (NSUInteger)currentWeight;

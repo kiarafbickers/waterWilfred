@@ -7,6 +7,7 @@
 //
 
 #import "WWAUserData.h"
+#import "WWAWaterCup.h"
 
 @interface WWAUserData ()
 
@@ -27,16 +28,19 @@
     return self;
 }
 
-- (NSUInteger)calculateWaterIntake:(NSUInteger)currentWeight {
+-(NSArray *)calculateWaterIntake:(NSUInteger)currentWeight{
     
     NSInteger numberOfOunces;
-    NSInteger numberOfCups;
-    
     numberOfOunces = currentWeight/2;
-    numberOfCups = numberOfOunces/8;
-    NSLog(@"You need to drink %lu cups of water per day", numberOfCups);
+    NSMutableArray *numberOfCups =[NSMutableArray new];
     
-    return self.glasses = numberOfCups;
+    for (NSUInteger i = 0; i < numberOfOunces/8; i++)
+    {
+        WWAWaterCup *newCup = [[WWAWaterCup alloc] init];
+        newCup.isChecked = NO;
+        [numberOfCups addObject:newCup];
+    }
+    return self.glassesArrayTest = numberOfCups;
 }
 
 -(NSUInteger)calulateCurrentWeight {

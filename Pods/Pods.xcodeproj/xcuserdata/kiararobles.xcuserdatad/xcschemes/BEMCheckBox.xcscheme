@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F28BAFCB104EAE8E69C7AEF9"
-               BuildableName = "libBAFluidView.a"
-               BlueprintName = "BAFluidView"
+               BlueprintIdentifier = "7C010C5608AFE105D3578C67"
+               BuildableName = "libBEMCheckBox.a"
+               BlueprintName = "BEMCheckBox"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

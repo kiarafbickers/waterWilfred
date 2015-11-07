@@ -16,6 +16,11 @@
 		E968F74D1BED020D008B41CC /* CALayer+WiggleAnimationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E968F74C1BED020D008B41CC /* CALayer+WiggleAnimationAdditions.m */; settings = {ASSET_TAGS = (); }; };
 		E968F75B1BEE5490008B41CC /* Wilfred-DeadFloat.png in Resources */ = {isa = PBXBuildFile; fileRef = E968F75A1BEE5490008B41CC /* Wilfred-DeadFloat.png */; settings = {ASSET_TAGS = (); }; };
 		E968F75E1BEE6E6E008B41CC /* WWAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E968F75D1BEE6E6E008B41CC /* WWAMainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		E968F7621BEE9DE3008B41CC /* WWAWaterCup.m in Sources */ = {isa = PBXBuildFile; fileRef = E968F7611BEE9DE3008B41CC /* WWAWaterCup.m */; settings = {ASSET_TAGS = (); }; };
+		E968F7691BEE9DF0008B41CC /* WWACupsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E968F7641BEE9DF0008B41CC /* WWACupsCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		E968F76A1BEE9DF0008B41CC /* WWACustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E968F7661BEE9DF0008B41CC /* WWACustomCell.m */; settings = {ASSET_TAGS = (); }; };
+		E968F76B1BEE9DF0008B41CC /* WWAStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = E968F7681BEE9DF0008B41CC /* WWAStatus.m */; settings = {ASSET_TAGS = (); }; };
+		E968F76D1BEE9F98008B41CC /* glass.png in Resources */ = {isa = PBXBuildFile; fileRef = E968F76C1BEE9F98008B41CC /* glass.png */; settings = {ASSET_TAGS = (); }; };
 		E9CF9FE01BD15B4A00D53079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FDF1BD15B4A00D53079 /* main.m */; };
 		E9CF9FE31BD15B4A00D53079 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FE21BD15B4A00D53079 /* AppDelegate.m */; };
 		E9CF9FE91BD15B4A00D53079 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CF9FE71BD15B4A00D53079 /* Main.storyboard */; };
@@ -60,6 +65,15 @@
 		E968F75A1BEE5490008B41CC /* Wilfred-DeadFloat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wilfred-DeadFloat.png"; sourceTree = "<group>"; };
 		E968F75C1BEE6E6E008B41CC /* WWAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWAMainViewController.h; sourceTree = "<group>"; };
 		E968F75D1BEE6E6E008B41CC /* WWAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWAMainViewController.m; sourceTree = "<group>"; };
+		E968F7601BEE9DE3008B41CC /* WWAWaterCup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWAWaterCup.h; sourceTree = "<group>"; };
+		E968F7611BEE9DE3008B41CC /* WWAWaterCup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWAWaterCup.m; sourceTree = "<group>"; };
+		E968F7631BEE9DF0008B41CC /* WWACupsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWACupsCollectionViewController.h; sourceTree = "<group>"; };
+		E968F7641BEE9DF0008B41CC /* WWACupsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWACupsCollectionViewController.m; sourceTree = "<group>"; };
+		E968F7651BEE9DF0008B41CC /* WWACustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWACustomCell.h; sourceTree = "<group>"; };
+		E968F7661BEE9DF0008B41CC /* WWACustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWACustomCell.m; sourceTree = "<group>"; };
+		E968F7671BEE9DF0008B41CC /* WWAStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWAStatus.h; sourceTree = "<group>"; };
+		E968F7681BEE9DF0008B41CC /* WWAStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWAStatus.m; sourceTree = "<group>"; };
+		E968F76C1BEE9F98008B41CC /* glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glass.png; sourceTree = "<group>"; };
 		E9CF9FDB1BD15B4900D53079 /* WaterWilfred.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterWilfred.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CF9FDF1BD15B4A00D53079 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9CF9FE11BD15B4A00D53079 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +138,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E968F75F1BEE9CA1008B41CC /* Selma */ = {
+			isa = PBXGroup;
+			children = (
+				E968F7601BEE9DE3008B41CC /* WWAWaterCup.h */,
+				E968F7611BEE9DE3008B41CC /* WWAWaterCup.m */,
+				E968F7631BEE9DF0008B41CC /* WWACupsCollectionViewController.h */,
+				E968F7641BEE9DF0008B41CC /* WWACupsCollectionViewController.m */,
+				E968F7651BEE9DF0008B41CC /* WWACustomCell.h */,
+				E968F7661BEE9DF0008B41CC /* WWACustomCell.m */,
+				E968F7671BEE9DF0008B41CC /* WWAStatus.h */,
+				E968F7681BEE9DF0008B41CC /* WWAStatus.m */,
+			);
+			name = Selma;
+			sourceTree = "<group>";
+		};
 		E9CF9FD21BD15B4900D53079 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +189,7 @@
 				E9CFA0141BD16A3700D53079 /* WWANavigationController.h */,
 				E9CFA0151BD16A3700D53079 /* WWANavigationController.m */,
 				E9CF9FE71BD15B4A00D53079 /* Main.storyboard */,
+				E968F75F1BEE9CA1008B41CC /* Selma */,
 				E9CF9FED1BD15B4A00D53079 /* Assets.xcassets */,
 				E9CF9FEF1BD15B4A00D53079 /* LaunchScreen.storyboard */,
 				E9CF9FF21BD15B4A00D53079 /* Info.plist */,
@@ -174,6 +204,7 @@
 			children = (
 				E968F74B1BED020D008B41CC /* CALayer+WiggleAnimationAdditions.h */,
 				E968F74C1BED020D008B41CC /* CALayer+WiggleAnimationAdditions.m */,
+				E968F76C1BEE9F98008B41CC /* glass.png */,
 				E968F75A1BEE5490008B41CC /* Wilfred-DeadFloat.png */,
 				E968F7431BECFA24008B41CC /* Wilfred-Dead.png */,
 				E968F7441BECFA24008B41CC /* Wilfred-Happy.png */,
@@ -310,6 +341,7 @@
 				E968F7491BECFA24008B41CC /* Wilfred-Meh.png in Resources */,
 				E968F74A1BECFA24008B41CC /* Wilfred-Sad.png in Resources */,
 				E968F7481BECFA24008B41CC /* Wilfred-Happy.png in Resources */,
+				E968F76D1BEE9F98008B41CC /* glass.png in Resources */,
 				E9CF9FF11BD15B4A00D53079 /* LaunchScreen.storyboard in Resources */,
 				E9CF9FEE1BD15B4A00D53079 /* Assets.xcassets in Resources */,
 				E9CF9FE91BD15B4A00D53079 /* Main.storyboard in Resources */,
@@ -373,9 +405,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9268A211BE16FF7004FA45F /* WWAUserData.m in Sources */,
+				E968F76B1BEE9DF0008B41CC /* WWAStatus.m in Sources */,
+				E968F76A1BEE9DF0008B41CC /* WWACustomCell.m in Sources */,
+				E968F7691BEE9DF0008B41CC /* WWACupsCollectionViewController.m in Sources */,
 				E968F75E1BEE6E6E008B41CC /* WWAMainViewController.m in Sources */,
 				E9CFA0161BD16A3700D53079 /* WWANavigationController.m in Sources */,
 				E9CF9FEC1BD15B4A00D53079 /* WaterWilfred.xcdatamodeld in Sources */,
+				E968F7621BEE9DE3008B41CC /* WWAWaterCup.m in Sources */,
 				E9CF9FE31BD15B4A00D53079 /* AppDelegate.m in Sources */,
 				E968F74D1BED020D008B41CC /* CALayer+WiggleAnimationAdditions.m in Sources */,
 				E9CFA0191BD1748A00D53079 /* WWAViewController.m in Sources */,
