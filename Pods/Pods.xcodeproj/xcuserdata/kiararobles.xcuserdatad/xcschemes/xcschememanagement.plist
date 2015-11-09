@@ -19,11 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>BEMCheckBox.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-WaterWilfred.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6D7D6DEA7270E00406129F9F1E92FAD9</key>
+		<key>18492197460D52CCBACD1FE47B02F154</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8575499363B6B1A9563E5FC44B04D614</key>
+		<key>86D845FB4E49D9B26EFC581AA6E2874F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C3633209972CDA91B300FC472B3D420F</key>
+		<key>BE9C772F9310A9C7BF9051B69874F9A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EDE385B7201ABE1DE695B832BC81FACF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FEFA1320FA97C56DF1D82DFA999B4D9C</key>
+		<key>E436F1C4D159DE2B39D84E4C13FA80AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

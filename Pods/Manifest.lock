@@ -1,16 +1,13 @@
 PODS:
   - ACPReminder (1.0.2)
   - BAFluidView (0.1.6)
-  - BEMCheckBox (1.1.0)
 
 DEPENDENCIES:
   - ACPReminder (~> 1.0.2)
   - BAFluidView
-  - BEMCheckBox
 
 SPEC CHECKSUMS:
   ACPReminder: 67e475fe4d2a67da4c24e453b0a2c9acc53dd2c3
   BAFluidView: d43890546d372d1f1b47cc12991ab5b257322f23
-  BEMCheckBox: abb7b1ffcc24c25c31ffa7b7167a3e869f4f15ba
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

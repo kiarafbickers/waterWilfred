@@ -16,13 +16,11 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-//testMEthods Properties
-
 @property (nonatomic) NSUInteger numberOfCups;
 @property (nonatomic) NSUInteger numberOfOunces;
 
-- (void)saveContext;
-- (NSURL *)applicationDocumentsDirectory;
+//- (void)saveContext;
+//- (NSURL *)applicationDocumentsDirectory;
 
 
 @end

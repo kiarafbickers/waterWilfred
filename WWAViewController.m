@@ -10,26 +10,25 @@
 #import "WWAMainViewController.h"
 #import "UIColor+ColorWithHex.h"
 #import "CALayer+WiggleAnimationAdditions.h"
-#import <ACPReminder/ACPReminder.h>
+#import "ACPReminder/ACPReminder.h"
+#import "QuartzCore/QuartzCore.h"
 
 @interface WWAViewController ()
 
-@property (strong,nonatomic) UIDynamicAnimator *animator;
-@property (strong,nonatomic) UIView *swipeLabel;
-@property (strong,nonatomic) UISwipeGestureRecognizer *leftSwipeGestureRecognizer;
-@property (strong,nonatomic) UISwipeGestureRecognizer *rightSwipeGestureRecognizer;
-@property (strong,nonatomic) UIAttachmentBehavior *attachmentBehavior;
-@property (strong,nonatomic) CABasicAnimation *fadeIn;
-@property (strong,nonatomic) CABasicAnimation *fadeOut;
+@property (strong, nonatomic) UISwipeGestureRecognizer *leftSwipeGestureRecognizer;
+@property (strong, nonatomic) UISwipeGestureRecognizer *rightSwipeGestureRecognizer;
+@property (strong, nonatomic) UIView *swipeLabel;
+@property (assign, nonatomic) NSInteger currentExample;
+@property (assign, nonatomic) BOOL firstTimeLoading;
+@property (assign, nonatomic) CAGradientLayer *gradient;
+@property (strong, nonatomic) CAShapeLayer *backgroundLayer;
+@property (strong, nonatomic) UIDynamicAnimator *animator;
+@property (strong, nonatomic) CABasicAnimation *fadeIn;
+@property (strong, nonatomic) CABasicAnimation *fadeOut;
 @property (strong,nonatomic) NSMutableArray *examplesArray;
-@property (assign,nonatomic) int currentExample;
-@property (assign,nonatomic) BOOL activity;
-@property (assign,nonatomic) NSTimer *timer;
-@property (assign,nonatomic) BOOL firstTimeLoading;
-@property(assign,nonatomic) CAGradientLayer *gradient;
-@property (nonatomic, strong) CAShapeLayer *backgroundLayer;
 
 @end
+
 
 @implementation WWAViewController
 
@@ -37,84 +36,90 @@
 #pragma mark - Lifecycle
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
-    [self setUpBackground];
     
-    self.activity = NO;
     self.firstTimeLoading = YES;
-    
-    
-    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
-    
-    // Do any additional setup after loading the view, typically from a nib.
-    self.leftSwipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipes:)];
-    self.rightSwipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipes:)];
-    
-    self.leftSwipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
-    self.rightSwipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
-    
-    [self.view addGestureRecognizer:self.leftSwipeGestureRecognizer];
-    [self.view addGestureRecognizer:self.rightSwipeGestureRecognizer];
-
-    
-    self.currentExample = 0;
-    
-    //For fading in swipe labels and timing it's appearance
-    self.fadeIn = [CABasicAnimation animationWithKeyPath:@"opacity"];
-    self.fadeIn.duration = 2.0;
-    self.fadeIn.fromValue = @0.0f;
-    self.fadeIn.toValue = @1.0f;
-    self.fadeIn.removedOnCompletion = NO;
-    self.fadeIn.fillMode = kCAFillModeForwards;
-    self.fadeIn.additive = NO;
-    
-    self.fadeOut = [CABasicAnimation animationWithKeyPath:@"opacity"];
-    self.fadeOut.duration = 0.5f;
-    self.fadeOut.fromValue = @1.0f;
-    self.fadeOut.toValue = @0.0f;
-    self.fadeOut.removedOnCompletion = NO;
-    self.fadeOut.fillMode = kCAFillModeForwards;
-    self.fadeOut.additive = NO;
+    [self setupBackground];
+    [self setupGestures];
+}
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
 }
 
-- (void)viewDidLayoutSubviews {
-    
-    if (self.firstTimeLoading) {
-        self.firstTimeLoading = NO;
+
+#pragma mark - Views
+
+- (void)viewDidLayoutSubviews
+{
+    if (self.firstTimeLoading)
+    {
+        self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+        self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame];
+        
         self.exampleContainerView = [self nextBAFluidViewExample];
         [self.view insertSubview:self.exampleContainerView belowSubview:self.swipeForNextExampleLabel];
         [self.exampleContainerView addGestureRecognizer:self.leftSwipeGestureRecognizer];
         [self.exampleContainerView addGestureRecognizer:self.rightSwipeGestureRecognizer];
+        
+        self.firstTimeLoading = NO;
     }
 }
-
-- (void)setUpBackground {
-    //sets up the green background [for fun - even though there an image :) ]
-    if (self.gradient) {
+- (void)setupBackground
+{
+    // Setup gradient
+    if (self.gradient)
+    {
         [self.gradient removeFromSuperlayer];
         self.gradient = nil;
     }
     
-    //resetting a gradient layer causes the iphone6 simulator to fail (weird bug)
+    // Resetting a gradient layer, causes the iphone6 simulator to fail (weird bug)
     CAGradientLayer *tempLayer = [CAGradientLayer layer];
     tempLayer.frame = self.view.bounds;
-    tempLayer.colors = @[(id)[UIColor colorWithHex:0x53cf84].CGColor,(id)[UIColor colorWithHex:0x53cf84].CGColor, (id)[UIColor colorWithHex:0x2aa581].CGColor, (id)[UIColor colorWithHex:0x1b9680].CGColor];
-    tempLayer.locations = @[[NSNumber numberWithFloat:0.0f], [NSNumber numberWithFloat:0.5f],[NSNumber numberWithFloat:0.8f], [NSNumber numberWithFloat:1.0f]];
+    tempLayer.colors = @[(id)[UIColor colorWithHex:0x53cf84].CGColor,
+                         (id)[UIColor colorWithHex:0x53cf84].CGColor,
+                         (id)[UIColor colorWithHex:0x2aa581].CGColor,
+                         (id)[UIColor colorWithHex:0x1b9680].CGColor];
+    tempLayer.locations = @[[NSNumber numberWithFloat:0.0f],
+                            [NSNumber numberWithFloat:0.5f],
+                            [NSNumber numberWithFloat:0.8f],
+                            [NSNumber numberWithFloat:1.0f]];
     tempLayer.startPoint = CGPointMake(0, 0);
     tempLayer.endPoint = CGPointMake(1, 1);
-    
     self.gradient = tempLayer;
-    [self.backgroundView.layer insertSublayer:self.gradient atIndex:0];
     
+    [self.backgroundView.layer insertSublayer:self.gradient atIndex:0];
+}
+- (void)setupGestures
+{
+    self.leftSwipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipes:)];
+    self.rightSwipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipes:)];
+    self.leftSwipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+    self.rightSwipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:self.leftSwipeGestureRecognizer];
+    [self.view addGestureRecognizer:self.rightSwipeGestureRecognizer];
+    
+    // Setup fading on swipe labels
+    self.fadeIn = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    self.fadeIn.duration = 2.0f;
+    self.fadeIn.fromValue = @0.0f;
+    self.fadeIn.toValue = @1.0f;
+    self.fadeIn.removedOnCompletion = NO;
+    self.fadeIn.fillMode = kCAFilterLinear;
+    self.fadeIn.additive = NO;
+    
+    self.fadeOut = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    self.fadeOut.duration = 2.0f;
+    self.fadeOut.fromValue = @1.0f;
+    self.fadeOut.toValue = @0.0f;
+    self.fadeOut.removedOnCompletion = NO;
+    self.fadeOut.fillMode = kCAFilterLinear;
+    self.fadeOut.additive = NO;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
 
 #pragma mark - Gestures
-
 
 - (void)handleSwipes:(UISwipeGestureRecognizer *)sender
 {
@@ -132,56 +137,15 @@
     }
 }
 
-- (void)startWiggling
-{
-    CALayer *wiggleLayer = [self wiggleLayer];
-    [wiggleLayer bts_startWiggling];
-}
 
-- (void)stopWiggling
-{
-    CALayer *wiggleLayer= [self wiggleLayer];
-    [wiggleLayer bts_stopWiggling];
-}
-
-- (CALayer *)wiggleLayer
-{
-    return [[[[self view] layer] sublayers] lastObject];
-}
-
-
-#pragma mark - Private
-
-- (void)showSwipeForNextExampleLabel {
-    //call to action in case user doesn't swipe
-    if (!self.activity) {
-        [self.swipeForNextExampleLabel.layer removeAllAnimations];
-        self.swipeForNextExampleLabel.layer.opacity = 1;
-        [self.swipeForNextExampleLabel.layer addAnimation:self.fadeIn forKey:@"fadeIn"];
-    }
-    
-}
-
-- (void)hideSwipeForNextExampleLabel {
-    [self.swipeForNextExampleLabel.layer removeAllAnimations];
-    self.swipeForNextExampleLabel.layer.opacity = 0;
-    [self.swipeForNextExampleLabel.layer addAnimation:self.fadeOut forKey:@"fadeOut"];
-}
-
+#pragma mark - Actions
 
 -(void)transitionToNextExample{
-    
-    //This adds the dragging and falling functionality
-    if(self.swipeForNextExampleLabel.alpha > 0){
-        [self hideSwipeForNextExampleLabel];
-    }
-    
-    self.activity = NO;
     [self.animator removeAllBehaviors];
+    [self.view.layer removeAllAnimations];
     
     self.currentExample++;
     
-    //show new example
     BAFluidView *nextFluidViewExample = [self nextBAFluidViewExample];
     [nextFluidViewExample addGestureRecognizer:self.rightSwipeGestureRecognizer];
     nextFluidViewExample.alpha = 0.0;
@@ -196,6 +160,25 @@
     
 }
 
+
+#pragma mark - Animations
+
+- (void) startWiggling
+{
+    CALayer *wiggleLayer = [self wiggleLayer];
+    [wiggleLayer bts_startWiggling];
+}
+
+- (void) stopWiggling
+{
+    CALayer *wiggleLayer= [self wiggleLayer];
+    [wiggleLayer bts_stopWiggling];
+}
+
+- (CALayer *) wiggleLayer
+{
+    return [[[[self view] layer] sublayers] lastObject];
+}
 - (void) runSpinAnimationOnView:(CALayer*)layer duration:(CGFloat)duration rotations:(CGFloat)rotations repeat:(float)repeat
 {
     CABasicAnimation* rotationAnimation;
@@ -209,28 +192,24 @@
     
     [layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
 }
-
 - (void) runHalfSpinAnimationOnView:(CALayer*)layer duration:(CGFloat)duration repeat:(float)repeat
 {
-    NSString *zRotationKeyPath = @"transform.rotation.z"; // The killer of typos
+    NSString *zRotationKeyPath = @"transform.rotation.z";
     
     CGFloat currentAngle = [[layer valueForKeyPath:zRotationKeyPath] floatValue];
-    CGFloat angleToAdd   = M_PI; // 90 deg = pi/2
+    CGFloat angleToAdd   = M_PI;
     [layer setValue:@(currentAngle+angleToAdd) forKeyPath:zRotationKeyPath];
     
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:zRotationKeyPath];
     animation.duration = duration;
-    animation.toValue = @(0.0);        // model value was already changed. End at that value
-    animation.byValue = @(angleToAdd); // start from - this value (it's toValue - byValue (see above))
+    animation.toValue = @(0.0);
+    animation.byValue = @(angleToAdd);
     animation.repeatCount = repeat;
     
-    // Add the animation. Once it completed it will be removed and you will see the value
-    // of the model layer which happens to be the same value as the animation stopped at.
     [layer addAnimation:animation forKey:@"90rotation"];
-    
 }
-
-- (void)runBigSpinAnimationOnView:(CALayer*)layer duration:(CGFloat)duration rotations:(CGFloat)rotations repeat:(float)repeat {
+- (void) runBigSpinAnimationOnView:(CALayer*)layer duration:(CGFloat)duration rotations:(CGFloat)rotations repeat:(float)repeat
+{
     CGFloat startAngle = - ((float)M_PI / 2);
     CGFloat endAngle = (1.8f * (float)M_PI) + startAngle;
     
@@ -252,9 +231,10 @@
     rotationAnimation.repeatCount = repeat;
     [layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
 }
--(BAFluidView*) nextBAFluidViewExample {
-    
-    switch (self.currentExample) {
+-(BAFluidView *) nextBAFluidViewExample
+{
+    switch (self.currentExample)
+    {
         case 0:
         {
             // Fill view with water
@@ -262,17 +242,15 @@
             self.fluidView.fillColor = [UIColor colorWithHex:0x397ebe];
             [self.fluidView keepStationary];
             
+            // Set UILabel text
             self.message = [UILabel new];
-            
-            // Set Label text
-            [self.view addSubview:self.message];
             self.message.backgroundColor = [UIColor clearColor];
             self.message.text = @"Congrats on your new pet!\nMeet Wilfred.";
             self.message.font = [UIFont fontWithName:@"Helvetica" size:20];
             self.message.numberOfLines = 2;
             self.message.textAlignment = NSTextAlignmentCenter;
+            [self.view addSubview:self.message];
             
-
             // Creating constraints using Layout Anchors
             self.message.translatesAutoresizingMaskIntoConstraints = NO;
             [self.message.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = YES;
@@ -293,143 +271,121 @@
             CALayer *wiggleLayer = [self wiggleLayer];
             [wiggleLayer bts_startWiggling];
             
+            // Add breadcrumbs image
+            self.breadcrumbsLayer = [CALayer layer];
+            [self.breadcrumbsLayer setContents:(__bridge id)[[UIImage imageNamed:@"page1.png"] CGImage]];
+            [self.breadcrumbsLayer setBounds:CGRectMake(0.0, 0.0, 67.0, 7.0)];
+            [[[self view] layer] addSublayer:self.breadcrumbsLayer];
+            
+            CGRect viewBounds2 = [[self view] frame];
+            [self.breadcrumbsLayer setPosition:CGPointMake(viewBounds2.size.width / 2.0, viewBounds2.size.height / 1.04 - viewBounds2.origin.y)];
             
             return self.fluidView;
         }
-            
         case 1:
         {
-            // Move water
-            self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame startElevation:@0.55];
-            self.fluidView.fillColor = [UIColor colorWithHex:0x397ebe];
-            self.fluidView.fillDuration = 5.0;
-            self.fluidView.fillRepeatCount = 0.5;
-            [self.fluidView fillTo:@0.25];
-            [self.fluidView startAnimation];
+            [self waterLevelAnimationStart:@0.550 fillDuration:3.3 fillTo:@0.250];
             
-            // Move fish
-            CGRect viewBounds = [[self view] frame];
-            [self.fishLayer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
-            
-            // UILabel *label1 = [UILabel new];
-            
-            [self.view addSubview:self.message];
             self.message.text = @"Every morning his water\nstarts out low...";
-            self.message.font = [UIFont fontWithName:@"Helvetica" size:20];
+            
+            CGRect viewBounds = [[self view] frame];
+            self.fishLayer.position = CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y);
+            [self.breadcrumbsLayer setContents:(__bridge id)[[UIImage imageNamed:@"page2.png"] CGImage]];
             
             return self.fluidView;
         }
-            
         case 2:
         {
-            // Move water
-            self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame startElevation:@0.25];
-            self.fluidView.fillColor = [UIColor colorWithHex:0x397ebe];
-            self.fluidView.fillDuration = 5.0;
-            self.fluidView.fillRepeatCount = 0.5;
-            [self.fluidView fillTo:@0.72];
-            [self.fluidView startAnimation];
+            [self waterLevelAnimationStart:@0.250 fillDuration:5.0 fillTo:@0.720];
             
-            // Move fish
+            self.message.text = @"As you drink,\nhis water level rises.";
+            
             CGRect viewBounds = [[self view] frame];
             [self.fishLayer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.25 - viewBounds.origin.y)];
-            
-            // Change message
-            [self.view addSubview:self.message];
-            self.message.text = @"As you drink,\nhis water level rises.";
-            self.message.font = [UIFont fontWithName:@"Helvetica" size:20];
+            [self.breadcrumbsLayer setContents:(__bridge id)[[UIImage imageNamed:@"page3.png"] CGImage]];
             
             return self.fluidView;
         }
-            
         case 3:
         {
-            // Move water
-            self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame startElevation:@0.72];
+            self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame startElevation:@0.720];
             self.fluidView.fillColor = [UIColor colorWithHex:0x397ebe];
             [self.fluidView keepStationary];
             
-            // Move fish
+            self.message.text = @"Give your fish\nmore room to swim!";
+            
             CGRect viewBounds = [[self view] frame];
             [self.fishLayer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.25 - viewBounds.origin.y)];
-            
-            // Change message
-            [self.view addSubview:self.message];
-            self.message.text = @"Give your fish\nmore room to swim!";
-            self.message.font = [UIFont fontWithName:@"Helvetica" size:20];
-            
-            //[self.fishLargerLayer addSublayer:self.fishLayer];
-            
+        
             [self runSpinAnimationOnView:self.fishLayer duration:1 rotations:1 repeat:1];
-            //[self runBigSpinAnimationOnView:self.fishLayer duration:1 rotations:1 repeat:1];
             
+                //[self.fishLargerLayer addSublayer:self.fishLayer];
+                //[self runBigSpinAnimationOnView:self.fishLayer duration:1 rotations:1 repeat:1];
+            
+            [self.breadcrumbsLayer setContents:(__bridge id)[[UIImage imageNamed:@"page4.png"] CGImage]];
             
             return self.fluidView;
         }
-            
         case 4:
         {
-            // Move water
-            self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame startElevation:@0.25];
-            self.fluidView.fillColor = [UIColor colorWithHex:0x397ebe];
-            [self.fluidView keepStationary];
+            [self waterLevelAnimationStart:@0.720 fillDuration:5.0 fillTo:@0.250];
             
-            // Move fish
             CGRect viewBounds = [[self view] frame];
             [self.fishLayer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
             
-            // Change message
-            [self.view addSubview:self.message];
             self.message.text = @"But forget to drink water\nand you might end up with\na dead fish.";
             self.message.numberOfLines = 3;
             
-            [self runHalfSpinAnimationOnView:self.fishLayer duration:3 repeat:1];
-            
             [self.fishLayer setContents:(__bridge id)[[UIImage imageNamed:@"Wilfred-DeadFloat.png"] CGImage]];
-            // [self runBigSpinAnimationOnView:self.fishLayer duration:1 rotations:1 repeat:1];
-            
+            [self runHalfSpinAnimationOnView:self.fishLayer duration:1.2 repeat:1];
+        
+            [self.breadcrumbsLayer setContents:(__bridge id)[[UIImage imageNamed:@"page5.png"] CGImage]];
             
             return self.fluidView;
         }
-        
         case 5:
         {
-            // Move water
-            self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame startElevation:@0.25];
+            self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame startElevation:@0.250];
             self.fluidView.fillColor = [UIColor colorWithHex:0x397ebe];
             [self.fluidView keepStationary];
             
-            // Move fish
             CGRect viewBounds = [[self view] frame];
             [self.fishLayer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
             
-            // Change message
-            [self.view addSubview:self.message];
             self.message.text = @"Wilfed's, just playing!!";
             self.message.numberOfLines = 2;
             
             [self.fishLayer setContents:(__bridge id)[[UIImage imageNamed:@"Wilfred-Happy.png"] CGImage]];
-            [self runHalfSpinAnimationOnView:self.fishLayer duration:3 repeat:1];
+            [self runHalfSpinAnimationOnView:self.fishLayer duration:2 repeat:1];
+            
+            [self.breadcrumbsLayer setContents:(__bridge id)[[UIImage imageNamed:@"page5.png"] CGImage]];
             
             return self.fluidView;
-
         }
-        
         case 6:
         {
-            WWAMainViewController *mainGame = [[WWAMainViewController alloc] init];
-            [self presentViewController:mainGame animated:YES completion:nil];
-            return nil;
+            //WWAMainViewController *mainController = [[WWAMainViewController alloc] init];
+            //WWAMainViewController *mainController = [self.storyboard instantiateViewControllerWithIdentifier:@"MainController"];
+            //[self presentViewController:mainController animated:NO completion:nil];
             
+            return self.fluidView;
         }
-            
         default:
         {
             self.currentExample = 0;
             return [self nextBAFluidViewExample];
         }
     }
-    
     return nil;
 }
+- (void) waterLevelAnimationStart:(NSNumber *)startElevation fillDuration:(CGFloat)fillDuration fillTo:(NSNumber *)fillTo
+{
+    self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame startElevation:startElevation];
+    self.fluidView.fillColor = [UIColor colorWithHex:0x397ebe];
+    self.fluidView.fillDuration = fillDuration;
+    self.fluidView.fillRepeatCount = 0.5;
+    [self.fluidView fillTo:fillTo];
+    [self.fluidView startAnimation];
+}
+
 @end
