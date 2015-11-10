@@ -28,22 +28,22 @@ static NSString *const kBTSWiggleTransformTranslationXAnimation = @"BTSWiggleTra
     // Create the rotation animation - a very small angle is all we need to achieve a wiggle effect.
     CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     [rotationAnimation setRepeatCount:MAXFLOAT];
-    [rotationAnimation setDuration:0.17];
+    [rotationAnimation setDuration:0.8]; // 0.17 on CAlayer
     [rotationAnimation setAutoreverses:YES];
 
-    [rotationAnimation setFromValue:@(M_PI / 100.0)];
-    [rotationAnimation setToValue:@(-M_PI/ 100.0)];
+    [rotationAnimation setFromValue:@(M_PI / 220.0)]; // 100.0 on CALayer
+    [rotationAnimation setToValue:@(-M_PI/ 220.0)];
 
     // Create the translation animation along the X axis. This gives is a slight sliding effect, which looks nice.
     CABasicAnimation *translationXAnimation = [CABasicAnimation animationWithKeyPath:@"transform.translation.x"];
     [translationXAnimation setRepeatCount:MAXFLOAT];
-    [translationXAnimation setDuration:0.2];
+    [translationXAnimation setDuration:0.5]; // 0.2 on CAlayer
 
     [translationXAnimation setAutoreverses:YES];
 
     CGRect bounds = [self bounds];
-    [translationXAnimation setFromValue:@(bounds.origin.x + 2.0)];
-    [translationXAnimation setToValue:@(bounds.origin.x - 2.0)];
+    [translationXAnimation setFromValue:@(bounds.origin.x + 2.0)]; // 2.0 on CAlayer
+    [translationXAnimation setToValue:@(bounds.origin.x - 2.0)]; // 2.0 on CAlayer
 
     // add the animations using app-specific keys... we use these keys to "stop wiggling".
     [self addAnimation:rotationAnimation forKey:kBTSWiggleTransformAnimation];

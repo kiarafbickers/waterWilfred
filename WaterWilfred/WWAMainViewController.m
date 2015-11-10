@@ -30,6 +30,7 @@
 @property (nonatomic, strong) NSString *valuePassed;
 @property (nonatomic, strong) NSMutableArray *sequenceOfAnimations;
 @property (nonatomic, strong) NSArray *imgArr;
+@property (nonatomic, strong) NSUserDefaults *theDefaults;
 
 @end
 
@@ -45,8 +46,9 @@
     [self setupNavigationController];
     [self setupTitle];
     [self setupGestures];
+    [self checkLaunch];
     
-    [self presentWeightInputAlert];
+    // [self presentWeightInputAlert];
     
     NSLog(@"Viw loading?????");
 }
@@ -54,7 +56,30 @@
 {
     [super didReceiveMemoryWarning];
 }
-
+- (void) checkLaunch {
+    NSUInteger launchCount;
+    //Set up the properties for the integer and default.
+    self.theDefaults = [NSUserDefaults standardUserDefaults];
+    launchCount = [self.theDefaults integerForKey:@"hasRun"] + 1;
+    [self.theDefaults setInteger:launchCount forKey:@"hasRun"];
+    [self.theDefaults synchronize];
+    
+    //Log the amount of times the application has been run
+    NSLog(@"This application has been run %lu amount of times", (unsigned long)launchCount);
+    
+    //Test if application is the first time running
+    if(launchCount == 1) {
+        //Run your first launch code (Bring user to info/setup screen, etc.)
+        NSLog(@"This is the first time this application has been run");
+        //[self performSegueWithIdentifier:@"segueToNavOnce" sender:nil];
+    }
+              
+    //Test if it has been run before
+    if(launchCount >= 2) {
+        //Run new code if they have opened the app before (Bring user to home screen etc.
+        NSLog(@"This application has been run before");
+    }
+}
 
 #pragma mark - Views
 
@@ -354,225 +379,92 @@
     {
         case 0:
         {
-            
-            
-//            UIImage *fishImage = [UIImage alloc] initWithCIImage:<#(nonnull CIImage *)#>
-//            
-//            UIImageView *someImageView = [UIImageView new];
-//            
-//            
-//            UIImage *fishImage = [UIImage imageNamed:@"Wilred-Happy"];
-//            UIImageView = [[UIImageView alloc] initWithImage:fishImage];
-//            
-//            
-//            someImageView.image = fishImage;
-//            
-//            
-//            
-//            [UIView animateKeyframesWithDuration:9
-//                                           delay:0
-//                                         options:UIViewKeyframeAnimationOptionCalculationModeLinear
-//                                      animations:^{
-//                                          
-//                                          
-//                                          
-//                                          
-//                                      [UIView addKeyframeWithRelativeStartTime:0
-//                                                              relativeDuration:3
-//                                                                    animations:^{
-//                                                                        
-//                                                                        [someIma]
-//                                                                        
-//                                                                        
-//                                                                        
-//                                                                    }];
-//                                          
-//                                          
-//                                          
-//                                          
-//                                          
-//                                          
-//                                          
-//                                          
-//                                          
-//                                          
-//                                          
-//                                          
-//                                          
-//                                          
-//                                          
-//                                          
-//                                          
-//                                      } completion:^(BOOL finished) {
-//                                          
-//                                      }];
-            
-            
-            
             NSLog(@"Case 0 is happening.");
             
             self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame startElevation:@0.25];
             self.fluidView.fillColor = [UIColor colorWithHex:0x397ebe];
             [self.fluidView keepStationary];
             
-            self.fishLayer = [CALayer layer];
-            [self.fishLayer setContents:(__bridge id)[[UIImage imageNamed:@"Wilfred-Meh.png"] CGImage]];
-            [self.fishLayer setContentsScale:[[UIScreen mainScreen] scale]];
-            [self.fishLayer setBounds:CGRectMake(0.0, 0.0, 162.9, 120.6)];
-            [[[self view] layer] addSublayer:self.fishLayer];
+            // Initialize first fish images
+            self.fishView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 162.9, 120.6)];
+            self.fishImage = [UIImage imageNamed:@"Wilfred-Meh"];
+            self.fishImageView = [[UIImageView alloc] initWithImage:self.fishImage];
+            self.fishImageView.contentMode = UIViewContentModeScaleAspectFit; // Change size
+            self.fishImageView.frame = self.fishView.bounds;
+            [self.fishView addSubview:self.fishImageView];
+            [self.view addSubview:self.fishView];
             
             CGRect viewBounds = [[self view] frame];
-            [self.fishLayer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
+            [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
             
             CALayer *wiggleLayer = [self wiggleLayer];
             [wiggleLayer bts_startWiggling];
+            
+            [self swimFishWithDuration:8];
             
             return self.fluidView;
         }
         case 1:
         {
-            
             NSLog(@"Case 1 is happening.");
-
             [self waterLevelAnimationStart:@0.250 fillTo:@0.325];
-            
-            CGRect viewBounds = [[self view] frame];
-            [self.fishLayer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
-            
+
             return self.fluidView;
         }
         case 2:
         {
             NSLog(@"Case 2 is happening.");
-
             [self waterLevelAnimationStart:@0.325 fillTo:@0.400];
-            
-            CGRect viewBounds = [[self view] frame];
-            [self.fishLayer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
+
             
             return self.fluidView;
         }
         case 3:
         {
-            
             NSLog(@"Case 3 is happening.");
-
-            
             [self waterLevelAnimationStart:@0.400 fillTo:@0.475];
-
-            CAMediaTimingFunction *timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-            
-            // Animation 1
-            CAKeyframeAnimation *animation1 = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.x"];
-            animation1.fillMode = kCAFillModeForwards;
-            animation1.removedOnCompletion = NO;
-            animation1.timingFunctions = @[timingFunction, timingFunction];
-            animation1.values = @[@0, @-70, @70];
-            animation1.duration = 9;
-            animation1.repeatCount = 1;
-            
-            // Animation 2
-            CABasicAnimation *animation2 = [CABasicAnimation animationWithKeyPath: @"transform"];
-            CATransform3D flip = CATransform3DMakeScale(-1, 1, 1);
-            animation2.toValue = [NSValue valueWithCATransform3D:flip];
-            
-            
-            
-            animation2.beginTime = 3;
-            animation2.duration = 0.5;
-            animation2.repeatCount = 1;
-            animation2.removedOnCompletion = NO;
-            
-            
-            
-//            // Animation 3
-//            CAKeyframeAnimation *animation3 = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.x"];
-//            animation3.values = @[@-70, @70];
-//            animation3.beginTime = 3.5;
-//            animation3.duration = 6;
-//            animation3.timingFunctions = @[timingFunction];
-//            animation3.removedOnCompletion = NO;
-//            animation3.fillMode = kCAFillModeForwards;
-
-            // Animation group
-            CAAnimationGroup *group = [CAAnimationGroup animation];
-            group.animations = @[animation2, animation1];
-            group.duration = 9;
-            
-            [self.fishLayer addAnimation:group forKey:@"fishSwim"];
+         
             return self.fluidView;
         }
         case 4:
         {
-            
             NSLog(@"Case 4 is happening.");
-
             [self waterLevelAnimationStart:@0.475 fillTo:@.550];
-            
-            CGRect viewBounds = [[self view] frame];
-            [self.fishLayer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
-            
+
             return self.fluidView;
         }
         case 5:
         {
-            
-            
             NSLog(@"Case 5 is happening.");
-
             [self waterLevelAnimationStart:@0.550 fillTo:@.625];
-            
-            CGRect viewBounds = [[self view] frame];
-            [self.fishLayer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
-            
+
             return self.fluidView;
         }
         case 6:
         {
-            
             NSLog(@"Case 6 is happening.");
-
             [self waterLevelAnimationStart:@0.625 fillTo:@.700];
-            
-            CGRect viewBounds = [[self view] frame];
-            [self.fishLayer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
-            
+         
             return self.fluidView;
         }
         case 7:
         {
-            
             NSLog(@"Case 7 is happening.");
-
             [self waterLevelAnimationStart:@0.700 fillTo:@.775];
-            
-            CGRect viewBounds = [[self view] frame];
-            [self.fishLayer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
-            
+
             return self.fluidView;
         }
         case 8:
         {
-            
-            
             NSLog(@"Case 8 is happening.");
-
             [self waterLevelAnimationStart:@0.775 fillTo:@.850];
-            
-            CGRect viewBounds = [[self view] frame];
-            [self.fishLayer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
-            
+
             return self.fluidView;
         }
         case 9:
         {
-            
             NSLog(@"Case 9 is happening.");
-
             [self waterLevelAnimationStart:@0.850 fillTo:@.925];
-            
-            CGRect viewBounds = [[self view] frame];
-            [self.fishLayer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
             
             return self.fluidView;
         }
@@ -594,6 +486,82 @@
     self.fluidView.fillRepeatCount = 0.5;
     [self.fluidView fillTo:fillTo];
     [self.fluidView startAnimation];
+}
+- (void) swimFishWithDuration:(NSUInteger)duration{
+    CGPoint originalOrigin = self.fishImageView.frame.origin;
+    CGSize originalSize = self.fishImageView.frame.size;
+    
+    [UIView animateKeyframesWithDuration:4
+                                   delay:0
+                                 options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionRepeat
+                              animations:^{
+                                  
+                                  // swim left
+                                  [UIView addKeyframeWithRelativeStartTime:0.0
+                                                          relativeDuration:1/4.0
+                                                                animations:^{
+                                                                    self.fishImageView.frame = CGRectMake(0,
+                                                                                                          originalOrigin.y,
+                                                                                                          originalSize.width,
+                                                                                                          originalSize.height);
+                                                                }];
+                                  
+                                  // horizontal flip
+                                  [UIView addKeyframeWithRelativeStartTime:1/4.0
+                                                          relativeDuration:0.03
+                                                                animations:^{
+                                                                    self.fishImageView.layer.transform = CATransform3DMakeScale(-1, 1, 1);
+                                                                }];
+                                  
+                                  // swim right
+                                  [UIView addKeyframeWithRelativeStartTime:1/4.0
+                                                          relativeDuration:2/4.0
+                                                                animations:^{
+                                                                    self.fishImageView.frame = CGRectMake(originalOrigin.x * 2,
+                                                                                                          originalOrigin.y,
+                                                                                                          originalSize.width,
+                                                                                                          originalSize.height);
+                                                                }];
+                                  
+                                  // horizontal flip
+                                  [UIView addKeyframeWithRelativeStartTime:3/4.0
+                                                          relativeDuration:0.03
+                                                                animations:^{
+                                                                    self.fishImageView.layer.transform = CATransform3DMakeScale(1, 1, 1);
+                                                                }];
+                                  
+                                  // swim right
+                                  [UIView addKeyframeWithRelativeStartTime:3/4.0
+                                                          relativeDuration:1/4.0
+                                                                animations:^{
+                                                                    self.fishImageView.frame = CGRectMake(originalOrigin.x,
+                                                                                                          originalOrigin.y,
+                                                                                                          originalSize.width,
+                                                                                                          originalSize.height);
+                                                                }];
+                                  
+                              } completion:^(BOOL finished) {
+                                  
+                                  
+                              }];
+
+}
+- (void) swimUpByHeight:(NSInteger)height {
+    CGRect viewBounds = [[self view] frame];
+    CGPoint originalOrigin = self.fishImageView.frame.origin;
+    CGSize originalSize = self.fishImageView.frame.size;
+    
+    [self.fishImageView.layer removeAllAnimations];
+    [UIView animateKeyframesWithDuration:2
+                                   delay:0
+                                 options:UIViewAnimationCurveLinear
+                              animations:^{
+                                  self.fishImageView.frame = CGRectMake(originalOrigin.x,
+                                                                        originalOrigin.y - viewBounds.size.height/height,
+                                                                        originalSize.width,
+                                                                        originalSize.height);
+                              }
+                              completion:nil];
 }
 
 @end

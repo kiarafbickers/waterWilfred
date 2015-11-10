@@ -17,6 +17,8 @@
 @property (nonatomic, strong) UIImageView *myImageView;
 @property (nonatomic, strong) UIView *fishView;
 @property (strong, nonatomic) CALayer *fishLayer;
+@property (nonatomic, strong) UIImage *fishImage;
+@property (nonatomic, strong) UIImageView *fishImageView;
 @property (strong, nonatomic) CALayer *fishLargerLayer;
 @property (strong, nonatomic) BAFluidView *fluidView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;

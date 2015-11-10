@@ -356,7 +356,7 @@
             self.message.numberOfLines = 2;
             
             [self.fishLayer setContents:(__bridge id)[[UIImage imageNamed:@"Wilfred-Happy.png"] CGImage]];
-            [self runHalfSpinAnimationOnView:self.fishLayer duration:2 repeat:1];
+            [self runHalfSpinAnimationOnView:self.fishLayer duration:0.3 repeat:1];
             
             [self.breadcrumbsLayer setContents:(__bridge id)[[UIImage imageNamed:@"page5.png"] CGImage]];
             
@@ -364,9 +364,7 @@
         }
         case 6:
         {
-            //WWAMainViewController *mainController = [[WWAMainViewController alloc] init];
-            //WWAMainViewController *mainController = [self.storyboard instantiateViewControllerWithIdentifier:@"MainController"];
-            //[self presentViewController:mainController animated:NO completion:nil];
+            [self performSegueWithIdentifier:@"segueToNav" sender:nil];
             
             return self.fluidView;
         }

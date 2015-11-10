@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="anW-Mu-YvK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bH8-95-udM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -118,11 +118,12 @@
                         <outlet property="backgroundView" destination="9on-uQ-bPN" id="srb-gu-4OZ"/>
                         <outlet property="exampleContainerView" destination="i4u-5x-Pds" id="4Ag-Dx-Kjp"/>
                         <outlet property="swipeForNextExampleLabel" destination="Byl-p7-GcQ" id="RfH-aL-MC1"/>
+                        <segue destination="anW-Mu-YvK" kind="show" identifier="segueToNav" id="Lyc-lS-LQc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Fk-wZ-heU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1164" y="389"/>
+            <point key="canvasLocation" x="1254" y="381"/>
         </scene>
         <!--Navigation Controller Status Bar Style-->
         <scene sceneID="XE4-lp-ERg">
@@ -137,6 +138,7 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="x23-D7-faz" kind="relationship" relationship="rootViewController" id="zWq-U5-rDJ"/>
+                        <segue destination="bH8-95-udM" kind="show" identifier="segueToNavOnce" id="bbf-5k-JLk"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZL5-eA-P1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
