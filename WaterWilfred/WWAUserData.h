@@ -10,12 +10,16 @@
 
 @interface WWAUserData : NSObject
 
-@property (nonatomic) NSUInteger currentWeight;
-@property (nonatomic) NSUInteger numberOfTimesAlertedToDrinkWater;
+@property (nonatomic, readonly) NSUInteger currentWeight;
+@property (nonatomic) NSUInteger alertToDrinkWater;
 @property (nonatomic) NSUInteger glasses;
+@property (nonatomic) NSNumber *currentWaterLevel;
 
+- (instancetype)initWithCurrentWeight:(NSUInteger)currentWeight;
 - (NSUInteger)calculateWaterIntake:(NSUInteger)currentWeight;
-- (void)userWeightInfo:(NSInteger)currentWeight;
 
+// Overiding the setter and getter
+- (NSUInteger)currentWeight;
+- (void)setCurrentWeight:(NSUInteger)currentWeight;
 
 @end

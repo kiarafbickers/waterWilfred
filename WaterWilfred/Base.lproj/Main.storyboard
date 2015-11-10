@@ -1,47 +1,149 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ryR-nL-Zhl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bH8-95-udM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lovelo Black.otf">
+            <string>LoveloBlack</string>
+            <string>LoveloBlack</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--Water Wilfred-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Main View Controller-->
+        <scene sceneID="oLN-U2-pZi">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WWAViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x23-D7-faz" customClass="WWAMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="hez-yg-JWZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="GPm-Yr-CAH"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="zQ6-jS-TOM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vi2-wj-e8v" userLabel="backgroundView">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZk-ew-LbB" userLabel="exampleContainerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCY-xJ-Xet">
+                                        <rect key="frame" x="107" y="480" width="200" height="200"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Swipe downward for next example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3if-kV-JLa">
+                                <rect key="frame" x="96" y="362" width="222" height="12"/>
+                                <fontDescription key="fontDescription" name="LoveloBlack" family="Lovelo" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Vi2-wj-e8v" secondAttribute="centerY" id="Fpd-me-RBC"/>
+                            <constraint firstItem="GPm-Yr-CAH" firstAttribute="top" secondItem="Vi2-wj-e8v" secondAttribute="bottom" id="HOd-YS-bkZ"/>
+                            <constraint firstAttribute="centerX" secondItem="Vi2-wj-e8v" secondAttribute="centerX" id="IL1-a0-Xe0"/>
+                            <constraint firstAttribute="trailing" secondItem="Vi2-wj-e8v" secondAttribute="trailing" id="TA9-em-vwk"/>
+                            <constraint firstAttribute="centerX" secondItem="3if-kV-JLa" secondAttribute="centerX" id="ob6-Ys-Go9"/>
+                            <constraint firstItem="Vi2-wj-e8v" firstAttribute="leading" secondItem="zQ6-jS-TOM" secondAttribute="leading" id="uiM-2c-obu"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Water Wilfred" id="Gyb-sf-ADk"/>
+                    <navigationItem key="navigationItem" id="lCR-8g-WnW">
+                        <nil key="title"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7ZB-CR-8HH">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="plusButton:" destination="x23-D7-faz" id="xWU-EO-2ou"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="TZk-ew-LbB" id="TSP-qP-K4R"/>
+                        <outlet property="exampleContainerView" destination="TZk-ew-LbB" id="U44-XX-ttI"/>
+                        <outlet property="imageView" destination="aCY-xJ-Xet" id="cr3-0E-P4f"/>
+                        <outlet property="swipeForNextExampleLabel" destination="3if-kV-JLa" id="F7H-Rt-T74"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PXH-Gp-Qaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061" y="376"/>
+            <point key="canvasLocation" x="2292" y="389"/>
         </scene>
-        <!--Water Wilfred-->
-        <scene sceneID="FJh-dJ-KLy">
+        <!--View Controller-->
+        <scene sceneID="Kf4-zc-34R">
             <objects>
-                <navigationController title="Water Wilfred" automaticallyAdjustsScrollViewInsets="NO" id="ryR-nL-Zhl" customClass="WWANavigationController" sceneMemberID="viewController">
+                <viewController id="bH8-95-udM" customClass="WWAViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mS6-Xu-NeO"/>
+                        <viewControllerLayoutGuide type="bottom" id="FaU-kh-8jC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="css-LD-mCf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9on-uQ-bPN" userLabel="backgroundView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i4u-5x-Pds" userLabel="exampleContainerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Swipe downward for next example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byl-p7-GcQ">
+                                <rect key="frame" x="96" y="616" width="222" height="12"/>
+                                <fontDescription key="fontDescription" name="LoveloBlack" family="Lovelo" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="9on-uQ-bPN" secondAttribute="centerX" id="6bi-GK-w5p"/>
+                            <constraint firstItem="FaU-kh-8jC" firstAttribute="top" secondItem="9on-uQ-bPN" secondAttribute="bottom" id="BdK-vu-8on"/>
+                            <constraint firstItem="9on-uQ-bPN" firstAttribute="leading" secondItem="css-LD-mCf" secondAttribute="leading" id="GD3-fh-L2e"/>
+                            <constraint firstAttribute="centerY" secondItem="9on-uQ-bPN" secondAttribute="centerY" id="UPS-DW-P27"/>
+                            <constraint firstItem="9on-uQ-bPN" firstAttribute="top" secondItem="css-LD-mCf" secondAttribute="top" id="h2C-UW-BJb"/>
+                            <constraint firstAttribute="trailing" secondItem="9on-uQ-bPN" secondAttribute="trailing" id="iZ3-iD-fIh"/>
+                            <constraint firstAttribute="centerX" secondItem="Byl-p7-GcQ" secondAttribute="centerX" id="oaB-4K-0Yk"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="9on-uQ-bPN" id="srb-gu-4OZ"/>
+                        <outlet property="exampleContainerView" destination="i4u-5x-Pds" id="4Ag-Dx-Kjp"/>
+                        <outlet property="swipeForNextExampleLabel" destination="Byl-p7-GcQ" id="RfH-aL-MC1"/>
+                        <segue destination="anW-Mu-YvK" kind="presentation" identifier="segueToNav" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="Lyc-lS-LQc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Fk-wZ-heU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1254" y="381"/>
+        </scene>
+        <!--Navigation Controller Status Bar Style-->
+        <scene sceneID="XE4-lp-ERg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="anW-Mu-YvK" customClass="UINavigationController_StatusBarStyle" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="abe-GG-w24">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bRg-4K-1h6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ysF-sT-h3C"/>
+                        <segue destination="x23-D7-faz" kind="relationship" relationship="rootViewController" id="zWq-U5-rDJ"/>
+                        <segue destination="bH8-95-udM" kind="show" identifier="segueToNavOnce" id="bbf-5k-JLk"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8AQ-WK-Vyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZL5-eA-P1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="532" y="376"/>
+            <point key="canvasLocation" x="1780" y="389"/>
         </scene>
     </scenes>
 </document>

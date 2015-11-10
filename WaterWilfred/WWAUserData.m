@@ -10,10 +10,22 @@
 
 @interface WWAUserData ()
 
+@property (nonatomic, readwrite) NSUInteger currentWeight;
+
 @end
 
 @implementation WWAUserData
 
+- (instancetype)initWithCurrentWeight:(NSUInteger)currentWeight
+{
+    self = [super init];
+    if (self) {
+        _currentWeight = [self calulateCurrentWeight];
+        _glasses = [self calculateWaterIntake:currentWeight];
+        _alertToDrinkWater = self.glasses;
+    }
+    return self;
+}
 
 - (NSUInteger)calculateWaterIntake:(NSUInteger)currentWeight {
     
@@ -27,7 +39,7 @@
     return self.glasses = numberOfCups;
 }
 
--(NSUInteger)currentWeight {
+-(NSUInteger)calulateCurrentWeight {
     NSNumber *weightNumber = [[NSUserDefaults standardUserDefaults] objectForKey:@"currentWeight"];
     
     if(weightNumber) {
@@ -38,9 +50,9 @@
 }
 
 -(void)setCurrentWeight:(NSUInteger)currentWeight {
-    
     [[NSUserDefaults standardUserDefaults] setObject:@(currentWeight) forKey:@"currentWeight"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
+
 
 @end

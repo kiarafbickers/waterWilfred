@@ -7,12 +7,12 @@
 //
 
 
-//#if DEBUG
+#if DEBUG
 #define ACPLog( s, ... ) NSLog( @"[%@:%d] %@", [[NSString stringWithUTF8String:__FILE__] \
 lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
-//#else
-//#define ACPLog( s, ... )
-//#endif
+#else
+#define ACPLog( s, ... )
+#endif
 
 
 #import "ACPReminder.h"

@@ -7,147 +7,221 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		58CFD1A944272747A7FD6C871DFF8F7D /* ACPReminder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D68081E8349A57CA24D22D7DB977F291 /* ACPReminder-dummy.m */; };
-		73E52DFD8529A755C75DB1F402D878D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F813C7C4F57056B7E57E9F2A010BF2F3 /* Foundation.framework */; };
-		796293A9818B722B41BD4D552638F2CD /* Pods-WaterWilfred-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A89EEC012C6218502C419BAAF5D60F2D /* Pods-WaterWilfred-dummy.m */; };
-		931ADE0DF2603999BC4665DF3407BEFE /* ACPReminder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FA49C0803018DF819125E4AFB2BF5D0 /* ACPReminder.h */; };
-		A81765E3DF7375438DB67D98CC87739C /* ACPReminder.m in Sources */ = {isa = PBXBuildFile; fileRef = 026F7FD6F3D43B7985B56F5056AF56AB /* ACPReminder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B080240D263A0867754D9E4BD52B0F4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F813C7C4F57056B7E57E9F2A010BF2F3 /* Foundation.framework */; };
+		518DA363B11DE44C98E4352BB70B8772 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		53F9228AB0984BF418B0E85E4244A4DB /* BAFluidView.h in Headers */ = {isa = PBXBuildFile; fileRef = E856558D3CC3AFA9944A77554BB40117 /* BAFluidView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F02DFC452521F3620D43934D374CA23 /* Pods-WaterWilfred-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272AE5BCCC0CEDDA6E1939255E01EB0 /* Pods-WaterWilfred-dummy.m */; };
+		918AF13A97CA10A2A648FEE3DD4E0A4E /* UIColor+ColorWithHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 4952BDB44012F5D2C9C9A2B4632D1688 /* UIColor+ColorWithHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99E99BB25252CFC491387A4E445F4706 /* UIColor+ColorWithHex.m in Sources */ = {isa = PBXBuildFile; fileRef = D82411FC48C115AB7D84A5C9D934A74A /* UIColor+ColorWithHex.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AC4EA54640C8165BF34947F1B5F300F0 /* ACPReminder.m in Sources */ = {isa = PBXBuildFile; fileRef = C676105C8A85C263CF230A621CEA96EB /* ACPReminder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C12F561CDFCDD01FE9CB0F26247E52BE /* BAFluidView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF74E348CDD52596D2851D02F6EE8F5A /* BAFluidView-dummy.m */; };
+		DAE6C873C27310134024A6320BC45F72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		DC5BE6CDB9E1A1BDEEAAFB37501F06AC /* ACPReminder.h in Headers */ = {isa = PBXBuildFile; fileRef = 102A06EF96388A76883CAEB042F1200C /* ACPReminder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E03948E393994BED37CB448037E19CFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		E642A99E723625EEB38B78520AC77979 /* BAFluidView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCA9589C87AC62E6939595FAD490268 /* BAFluidView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F3CA5242C8C5CD6D488921D377FFA8AA /* ACPReminder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F85705F58C54059CE6484EDD0F092D /* ACPReminder-dummy.m */; };
+		FA28A372DA641E1C886AA0FB74E7EF85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3BFFE410F0F150A1F630C495BCC7E7D4 /* PBXContainerItemProxy */ = {
+		97452A9F552979E727E4FAA761D3ECE5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C0E8FC983590831321B9400F05E4F56F;
+			remoteGlobalIDString = BE9C772F9310A9C7BF9051B69874F9A7;
 			remoteInfo = ACPReminder;
+		};
+		9D6E1E0F4B23BD4ABA90AAF5D2FB3E86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E436F1C4D159DE2B39D84E4C13FA80AB;
+			remoteInfo = BAFluidView;
+		};
+		F49980809F34E33714E640D019207C35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86D845FB4E49D9B26EFC581AA6E2874F;
+			remoteInfo = "BAFluidView-BAFluidView";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		026F7FD6F3D43B7985B56F5056AF56AB /* ACPReminder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACPReminder.m; path = ACPReminder/ACPReminder.m; sourceTree = "<group>"; };
-		0FB4286EDF27F10C78651FAF2691A881 /* Pods-WaterWilfred.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterWilfred.release.xcconfig"; sourceTree = "<group>"; };
-		17155DB9E01BA0DEC573856D36F6E6BE /* libPods-WaterWilfred.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WaterWilfred.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		38F6C501244D1564CEE3C661D6231643 /* Pods-WaterWilfred.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterWilfred.debug.xcconfig"; sourceTree = "<group>"; };
-		5C4E5BFD6ACBDDC6E95520E4AC41AD2E /* ACPReminder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPReminder.xcconfig; sourceTree = "<group>"; };
-		5C6EC48D12184BA04C05A569A6C92271 /* Pods-WaterWilfred-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WaterWilfred-resources.sh"; sourceTree = "<group>"; };
-		6FA49C0803018DF819125E4AFB2BF5D0 /* ACPReminder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPReminder.h; path = ACPReminder/ACPReminder.h; sourceTree = "<group>"; };
-		7619ADAD6EED2AAA50CDD1479EEB949D /* Pods-WaterWilfred-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WaterWilfred-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93E39739231A3BF365CD36479FD76667 /* ACPReminder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPReminder-prefix.pch"; sourceTree = "<group>"; };
-		94C4D54F2A7638626FDEA23E6DBAE482 /* ACPReminder-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ACPReminder-Private.xcconfig"; sourceTree = "<group>"; };
-		992A063B2E41206745F94B7E240A178C /* libACPReminder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libACPReminder.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2205BDD3530EA686ED8D6F0D341035A /* Pods-WaterWilfred-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterWilfred-acknowledgements.plist"; sourceTree = "<group>"; };
-		A89EEC012C6218502C419BAAF5D60F2D /* Pods-WaterWilfred-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WaterWilfred-dummy.m"; sourceTree = "<group>"; };
+		0272AE5BCCC0CEDDA6E1939255E01EB0 /* Pods-WaterWilfred-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WaterWilfred-dummy.m"; sourceTree = "<group>"; };
+		0B820DA3308A96961ACE3430B8845C51 /* ACPReminder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPReminder.xcconfig; sourceTree = "<group>"; };
+		102A06EF96388A76883CAEB042F1200C /* ACPReminder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPReminder.h; path = ACPReminder/ACPReminder.h; sourceTree = "<group>"; };
+		12F85705F58C54059CE6484EDD0F092D /* ACPReminder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPReminder-dummy.m"; sourceTree = "<group>"; };
+		139AB54EFE087DDCE9D38F9B5D73C2FA /* BAFluidView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BAFluidView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		17260169FFAC6237A659F040D3AD3CF5 /* BAFluidView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BAFluidView-prefix.pch"; sourceTree = "<group>"; };
+		447309325AF40C0126E0063775F9DBCA /* libPods-WaterWilfred.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WaterWilfred.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4952BDB44012F5D2C9C9A2B4632D1688 /* UIColor+ColorWithHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ColorWithHex.h"; path = "Pod/Classes/UIColor+ColorWithHex.h"; sourceTree = "<group>"; };
+		5B795A6480C8523E8F01D7D981D0B070 /* Pods-WaterWilfred.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterWilfred.debug.xcconfig"; sourceTree = "<group>"; };
+		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73C153C30008AD9D1340AC2ABF507711 /* BAFluidView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BAFluidView.xcconfig; sourceTree = "<group>"; };
+		7692ECAB6823718DE39F6B594F62963B /* libACPReminder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libACPReminder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		816757D2A4BFEB0B7247D8E9E693CE73 /* ACPReminder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPReminder-prefix.pch"; sourceTree = "<group>"; };
+		9377946FD2AD3BA8BFE2A19969F64732 /* Pods-WaterWilfred-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WaterWilfred-resources.sh"; sourceTree = "<group>"; };
+		B9EC4CA6C2965FF4A6DF13E051AFECD8 /* libBAFluidView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBAFluidView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D68081E8349A57CA24D22D7DB977F291 /* ACPReminder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPReminder-dummy.m"; sourceTree = "<group>"; };
-		F813C7C4F57056B7E57E9F2A010BF2F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BF74E348CDD52596D2851D02F6EE8F5A /* BAFluidView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BAFluidView-dummy.m"; sourceTree = "<group>"; };
+		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C472D12A19D143C3C289C1545C39D04E /* Pods-WaterWilfred-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WaterWilfred-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C676105C8A85C263CF230A621CEA96EB /* ACPReminder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACPReminder.m; path = ACPReminder/ACPReminder.m; sourceTree = "<group>"; };
+		CBCA9589C87AC62E6939595FAD490268 /* BAFluidView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BAFluidView.m; path = Pod/Classes/BAFluidView.m; sourceTree = "<group>"; };
+		D59A67BF930722DE3C15225007281FFC /* Pods-WaterWilfred-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WaterWilfred-frameworks.sh"; sourceTree = "<group>"; };
+		D82411FC48C115AB7D84A5C9D934A74A /* UIColor+ColorWithHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ColorWithHex.m"; path = "Pod/Classes/UIColor+ColorWithHex.m"; sourceTree = "<group>"; };
+		E856558D3CC3AFA9944A77554BB40117 /* BAFluidView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAFluidView.h; path = Pod/Classes/BAFluidView.h; sourceTree = "<group>"; };
+		FC2FC39FB00D8A12F12061AF30935E11 /* Pods-WaterWilfred-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterWilfred-acknowledgements.plist"; sourceTree = "<group>"; };
+		FCE785DB502FAFEF92D87A47B35BB965 /* Pods-WaterWilfred.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterWilfred.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4BAAB4F450B296127C064BAA8F332AAB /* Frameworks */ = {
+		0E74C9B787DA02E44FBE544C5AFE38C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B080240D263A0867754D9E4BD52B0F4A /* Foundation.framework in Frameworks */,
+				FA28A372DA641E1C886AA0FB74E7EF85 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		722121513162FCD9D667FA2DE3743321 /* Frameworks */ = {
+		5D3D2F98606AC4D3B5987C42E5CEEE65 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73E52DFD8529A755C75DB1F402D878D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65281E7AABAB9E45C83A1464D34C4F03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E03948E393994BED37CB448037E19CFE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB3A2D5A8A4DAEF430EE6677397BA0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE6C873C27310134024A6320BC45F72 /* Foundation.framework in Frameworks */,
+				518DA363B11DE44C98E4352BB70B8772 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		39501785F323531BD50A7FBEA03AADEC /* Targets Support Files */ = {
+		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				9F0F32FB5D45719B4604602D873B6900 /* Pods-WaterWilfred */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				F813C7C4F57056B7E57E9F2A010BF2F3 /* Foundation.framework */,
+				6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */,
+				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		574C1908C92C231FDDC06BDA481C9EDE /* Support Files */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5C4E5BFD6ACBDDC6E95520E4AC41AD2E /* ACPReminder.xcconfig */,
-				94C4D54F2A7638626FDEA23E6DBAE482 /* ACPReminder-Private.xcconfig */,
-				D68081E8349A57CA24D22D7DB977F291 /* ACPReminder-dummy.m */,
-				93E39739231A3BF365CD36479FD76667 /* ACPReminder-prefix.pch */,
+				18340F12838DEE43507667CC74401EB1 /* iOS */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ACPReminder";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7078A214F6047746C85403F2A51CB24A /* ACPReminder */ = {
+		571212F25ED6C8B40393458A0D747154 /* ACPReminder */ = {
 			isa = PBXGroup;
 			children = (
-				6FA49C0803018DF819125E4AFB2BF5D0 /* ACPReminder.h */,
-				026F7FD6F3D43B7985B56F5056AF56AB /* ACPReminder.m */,
-				574C1908C92C231FDDC06BDA481C9EDE /* Support Files */,
+				102A06EF96388A76883CAEB042F1200C /* ACPReminder.h */,
+				C676105C8A85C263CF230A621CEA96EB /* ACPReminder.m */,
+				A20B14319E5EF7B04F4169106FC2D30B /* Support Files */,
 			);
 			path = ACPReminder;
+			sourceTree = "<group>";
+		};
+		63CD06FC903EC8C27FAA4F0122F0FEE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				571212F25ED6C8B40393458A0D747154 /* ACPReminder */,
+				66CE08A7661A821BFD4187B501DC30BF /* BAFluidView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		66CE08A7661A821BFD4187B501DC30BF /* BAFluidView */ = {
+			isa = PBXGroup;
+			children = (
+				E856558D3CC3AFA9944A77554BB40117 /* BAFluidView.h */,
+				CBCA9589C87AC62E6939595FAD490268 /* BAFluidView.m */,
+				4952BDB44012F5D2C9C9A2B4632D1688 /* UIColor+ColorWithHex.h */,
+				D82411FC48C115AB7D84A5C9D934A74A /* UIColor+ColorWithHex.m */,
+				7F45A9FCE0C2478C11EB337094BC0366 /* Support Files */,
+			);
+			path = BAFluidView;
+			sourceTree = "<group>";
+		};
+		7B344875907E2CB0868E0A71CA9A92F9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D87817EF1A194D2847E3C0F07AA73A8F /* Pods-WaterWilfred */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C71CA44B13B961BFAD6CB11883C99C96 /* Pods */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				39501785F323531BD50A7FBEA03AADEC /* Targets Support Files */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				63CD06FC903EC8C27FAA4F0122F0FEE9 /* Pods */,
+				DFE561486096E9192DEAA504563ECDFA /* Products */,
+				7B344875907E2CB0868E0A71CA9A92F9 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9F0F32FB5D45719B4604602D873B6900 /* Pods-WaterWilfred */ = {
+		7F45A9FCE0C2478C11EB337094BC0366 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7619ADAD6EED2AAA50CDD1479EEB949D /* Pods-WaterWilfred-acknowledgements.markdown */,
-				A2205BDD3530EA686ED8D6F0D341035A /* Pods-WaterWilfred-acknowledgements.plist */,
-				A89EEC012C6218502C419BAAF5D60F2D /* Pods-WaterWilfred-dummy.m */,
-				5C6EC48D12184BA04C05A569A6C92271 /* Pods-WaterWilfred-resources.sh */,
-				38F6C501244D1564CEE3C661D6231643 /* Pods-WaterWilfred.debug.xcconfig */,
-				0FB4286EDF27F10C78651FAF2691A881 /* Pods-WaterWilfred.release.xcconfig */,
+				73C153C30008AD9D1340AC2ABF507711 /* BAFluidView.xcconfig */,
+				BF74E348CDD52596D2851D02F6EE8F5A /* BAFluidView-dummy.m */,
+				17260169FFAC6237A659F040D3AD3CF5 /* BAFluidView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BAFluidView";
+			sourceTree = "<group>";
+		};
+		A20B14319E5EF7B04F4169106FC2D30B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B820DA3308A96961ACE3430B8845C51 /* ACPReminder.xcconfig */,
+				12F85705F58C54059CE6484EDD0F092D /* ACPReminder-dummy.m */,
+				816757D2A4BFEB0B7247D8E9E693CE73 /* ACPReminder-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ACPReminder";
+			sourceTree = "<group>";
+		};
+		D87817EF1A194D2847E3C0F07AA73A8F /* Pods-WaterWilfred */ = {
+			isa = PBXGroup;
+			children = (
+				C472D12A19D143C3C289C1545C39D04E /* Pods-WaterWilfred-acknowledgements.markdown */,
+				FC2FC39FB00D8A12F12061AF30935E11 /* Pods-WaterWilfred-acknowledgements.plist */,
+				0272AE5BCCC0CEDDA6E1939255E01EB0 /* Pods-WaterWilfred-dummy.m */,
+				D59A67BF930722DE3C15225007281FFC /* Pods-WaterWilfred-frameworks.sh */,
+				9377946FD2AD3BA8BFE2A19969F64732 /* Pods-WaterWilfred-resources.sh */,
+				5B795A6480C8523E8F01D7D981D0B070 /* Pods-WaterWilfred.debug.xcconfig */,
+				FCE785DB502FAFEF92D87A47B35BB965 /* Pods-WaterWilfred.release.xcconfig */,
 			);
 			name = "Pods-WaterWilfred";
 			path = "Target Support Files/Pods-WaterWilfred";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		DFE561486096E9192DEAA504563ECDFA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C71CA44B13B961BFAD6CB11883C99C96 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7078A214F6047746C85403F2A51CB24A /* ACPReminder */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				992A063B2E41206745F94B7E240A178C /* libACPReminder.a */,
-				17155DB9E01BA0DEC573856D36F6E6BE /* libPods-WaterWilfred.a */,
+				139AB54EFE087DDCE9D38F9B5D73C2FA /* BAFluidView.bundle */,
+				7692ECAB6823718DE39F6B594F62963B /* libACPReminder.a */,
+				B9EC4CA6C2965FF4A6DF13E051AFECD8 /* libBAFluidView.a */,
+				447309325AF40C0126E0063775F9DBCA /* libPods-WaterWilfred.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,41 +229,68 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		765EBFE32EE7CF28297C94E0EC193B1D /* Headers */ = {
+		254630D21E6F936B1671549946AA1B17 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				931ADE0DF2603999BC4665DF3407BEFE /* ACPReminder.h in Headers */,
+				DC5BE6CDB9E1A1BDEEAAFB37501F06AC /* ACPReminder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B5E36C2B2D7D8CCD11BC753A3329178 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F9228AB0984BF418B0E85E4244A4DB /* BAFluidView.h in Headers */,
+				918AF13A97CA10A2A648FEE3DD4E0A4E /* UIColor+ColorWithHex.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		55242F992D080665D92877AE3F86AE44 /* Pods-WaterWilfred */ = {
+		18492197460D52CCBACD1FE47B02F154 /* Pods-WaterWilfred */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9EBA99E1DA2E611CCCB63C10E4EF0CB7 /* Build configuration list for PBXNativeTarget "Pods-WaterWilfred" */;
+			buildConfigurationList = 8963304B1BE5442D27E721D4E55FB256 /* Build configuration list for PBXNativeTarget "Pods-WaterWilfred" */;
 			buildPhases = (
-				AB56E513DFA825CE9447E4193248005D /* Sources */,
-				722121513162FCD9D667FA2DE3743321 /* Frameworks */,
+				4E93ED256AF4182762476F414BF8F43D /* Sources */,
+				0E74C9B787DA02E44FBE544C5AFE38C9 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				949842CEA8885F9491E37D4929B3D615 /* PBXTargetDependency */,
+				26B6C0B7A757F134B93E1F776647E527 /* PBXTargetDependency */,
+				B039F3A4018B4B89D25680A56A86E5F6 /* PBXTargetDependency */,
 			);
 			name = "Pods-WaterWilfred";
 			productName = "Pods-WaterWilfred";
-			productReference = 17155DB9E01BA0DEC573856D36F6E6BE /* libPods-WaterWilfred.a */;
+			productReference = 447309325AF40C0126E0063775F9DBCA /* libPods-WaterWilfred.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		C0E8FC983590831321B9400F05E4F56F /* ACPReminder */ = {
+		86D845FB4E49D9B26EFC581AA6E2874F /* BAFluidView-BAFluidView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDBE0B17E69F6045F4A141B1316E149C /* Build configuration list for PBXNativeTarget "ACPReminder" */;
+			buildConfigurationList = 2FFD15640778B3DE1FD3006E358BD7FE /* Build configuration list for PBXNativeTarget "BAFluidView-BAFluidView" */;
 			buildPhases = (
-				84AFC6F1086AC73EEA086D29887CBB5B /* Sources */,
-				4BAAB4F450B296127C064BAA8F332AAB /* Frameworks */,
-				765EBFE32EE7CF28297C94E0EC193B1D /* Headers */,
+				4BA79073923879B1BC38095FD30DAD95 /* Sources */,
+				5D3D2F98606AC4D3B5987C42E5CEEE65 /* Frameworks */,
+				D25B000B62FC3A3260F39B253F3D969C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BAFluidView-BAFluidView";
+			productName = "BAFluidView-BAFluidView";
+			productReference = 139AB54EFE087DDCE9D38F9B5D73C2FA /* BAFluidView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		BE9C772F9310A9C7BF9051B69874F9A7 /* ACPReminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3E75333F8231A5BAF789461A4462D02 /* Build configuration list for PBXNativeTarget "ACPReminder" */;
+			buildPhases = (
+				439055BE6ADC049509BC1607914E664D /* Sources */,
+				65281E7AABAB9E45C83A1464D34C4F03 /* Frameworks */,
+				254630D21E6F936B1671549946AA1B17 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -197,7 +298,25 @@
 			);
 			name = ACPReminder;
 			productName = ACPReminder;
-			productReference = 992A063B2E41206745F94B7E240A178C /* libACPReminder.a */;
+			productReference = 7692ECAB6823718DE39F6B594F62963B /* libACPReminder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E436F1C4D159DE2B39D84E4C13FA80AB /* BAFluidView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B56E1C2DC3A347108A51F0B62C98434 /* Build configuration list for PBXNativeTarget "BAFluidView" */;
+			buildPhases = (
+				DC0343166F809220C09B84C96094F294 /* Sources */,
+				CBB3A2D5A8A4DAEF430EE6677397BA0D /* Frameworks */,
+				3B5E36C2B2D7D8CCD11BC753A3329178 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				017DAF26ED6673CA6A3658374E73DAA6 /* PBXTargetDependency */,
+			);
+			name = BAFluidView;
+			productName = BAFluidView;
+			productReference = B9EC4CA6C2965FF4A6DF13E051AFECD8 /* libBAFluidView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -217,69 +336,137 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			productRefGroup = DFE561486096E9192DEAA504563ECDFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C0E8FC983590831321B9400F05E4F56F /* ACPReminder */,
-				55242F992D080665D92877AE3F86AE44 /* Pods-WaterWilfred */,
+				BE9C772F9310A9C7BF9051B69874F9A7 /* ACPReminder */,
+				E436F1C4D159DE2B39D84E4C13FA80AB /* BAFluidView */,
+				86D845FB4E49D9B26EFC581AA6E2874F /* BAFluidView-BAFluidView */,
+				18492197460D52CCBACD1FE47B02F154 /* Pods-WaterWilfred */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		84AFC6F1086AC73EEA086D29887CBB5B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		D25B000B62FC3A3260F39B253F3D969C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58CFD1A944272747A7FD6C871DFF8F7D /* ACPReminder-dummy.m in Sources */,
-				A81765E3DF7375438DB67D98CC87739C /* ACPReminder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB56E513DFA825CE9447E4193248005D /* Sources */ = {
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		439055BE6ADC049509BC1607914E664D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				796293A9818B722B41BD4D552638F2CD /* Pods-WaterWilfred-dummy.m in Sources */,
+				F3CA5242C8C5CD6D488921D377FFA8AA /* ACPReminder-dummy.m in Sources */,
+				AC4EA54640C8165BF34947F1B5F300F0 /* ACPReminder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA79073923879B1BC38095FD30DAD95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E93ED256AF4182762476F414BF8F43D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F02DFC452521F3620D43934D374CA23 /* Pods-WaterWilfred-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC0343166F809220C09B84C96094F294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12F561CDFCDD01FE9CB0F26247E52BE /* BAFluidView-dummy.m in Sources */,
+				E642A99E723625EEB38B78520AC77979 /* BAFluidView.m in Sources */,
+				99E99BB25252CFC491387A4E445F4706 /* UIColor+ColorWithHex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		949842CEA8885F9491E37D4929B3D615 /* PBXTargetDependency */ = {
+		017DAF26ED6673CA6A3658374E73DAA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BAFluidView-BAFluidView";
+			target = 86D845FB4E49D9B26EFC581AA6E2874F /* BAFluidView-BAFluidView */;
+			targetProxy = F49980809F34E33714E640D019207C35 /* PBXContainerItemProxy */;
+		};
+		26B6C0B7A757F134B93E1F776647E527 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ACPReminder;
-			target = C0E8FC983590831321B9400F05E4F56F /* ACPReminder */;
-			targetProxy = 3BFFE410F0F150A1F630C495BCC7E7D4 /* PBXContainerItemProxy */;
+			target = BE9C772F9310A9C7BF9051B69874F9A7 /* ACPReminder */;
+			targetProxy = 97452A9F552979E727E4FAA761D3ECE5 /* PBXContainerItemProxy */;
+		};
+		B039F3A4018B4B89D25680A56A86E5F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BAFluidView;
+			target = E436F1C4D159DE2B39D84E4C13FA80AB /* BAFluidView */;
+			targetProxy = 9D6E1E0F4B23BD4ABA90AAF5D2FB3E86 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		12A1CB903B2D38BD644F641A7CE82F6E /* Debug */ = {
+		01AEE3BA9F140F7222B2B50858FBE6D5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94C4D54F2A7638626FDEA23E6DBAE482 /* ACPReminder-Private.xcconfig */;
+			baseConfigurationReference = 73C153C30008AD9D1340AC2ABF507711 /* BAFluidView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ACPReminder/ACPReminder-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BAFluidView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1C339911986F27D59306C07F80CC5EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C153C30008AD9D1340AC2ABF507711 /* BAFluidView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BAFluidView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		22BB415E53591704000DAB6A2A9FD995 /* Release */ = {
+		4352BCFDE455D70962242E372AD57227 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FB4286EDF27F10C78651FAF2691A881 /* Pods-WaterWilfred.release.xcconfig */;
+			baseConfigurationReference = 73C153C30008AD9D1340AC2ABF507711 /* BAFluidView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BAFluidView/BAFluidView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4FB40D03566AA4D95489D9923BA99220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B795A6480C8523E8F01D7D981D0B070 /* Pods-WaterWilfred.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -287,7 +474,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -328,16 +515,35 @@
 			};
 			name = Debug;
 		};
-		713889E934FB865392A9168693FFAB90 /* Release */ = {
+		61FF2137095721F9F8897756E238458B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94C4D54F2A7638626FDEA23E6DBAE482 /* ACPReminder-Private.xcconfig */;
+			baseConfigurationReference = 0B820DA3308A96961ACE3430B8845C51 /* ACPReminder.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ACPReminder/ACPReminder-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6C36D819F7DB2661774C8C87E2DE59FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCE785DB502FAFEF92D87A47B35BB965 /* Pods-WaterWilfred.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -378,17 +584,37 @@
 			};
 			name = Release;
 		};
-		946A7CB39AC4F61791D354130BF7FD3B /* Debug */ = {
+		B4C09C0490F0803F51656525DFA6BE49 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38F6C501244D1564CEE3C661D6231643 /* Pods-WaterWilfred.debug.xcconfig */;
+			baseConfigurationReference = 0B820DA3308A96961ACE3430B8845C51 /* ACPReminder.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ACPReminder/ACPReminder-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CD7B888615129B075E41392006337AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C153C30008AD9D1340AC2ABF507711 /* BAFluidView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BAFluidView/BAFluidView-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -406,20 +632,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9EBA99E1DA2E611CCCB63C10E4EF0CB7 /* Build configuration list for PBXNativeTarget "Pods-WaterWilfred" */ = {
+		2FFD15640778B3DE1FD3006E358BD7FE /* Build configuration list for PBXNativeTarget "BAFluidView-BAFluidView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				946A7CB39AC4F61791D354130BF7FD3B /* Debug */,
-				22BB415E53591704000DAB6A2A9FD995 /* Release */,
+				1C339911986F27D59306C07F80CC5EC6 /* Debug */,
+				01AEE3BA9F140F7222B2B50858FBE6D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDBE0B17E69F6045F4A141B1316E149C /* Build configuration list for PBXNativeTarget "ACPReminder" */ = {
+		3B56E1C2DC3A347108A51F0B62C98434 /* Build configuration list for PBXNativeTarget "BAFluidView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12A1CB903B2D38BD644F641A7CE82F6E /* Debug */,
-				713889E934FB865392A9168693FFAB90 /* Release */,
+				CD7B888615129B075E41392006337AF5 /* Debug */,
+				4352BCFDE455D70962242E372AD57227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8963304B1BE5442D27E721D4E55FB256 /* Build configuration list for PBXNativeTarget "Pods-WaterWilfred" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB40D03566AA4D95489D9923BA99220 /* Debug */,
+				6C36D819F7DB2661774C8C87E2DE59FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3E75333F8231A5BAF789461A4462D02 /* Build configuration list for PBXNativeTarget "ACPReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61FF2137095721F9F8897756E238458B /* Debug */,
+				B4C09C0490F0803F51656525DFA6BE49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
