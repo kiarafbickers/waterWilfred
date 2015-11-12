@@ -53,7 +53,7 @@
     NSLog(@"Viw loading?????");
 }
 - (void) viewDidAppear {
-    [self.fishImageView.layer bts_startWiggling];
+    [self.fishView.layer bts_startWiggling];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -61,25 +61,18 @@
 }
 - (void) checkLaunch {
     NSUInteger launchCount;
-    //Set up the properties for the integer and default.
     self.theDefaults = [NSUserDefaults standardUserDefaults];
     launchCount = [self.theDefaults integerForKey:@"hasRun"] + 1;
     [self.theDefaults setInteger:launchCount forKey:@"hasRun"];
     [self.theDefaults synchronize];
     
-    //Log the amount of times the application has been run
     NSLog(@"This application has been run %lu amount of times", (unsigned long)launchCount);
     
-    //Test if application is the first time running
     if(launchCount == 1) {
-        //Run your first launch code (Bring user to info/setup screen, etc.)
         NSLog(@"This is the first time this application has been run");
-        //[self performSegueWithIdentifier:@"segueToNavOnce" sender:nil];
     }
-              
-    //Test if it has been run before
+    
     if(launchCount >= 2) {
-        //Run new code if they have opened the app before (Bring user to home screen etc.
         NSLog(@"This application has been run before");
     }
 }
@@ -92,8 +85,11 @@
     {
         self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
         self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame];
+        self.fluidView.startElavation = @0.250;
+        self.fluidView.fillColor = [UIColor colorWithHex:0x397ebe];
+        [self.fluidView keepStationary];
+        
         self.currentWaterLevel = 0;
-        self.sequenceOfAnimations = [NSMutableArray new];
         
         self.exampleContainerView = [self nextBAFluidViewExample];
         [self.view insertSubview:self.exampleContainerView belowSubview:self.swipeForNextExampleLabel];
@@ -283,20 +279,7 @@
 }
 -(void) transitionToNextExample
 {
-    [self.animator removeAllBehaviors];
-    
-    // Show next animation
-    BAFluidView *nextFluidViewExample = [self nextBAFluidViewExample];
-    [nextFluidViewExample addGestureRecognizer:self.upSwipeGestureRecognizer];
-    nextFluidViewExample.alpha = 0.0;
-    [self.view insertSubview:nextFluidViewExample aboveSubview:self.swipeForNextExampleLabel];
-    
-    [UIView animateWithDuration:0.5 animations:^{
-        nextFluidViewExample.alpha = 1.0;
-    } completion:^(BOOL finished) {
-        [self.exampleContainerView removeFromSuperview];
-        self.exampleContainerView = nextFluidViewExample;
-    }];
+    [self nextBAFluidViewExample];
 }
 - (void)animationDidStop:(CAAnimation *)animation finished:(BOOL)finished {
     [self applyNextAnimation];
@@ -384,22 +367,22 @@
         {
             NSLog(@"Case 0 is happening.");
             
-            self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame startElevation:@0.25];
-            self.fluidView.fillColor = [UIColor colorWithHex:0x397ebe];
-            [self.fluidView keepStationary];
+            [self waterLevelAnimationStart:@0.250 fillTo:@0.250];
             
-            // Initialize first fish images
-            self.fishView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 162.9, 120.6)];
-            self.fishImage = [UIImage imageNamed:@"Wilfred-Meh"];
-            self.fishImageView = [[UIImageView alloc] initWithImage:self.fishImage];
-            self.fishImageView.contentMode = UIViewContentModeScaleAspectFit; // Change size
-            self.fishImageView.frame = self.fishView.bounds;
-            [self.fishView addSubview:self.fishImageView];
-            [self.view addSubview:self.fishView];
+            if (!self.fishView) {
+                // Initialize first fish image
+                self.fishView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 162.9, 120.6)];
+                self.fishImage = [UIImage imageNamed:@"Wilfred-Meh"];
+                self.fishImageView = [[UIImageView alloc] initWithImage:self.fishImage];
+                self.fishImageView.contentMode = UIViewContentModeScaleAspectFit; // Change size
+                self.fishImageView.frame = self.fishView.bounds;
+                [self.fishView addSubview:self.fishImageView];
+                [self.view addSubview:self.fishView];
+            }
             
             CGRect viewBounds = [[self view] frame];
             [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
-            [self.fishImageView.layer bts_startWiggling];
+            [self.fishView.layer bts_startWiggling];
             
             [self swimFishWithDuration:8];
             
@@ -481,7 +464,8 @@
 }
 - (void) waterLevelAnimationStart:(NSNumber *)startElevation fillTo:(NSNumber *)fillTo
 {
-    self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame startElevation:startElevation];
+    //self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame startElevation:startElevation];
+    self.fluidView.startElavation = startElevation;
     self.fluidView.fillColor = [UIColor colorWithHex:0x397ebe];
     self.fluidView.fillDuration = 4.3;
     self.fluidView.fillRepeatCount = 0.5;
