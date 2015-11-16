@@ -7,6 +7,7 @@
 //
 
 #import "WWAUserData.h"
+#import "WWAMainViewController.h"
 
 @interface WWAUserData ()
 
@@ -26,7 +27,15 @@
     }
     return self;
 }
-
+//+ (WWAMainViewController *)sharedManager
+//{
+//    static WWAMainViewController *WWAMainViewControllerInstance = nil;
+//    static dispatch_once_t predicate;
+//    dispatch_once(&predicate, ^{
+//        WWAMainViewControllerInstance = [[self alloc] init];
+//    });
+//    return WWAMainViewControllerInstance;
+//}
 - (NSUInteger)calculateWaterIntake:(NSUInteger)currentWeight {
     
     NSInteger numberOfOunces;

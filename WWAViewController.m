@@ -38,6 +38,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self firstTimeOpenApp];
+    
     self.firstTimeLoading = YES;
     [self setupBackground];
     [self setupGestures];
@@ -50,6 +52,16 @@
 
 #pragma mark - Views
 
+- (void)firstTimeOpenApp
+{
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"hasBeenLaunched"]) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasBeenLaunched"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    else {
+        [self performSegueWithIdentifier:@"segueToNav" sender:nil];
+    }
+}
 - (void)viewDidLayoutSubviews
 {
     if (self.firstTimeLoading)
@@ -270,13 +282,16 @@
             [self.fishImageView.layer bts_startWiggling];
             
             // Add breadcrumbs image
-            self.breadcrumbsLayer = [CALayer layer];
-            [self.breadcrumbsLayer setContents:(__bridge id)[[UIImage imageNamed:@"page1.png"] CGImage]];
-            [self.breadcrumbsLayer setBounds:CGRectMake(0.0, 0.0, 67.0, 7.0)];
-            [[[self view] layer] addSublayer:self.breadcrumbsLayer];
+            self.breadcrumbsView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 88.0, 7.0)];
+            self.breadcrumbsImage = [UIImage imageNamed:@"page1"];
+            self.breadcrumbsImageView = [[UIImageView alloc] initWithImage:self.breadcrumbsImage];
+            self.breadcrumbsImageView.contentMode = UIViewContentModeScaleAspectFit;
+            self.breadcrumbsImageView.frame = self.breadcrumbsView.bounds;
+            [self.view addSubview:self.breadcrumbsImageView];
+            [self.view addSubview:self.breadcrumbsView];
             
             CGRect viewBounds2 = [[self view] frame];
-            [self.breadcrumbsLayer setPosition:CGPointMake(viewBounds2.size.width / 2.0, viewBounds2.size.height / 1.04 - viewBounds2.origin.y)];
+            [self.breadcrumbsImageView.layer setPosition:CGPointMake(viewBounds2.size.width / 2.0, viewBounds2.size.height / 1.04 - viewBounds2.origin.y)];
             
             return self.fluidView;
         }
@@ -298,7 +313,7 @@
                 
             }];
             
-            [self.breadcrumbsLayer setContents:(__bridge id)[[UIImage imageNamed:@"page2.png"] CGImage]];
+            self.breadcrumbsImageView.image = [UIImage imageNamed:@"page2"];
             
             return self.fluidView;
         }
@@ -367,7 +382,7 @@
             
             CGRect viewBounds = [[self view] frame];
             [self.fishLayer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.25 - viewBounds.origin.y)];
-            [self.breadcrumbsLayer setContents:(__bridge id)[[UIImage imageNamed:@"page3.png"] CGImage]];
+            self.breadcrumbsImageView.image = [UIImage imageNamed:@"page3"];
             
             return self.fluidView;
         }
@@ -383,9 +398,9 @@
             CGSize originalSize = self.fishImageView.frame.size;
             [self.fishLayer setPosition:CGPointMake(originalOrigin.x, originalOrigin.y - originalOrigin.y/2)];
         
-            [self runSpinAnimationOnView:self.fishImageView.layer duration:1 rotations:1 repeat:1];
+            [self runSpinAnimationOnView:self.fishImageView.layer duration:1 rotations:-1 repeat:1];
             
-            [self.breadcrumbsLayer setContents:(__bridge id)[[UIImage imageNamed:@"page4.png"] CGImage]];
+            self.breadcrumbsImageView.image = [UIImage imageNamed:@"page4"];
             
             return self.fluidView;
         }
@@ -408,7 +423,7 @@
             } completion:^(BOOL finished) {
             }];
             
-            [self.breadcrumbsLayer setContents:(__bridge id)[[UIImage imageNamed:@"page5.png"] CGImage]];
+            self.breadcrumbsImageView.image = [UIImage imageNamed:@"page5"];
             
             return self.fluidView;
         }
@@ -424,13 +439,12 @@
             [self.fishImageView.layer setContents:(__bridge id)[[UIImage imageNamed:@"Wilfred-Happy.png"] CGImage]];
             [self runHalfSpinAnimationOnView:self.fishImageView.layer duration:0.3 repeat:1];
             
-            [self.breadcrumbsLayer setContents:(__bridge id)[[UIImage imageNamed:@"page5.png"] CGImage]];
+            self.breadcrumbsImageView.image = [UIImage imageNamed:@"page6"];
             
             return self.fluidView;
         }
         case 6:
         {
-            [self.presentedViewController dismissModalViewControllerAnimated:NO];
             [self performSegueWithIdentifier:@"segueToNav" sender:nil];
             
             return self.fluidView;

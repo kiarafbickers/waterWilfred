@@ -22,6 +22,8 @@
 @property (nonatomic, strong) UIImage *fishImage;
 @property (nonatomic, strong) UIImageView *fishImageView;
 @property (nonatomic, strong) UIView *breadcrumbsView;
+@property (nonatomic, strong) UIImageView *breadcrumbsImageView;
+@property (nonatomic, strong) UIImage *breadcrumbsImage;
 @property (strong, nonatomic) CALayer *breadcrumbsLayer;
 @property (strong, nonatomic) BAFluidView *fluidView;
 

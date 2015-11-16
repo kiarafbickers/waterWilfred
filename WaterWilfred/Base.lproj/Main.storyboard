@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bH8-95-udM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Lovelo Black.otf">
@@ -25,13 +26,13 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vi2-wj-e8v" userLabel="backgroundView">
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCY-xJ-Xet">
+                                        <rect key="frame" x="107" y="480" width="200" height="200"/>
+                                    </imageView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZk-ew-LbB" userLabel="exampleContainerView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.0" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCY-xJ-Xet">
-                                        <rect key="frame" x="107" y="480" width="200" height="200"/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -54,12 +55,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="lCR-8g-WnW">
                         <nil key="title"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7ZB-CR-8HH">
+                        <barButtonItem key="leftBarButtonItem" image="menu" style="plain" id="2rw-US-GEQ">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="plusButton:" destination="x23-D7-faz" id="xWU-EO-2ou"/>
-                            </connections>
                         </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="up" id="7ZB-CR-8HH">
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="plusButton:" destination="x23-D7-faz" id="xWU-EO-2ou"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="down" id="Eyb-rs-Way">
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
@@ -138,7 +147,6 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="x23-D7-faz" kind="relationship" relationship="rootViewController" id="zWq-U5-rDJ"/>
-                        <segue destination="bH8-95-udM" kind="show" identifier="segueToNavOnce" id="bbf-5k-JLk"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZL5-eA-P1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -146,4 +154,9 @@
             <point key="canvasLocation" x="1780" y="389"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="down" width="25" height="13"/>
+        <image name="menu" width="25" height="13"/>
+        <image name="up" width="25" height="13"/>
+    </resources>
 </document>
