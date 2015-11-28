@@ -308,9 +308,9 @@
                                                                                     originalOrigin.y + originalOrigin.y/3.5,
                                                                                     originalSize.width,
                                                                                     originalSize.height);
+                self.rightSwipeGestureRecognizer.enabled = NO;
             } completion:^(BOOL finished) {
-                
-                
+                self.rightSwipeGestureRecognizer.enabled = YES;
             }];
             
             self.breadcrumbsImageView.image = [UIImage imageNamed:@"page2"];
@@ -372,11 +372,11 @@
                                                                                                                   originalOrigin.y - originalOrigin.y/2,
                                                                                                                   originalSize.width,
                                                                                                                   originalSize.height);
+                                          self.rightSwipeGestureRecognizer.enabled = NO;
                                                                         }];
                                           
                                       } completion:^(BOOL finished) {
-                                          
-                                          
+                                          self.rightSwipeGestureRecognizer.enabled = YES;
                                       }];
 
             
@@ -420,7 +420,10 @@
                                                       originalSize.height);
                 [self.fishImageView.layer setContents:(__bridge id)[[UIImage imageNamed:@"Wilfred-DeadFloat.png"] CGImage]];
                 [self runHalfSpinAnimationOnView:self.fishImageView.layer duration:1.2 repeat:1];
+                
+                self.rightSwipeGestureRecognizer.enabled = NO;
             } completion:^(BOOL finished) {
+                self.rightSwipeGestureRecognizer.enabled = YES;
             }];
             
             self.breadcrumbsImageView.image = [UIImage imageNamed:@"page5"];
