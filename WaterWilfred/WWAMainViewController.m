@@ -38,7 +38,8 @@
 
 #pragma mark - Lifecycle
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     self.firstTimeLoading = YES;
@@ -174,7 +175,6 @@
     self.fadeOut.additive = NO;
 }
 
-
 #pragma mark - Gestures
 
 - (void)handleSwipes:(UISwipeGestureRecognizer *)sender
@@ -198,7 +198,6 @@
         [self transitionToNextExample];
     }
 }
-
 
 #pragma mark - Actions
 
@@ -258,10 +257,20 @@
     [self setupTitle];
     [self transitionToNextExample];
 }
+- (IBAction)minusButton:(UIBarButtonItem *)sender
+{
+    if (self.currentGlassesCount) {
+        self.currentGlassesCount -= 1;
+        self.currentWaterLevel -= 1;
+        [self setupTitle];
+        [self transitionToNextExample];
+    }
+    else if (self.currentGlassesCount <= 0) {
 
+    }
+}
 
 #pragma mark - Animations
-
 
 - (void)startWiggling
 {

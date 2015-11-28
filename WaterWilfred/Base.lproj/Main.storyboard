@@ -67,6 +67,9 @@
                             </barButtonItem>
                             <barButtonItem image="down" id="Eyb-rs-Way">
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="minusButton:" destination="x23-D7-faz" id="UGx-mQ-pih"/>
+                                </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>

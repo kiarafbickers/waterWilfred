@@ -21,7 +21,7 @@
 @property (strong, nonatomic) BAFluidView *fluidView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
-
 - (IBAction)plusButton:(UIBarButtonItem *)sender;
+- (IBAction)minusButton:(UIBarButtonItem *)sender;
 
 @end
