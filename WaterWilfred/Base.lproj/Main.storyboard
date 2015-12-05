@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bH8-95-udM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -36,7 +37,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Swipe downward for next example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3if-kV-JLa">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe downward for next example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3if-kV-JLa">
                                 <rect key="frame" x="96" y="362" width="222" height="12"/>
                                 <fontDescription key="fontDescription" name="LoveloBlack" family="Lovelo" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -48,7 +49,10 @@
                             <constraint firstAttribute="centerY" secondItem="Vi2-wj-e8v" secondAttribute="centerY" id="Fpd-me-RBC"/>
                             <constraint firstItem="GPm-Yr-CAH" firstAttribute="top" secondItem="Vi2-wj-e8v" secondAttribute="bottom" id="HOd-YS-bkZ"/>
                             <constraint firstAttribute="centerX" secondItem="Vi2-wj-e8v" secondAttribute="centerX" id="IL1-a0-Xe0"/>
+                            <constraint firstItem="3if-kV-JLa" firstAttribute="centerY" secondItem="zQ6-jS-TOM" secondAttribute="centerY" id="SMr-V9-490"/>
                             <constraint firstAttribute="trailing" secondItem="Vi2-wj-e8v" secondAttribute="trailing" id="TA9-em-vwk"/>
+                            <constraint firstItem="3if-kV-JLa" firstAttribute="leading" secondItem="zQ6-jS-TOM" secondAttribute="leadingMargin" constant="76" id="Xw5-Vq-Lha"/>
+                            <constraint firstItem="3if-kV-JLa" firstAttribute="top" secondItem="hez-yg-JWZ" secondAttribute="bottom" constant="298" id="h9P-N4-zal"/>
                             <constraint firstAttribute="centerX" secondItem="3if-kV-JLa" secondAttribute="centerX" id="ob6-Ys-Go9"/>
                             <constraint firstItem="Vi2-wj-e8v" firstAttribute="leading" secondItem="zQ6-jS-TOM" secondAttribute="leading" id="uiM-2c-obu"/>
                         </constraints>
@@ -107,7 +111,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Swipe downward for next example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byl-p7-GcQ">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe downward for next example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byl-p7-GcQ">
                                 <rect key="frame" x="96" y="616" width="222" height="12"/>
                                 <fontDescription key="fontDescription" name="LoveloBlack" family="Lovelo" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -119,9 +123,12 @@
                             <constraint firstAttribute="centerX" secondItem="9on-uQ-bPN" secondAttribute="centerX" id="6bi-GK-w5p"/>
                             <constraint firstItem="FaU-kh-8jC" firstAttribute="top" secondItem="9on-uQ-bPN" secondAttribute="bottom" id="BdK-vu-8on"/>
                             <constraint firstItem="9on-uQ-bPN" firstAttribute="leading" secondItem="css-LD-mCf" secondAttribute="leading" id="GD3-fh-L2e"/>
+                            <constraint firstItem="Byl-p7-GcQ" firstAttribute="leading" secondItem="css-LD-mCf" secondAttribute="leadingMargin" constant="76" id="SWX-hk-27q"/>
                             <constraint firstAttribute="centerY" secondItem="9on-uQ-bPN" secondAttribute="centerY" id="UPS-DW-P27"/>
+                            <constraint firstItem="FaU-kh-8jC" firstAttribute="top" secondItem="Byl-p7-GcQ" secondAttribute="bottom" constant="108" id="VN3-Bv-2oG"/>
                             <constraint firstItem="9on-uQ-bPN" firstAttribute="top" secondItem="css-LD-mCf" secondAttribute="top" id="h2C-UW-BJb"/>
                             <constraint firstAttribute="trailing" secondItem="9on-uQ-bPN" secondAttribute="trailing" id="iZ3-iD-fIh"/>
+                            <constraint firstItem="Byl-p7-GcQ" firstAttribute="top" secondItem="mS6-Xu-NeO" secondAttribute="bottom" constant="596" id="jQz-ir-Zu5"/>
                             <constraint firstAttribute="centerX" secondItem="Byl-p7-GcQ" secondAttribute="centerX" id="oaB-4K-0Yk"/>
                         </constraints>
                     </view>
