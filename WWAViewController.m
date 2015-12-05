@@ -421,7 +421,7 @@
         {
             [self waterLevelAnimationStart:@0.720 fillDuration:5.0 fillTo:@0.250];
             
-            self.message.text = @"But forget to drink water..\nand Wilfred's in trouble.";
+            self.message.text = @"But forget to drink water..\nand Wilfred's in trouble!";
             self.message.numberOfLines = 2;
             
             CGPoint originalOrigin = self.fishImageView.frame.origin;
