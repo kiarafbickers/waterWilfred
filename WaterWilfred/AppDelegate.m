@@ -11,8 +11,6 @@
 #import <ACPReminder/ACPReminder.h>
 #import "WWAUserData.h"
 
-
-
 @interface AppDelegate ()
 
 @property (nonatomic, strong) NSArray* messages;
@@ -25,12 +23,9 @@
 
 @implementation AppDelegate
 
-
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     NSLog(@"Hey, working?");
-    // Override point for customization after application launch.
     
     return YES;
 }
