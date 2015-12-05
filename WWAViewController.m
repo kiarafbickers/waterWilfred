@@ -11,7 +11,7 @@
 #import "UIColor+ColorWithHex.h"
 #import "CALayer+WiggleAnimationAdditions.h"
 #import "ACPReminder/ACPReminder.h"
-#import "QuartzCore/QuartzCore.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface WWAViewController ()
 
@@ -255,9 +255,9 @@
             // Set UILabel text
             self.message = [UILabel new];
             self.message.backgroundColor = [UIColor clearColor];
-            self.message.text = @"Congrats on your new pet!\nMeet Wilfred.";
+            self.message.text = @"Congrats on your new pet!\n \n";
             self.message.font = [UIFont fontWithName:@"Helvetica" size:20];
-            self.message.numberOfLines = 2;
+            self.message.numberOfLines = 3;
             self.message.textAlignment = NSTextAlignmentCenter;
             [self.view addSubview:self.message];
             
@@ -267,8 +267,7 @@
             [self.message.centerYAnchor constraintEqualToAnchor:self.view.topAnchor constant:100].active = YES;
             [self.message.widthAnchor constraintEqualToConstant:300.0f].active = YES;
             [self.message.heightAnchor constraintEqualToConstant:150.0f].active = YES;
-            
-            // Initialize first fish images
+
             self.fishView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 162.9, 120.6)];
             self.fishImage = [UIImage imageNamed:@"Wilfred-Happy"];
             self.fishImageView = [[UIImageView alloc] initWithImage:self.fishImage];
@@ -276,6 +275,20 @@
             self.fishImageView.frame = self.fishView.bounds;
             [self.fishView addSubview:self.fishImageView];
             [self.view addSubview:self.fishView];
+            
+            //self.fishView.layer.opacity = 0.0;
+            
+            CGPoint originalOrigin = self.fishImageView.frame.origin;
+            CGSize originalSize = self.fishImageView.frame.size;
+            
+            [UIView animateWithDuration:1.5 delay:0.5 options:0 animations:^{
+                self.fishImageView.frame = CGRectMake(originalOrigin.x - 500,
+                                                      originalOrigin.y,
+                                                      originalSize.width,
+                                                      originalSize.height);
+            } completion:^(BOOL finished) {
+                self.message.text = @"Congrats on your new pet!\n \n Meet Wilfred.";
+            }];
             
             CGRect viewBounds = [[self view] frame];
             [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.5 - viewBounds.origin.y)];
@@ -408,8 +421,8 @@
         {
             [self waterLevelAnimationStart:@0.720 fillDuration:5.0 fillTo:@0.250];
             
-            self.message.text = @"But forget to drink water\nand you might end up with\na dead fish.";
-            self.message.numberOfLines = 3;
+            self.message.text = @"But forget to drink water..\nand Wilfred's in trouble.";
+            self.message.numberOfLines = 2;
             
             CGPoint originalOrigin = self.fishImageView.frame.origin;
             CGSize originalSize = self.fishImageView.frame.size;
