@@ -12,6 +12,7 @@
 #import "CALayer+WiggleAnimationAdditions.h"
 #import "ACPReminder/ACPReminder.h"
 #import "UIView+AnimationExtensions.h"
+#import <CoreMotion/CoreMotion.h>
 
 @interface WWAMainViewController ()
 
@@ -31,6 +32,7 @@
 @property (nonatomic, strong) NSMutableArray *sequenceOfAnimations;
 @property (nonatomic, strong) NSArray *imgArr;
 @property (nonatomic, strong) NSUserDefaults *theDefaults;
+@property(strong,nonatomic) CMMotionManager *motionManager;
 
 @end
 
@@ -368,13 +370,32 @@
     rotationAnimation.repeatCount = repeat;
     [layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
 }
-- (BAFluidView*) nextBAFluidViewExample
+- (BAFluidView *) nextBAFluidViewExample
 {
+    if (self.motionManager)
+    {
+        [self.motionManager stopAccelerometerUpdates];
+        self.motionManager = nil;
+    }
+    
     switch (self.currentWaterLevel)
     {
         case 0:
         {
             NSLog(@"Case 0 is happening.");
+            
+            self.motionManager = [[CMMotionManager alloc] init];
+            
+            if (self.motionManager.deviceMotionAvailable) {
+                self.motionManager.deviceMotionUpdateInterval = 0.3f;
+                [self.motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue mainQueue]
+                                                        withHandler:^(CMDeviceMotion *data, NSError *error) {
+                                                            NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
+                                                            NSDictionary* userInfo = [NSDictionary dictionaryWithObject:
+                                                                                      data forKey:@"data"];
+                                                            [nc postNotificationName:kBAFluidViewCMMotionUpdate object:self userInfo:userInfo];
+                                                        }];
+            }
             
             [self waterLevelAnimationStart:@0.250 fillTo:@0.250];
             
@@ -480,6 +501,7 @@
     self.fluidView.fillRepeatCount = 0.5;
     [self.fluidView fillTo:fillTo];
     [self.fluidView startAnimation];
+    [self.fluidView startTiltAnimation];
 }
 - (void) swimFishWithDuration:(NSUInteger)duration{
     CGPoint originalOrigin = self.fishImageView.frame.origin;

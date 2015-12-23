@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A737AD9EFCB8A271AF0237DE'
+               BlueprintIdentifier = '7168FF04035ACB6916457A1E'
                BlueprintName = 'ACPReminder'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libACPReminder.a'>

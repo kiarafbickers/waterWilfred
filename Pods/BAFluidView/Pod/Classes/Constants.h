@@ -1,6 +1,6 @@
 //The MIT License (MIT)
 //
-//Copyright (c) 2014 Bryan Antigua <antigua.b@gmail.com> Sam Stone <stonesam92@gmail.com>
+//Copyright (c) 2014 Bryan Antigua <antigua.b@gmail.com>
 //
 //Permission is hereby granted, free of charge, to any person obtaining a copy
 //of this software and associated documentation files (the "Software"), to deal
@@ -21,10 +21,15 @@
 //SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 
-@interface UIColor (ColorFromHex)
+/**
+ Enum for direction of waves (changes based on tilt)
+ */
+typedef enum {
+    BAFLUIDVIEWHORIZONTALDIRECTIONLEFT,
+    BAFLUIDVIEWHORIZONTALDIRECTIONRIGHT
+} BAFLUIDVIEWHORIZONTALDIRECTION;
 
-+(UIColor*)colorWithHex:(int)hex;
+@interface Constants : NSObject
 
 @end

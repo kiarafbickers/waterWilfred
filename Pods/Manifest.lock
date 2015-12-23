@@ -1,6 +1,6 @@
 PODS:
   - ACPReminder (1.0.2)
-  - BAFluidView (0.1.6)
+  - BAFluidView (0.2.0)
 
 DEPENDENCIES:
   - ACPReminder (~> 1.0.2)
@@ -8,6 +8,6 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   ACPReminder: 67e475fe4d2a67da4c24e453b0a2c9acc53dd2c3
-  BAFluidView: d43890546d372d1f1b47cc12991ab5b257322f23
+  BAFluidView: 572891753145874416810d03be1c2b542d09e2be
 
 COCOAPODS: 0.39.0

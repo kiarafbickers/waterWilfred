@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '88B6DF557F5BEBB6E4AECFC3'
+               BlueprintIdentifier = '31CEEEC8A1F0D054DA4241D9'
                BlueprintName = 'BAFluidView-BAFluidView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'BAFluidView.bundle'>
