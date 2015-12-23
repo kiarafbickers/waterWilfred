@@ -384,19 +384,7 @@
         {
             NSLog(@"Case 0 is happening.");
             
-            self.motionManager = [[CMMotionManager alloc] init];
-            
-            if (self.motionManager.deviceMotionAvailable) {
-                self.motionManager.deviceMotionUpdateInterval = 0.3f;
-                [self.motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue mainQueue]
-                                                        withHandler:^(CMDeviceMotion *data, NSError *error) {
-                                                            NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
-                                                            NSDictionary* userInfo = [NSDictionary dictionaryWithObject:
-                                                                                      data forKey:@"data"];
-                                                            [nc postNotificationName:kBAFluidViewCMMotionUpdate object:self userInfo:userInfo];
-                                                        }];
-            }
-            
+            [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.250 fillTo:@0.250];
             
             if (!self.fishView) {
@@ -421,6 +409,8 @@
         case 1:
         {
             NSLog(@"Case 1 is happening.");
+            
+            [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.250 fillTo:@0.325];
 
             return self.fluidView;
@@ -428,6 +418,8 @@
         case 2:
         {
             NSLog(@"Case 2 is happening.");
+            
+            [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.325 fillTo:@0.400];
 
             
@@ -436,6 +428,8 @@
         case 3:
         {
             NSLog(@"Case 3 is happening.");
+            
+            [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.400 fillTo:@0.475];
          
             return self.fluidView;
@@ -443,6 +437,8 @@
         case 4:
         {
             NSLog(@"Case 4 is happening.");
+            
+            [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.475 fillTo:@.550];
 
             return self.fluidView;
@@ -450,6 +446,8 @@
         case 5:
         {
             NSLog(@"Case 5 is happening.");
+            
+            [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.550 fillTo:@.625];
 
             return self.fluidView;
@@ -457,6 +455,8 @@
         case 6:
         {
             NSLog(@"Case 6 is happening.");
+            
+            [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.625 fillTo:@.700];
          
             return self.fluidView;
@@ -464,6 +464,8 @@
         case 7:
         {
             NSLog(@"Case 7 is happening.");
+            
+            [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.700 fillTo:@.775];
 
             return self.fluidView;
@@ -471,6 +473,8 @@
         case 8:
         {
             NSLog(@"Case 8 is happening.");
+            
+            [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.775 fillTo:@.850];
 
             return self.fluidView;
@@ -478,6 +482,8 @@
         case 9:
         {
             NSLog(@"Case 9 is happening.");
+            
+            [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.850 fillTo:@.925];
             
             return self.fluidView;
@@ -487,6 +493,7 @@
             NSLog(@"DEFAULT is happening.");
 
             self.currentWaterLevel = 0;
+            [self initializeWaterCoreMotion];
             return [self nextBAFluidViewExample];
         }
     }
@@ -503,6 +510,23 @@
     [self.fluidView startAnimation];
     [self.fluidView startTiltAnimation];
 }
+- (void) initializeWaterCoreMotion
+{
+    self.motionManager = [[CMMotionManager alloc] init];
+    
+    if (self.motionManager.deviceMotionAvailable) {
+        self.motionManager.deviceMotionUpdateInterval = 0.3f;
+        [self.motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue mainQueue]
+                                                withHandler:^(CMDeviceMotion *data, NSError *error) {
+                                                    NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
+                                                    NSDictionary* userInfo = [NSDictionary dictionaryWithObject:
+                                                                              data forKey:@"data"];
+                                                    [nc postNotificationName:kBAFluidViewCMMotionUpdate object:self userInfo:userInfo];
+                                                }];
+    }
+
+}
+
 - (void) swimFishWithDuration:(NSUInteger)duration{
     CGPoint originalOrigin = self.fishImageView.frame.origin;
     CGSize originalSize = self.fishImageView.frame.size;
