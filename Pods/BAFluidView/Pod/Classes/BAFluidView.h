@@ -82,6 +82,11 @@ Changes the fill color of the wave animation
 extern NSString * const kBAFluidViewCMMotionUpdate;
 
 /**
+ Made public to constrain fish image to self.rollLayer.presentationlayer
+ */
+@property (strong,nonatomic) CALayer *rollLayer;
+
+/**
  Returns an object that can create the fluid animation with the given wave properties. This init function lets you adjust the wave crest properties.
  
  @param aRect

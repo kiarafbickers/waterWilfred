@@ -59,8 +59,6 @@ NSString * const kBAFluidViewCMMotionUpdate = @"BAFluidViewCMMotionUpdate";
 
 @property (assign,nonatomic) CGFloat rollOrientationAdjustment;
 
-@property (strong,nonatomic) CALayer *rollLayer;
-
 @end
 
 @implementation BAFluidView
@@ -474,6 +472,7 @@ NSString * const kBAFluidViewCMMotionUpdate = @"BAFluidViewCMMotionUpdate";
         roll = 1;
     }
     self.roll = roll;
+    //NSLog(@"3 roll: %f", self.roll);
     
     //change wave direction if we're tilting in a different direction
     BAFLUIDVIEWHORIZONTALDIRECTION oldDirection = self.waveDirection;
@@ -489,6 +488,7 @@ NSString * const kBAFluidViewCMMotionUpdate = @"BAFluidViewCMMotionUpdate";
     
     //tilt relative to the phone
     CALayer *presentationLayer = self.rollLayer.presentationLayer;
+    //NSLog(@"rollLayer.presentationLayer: %@", self.rollLayer.presentationLayer);
     CATransform3D zRotation = CATransform3DMakeRotation(-(self.roll+self.rollOrientationAdjustment)*0.7, 0, 0, 1.0);
     CABasicAnimation *animateZRotation;
     animateZRotation = [CABasicAnimation animationWithKeyPath:@"transform"];

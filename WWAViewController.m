@@ -377,7 +377,7 @@
                                                                             self.fishImageView.layer.transform = CATransform3DMakeScale(1, 1, 1);
                                                                         }];
                                           
-                                          // swim right
+                                          // swim left
                                           [UIView addKeyframeWithRelativeStartTime:3/4.0
                                                                   relativeDuration:1/4.0
                                                                         animations:^{

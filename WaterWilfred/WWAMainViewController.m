@@ -33,6 +33,8 @@
 @property (nonatomic, strong) NSArray *imgArr;
 @property (nonatomic, strong) NSUserDefaults *theDefaults;
 @property(strong,nonatomic) CMMotionManager *motionManager;
+@property(nonatomic) UIDeviceOrientation currentOrientation;
+@property(nonatomic) CGPoint originalOrigin;
 
 @end
 
@@ -52,8 +54,6 @@
     [self checkLaunch];
     
     // [self presentWeightInputAlert];
-    
-    NSLog(@"Viw loading?????");
 }
 - (void) viewDidAppear {
     [self.fishView.layer bts_startWiggling];
@@ -395,10 +395,10 @@
                 self.fishImageView.contentMode = UIViewContentModeScaleAspectFit; // Change size
                 self.fishImageView.frame = self.fishView.bounds;
                 [self.fishView addSubview:self.fishImageView];
-                [self.view addSubview:self.fishView];
+                [self.fluidView addSubview:self.fishView];
             }
             
-            CGRect viewBounds = [[self view] frame];
+            CGRect viewBounds = self.fluidView.frame;
             [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
             [self.fishView.layer bts_startWiggling];
             
@@ -493,7 +493,7 @@
             NSLog(@"DEFAULT is happening.");
 
             self.currentWaterLevel = 0;
-            [self initializeWaterCoreMotion];
+            
             return [self nextBAFluidViewExample];
         }
     }
@@ -527,8 +527,28 @@
 
 }
 
-- (void) swimFishWithDuration:(NSUInteger)duration{
+- (void) receiveTestNotification:(NSNotification *)notification
+{
+    NSDictionary *userInfo = notification.userInfo;
+    NSObject *object = [userInfo objectForKey:@"data"];
+    NSLog(@"%@", object);
+}
+
+- (void) swimFishWithDuration:(NSUInteger)duration
+{
+    if (self.motionManager.accelerometerAvailable) {
+        self.motionManager.accelerometerUpdateInterval = 0.01f;
+        [self.motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue mainQueue]
+                                                 withHandler:^(CMAccelerometerData *data, NSError *error) {
+                                                     //NSLog(@"x = %f, y =%f", data.acceleration.x, data.acceleration.y);
+                                                     
+                                                 }];
+    }
+    
+        
     CGPoint originalOrigin = self.fishImageView.frame.origin;
+    NSLog(@"self.fishImageView.frame.origin.x = %f", self.fishImageView.frame.origin.x);
+    NSLog(@"self.fishImageView.frame.origin.y = %f", self.fishImageView.frame.origin.y);
     CGSize originalSize = self.fishImageView.frame.size;
     
     [UIView animateKeyframesWithDuration:4
