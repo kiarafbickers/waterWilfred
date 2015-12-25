@@ -306,6 +306,9 @@
             CGRect viewBounds2 = [[self view] frame];
             [self.breadcrumbsImageView.layer setPosition:CGPointMake(viewBounds2.size.width / 2.0, viewBounds2.size.height / 1.04 - viewBounds2.origin.y)];
             
+            self.leftSwipeGestureRecognizer.enabled = NO;
+
+            
             return self.fluidView;
         }
         case 1:

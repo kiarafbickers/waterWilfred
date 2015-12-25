@@ -472,7 +472,6 @@ NSString * const kBAFluidViewCMMotionUpdate = @"BAFluidViewCMMotionUpdate";
         roll = 0.5;
     }
     self.roll = roll;
-    NSLog(@"roll + self.rollOrientationAdjustmen: %f", roll + self.rollOrientationAdjustment);
     
     //change wave direction if we're tilting in a different direction
     BAFLUIDVIEWHORIZONTALDIRECTION oldDirection = self.waveDirection;
