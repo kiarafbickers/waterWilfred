@@ -466,13 +466,13 @@ NSString * const kBAFluidViewCMMotionUpdate = @"BAFluidViewCMMotionUpdate";
     CGFloat roll = atan2(2*(quat.y*quat.w - quat.x*quat.z), 1 - 2*quat.y*quat.y - 2*quat.z*quat.z);
     
     //limiting tilt
-    if((roll + self.rollOrientationAdjustment)< -1){
-        roll = -1;
-    } else if((roll + self.rollOrientationAdjustment)	 > 1){
-        roll = 1;
+    if((roll + self.rollOrientationAdjustment) < -0.5){
+        roll = -0.5;
+    } else if((roll + self.rollOrientationAdjustment) > 0.5){
+        roll = 0.5;
     }
     self.roll = roll;
-    //NSLog(@"3 roll: %f", self.roll);
+    NSLog(@"roll + self.rollOrientationAdjustmen: %f", roll + self.rollOrientationAdjustment);
     
     //change wave direction if we're tilting in a different direction
     BAFLUIDVIEWHORIZONTALDIRECTION oldDirection = self.waveDirection;
