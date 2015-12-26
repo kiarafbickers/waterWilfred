@@ -45,6 +45,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    
+    if (![[NSUserDefaults standardUserDefaults] integerForKey:@"currentWaterLevel"] || [[NSUserDefaults standardUserDefaults] integerForKey:@"currentGlassesCount"])
+    {
+        self.currentGlassesCount = 0;
+        self.currentWaterLevel = 0;
+        [[NSUserDefaults standardUserDefaults] setInteger:self.currentGlassesCount forKey:@"currentGlassesCount"];
+        [[NSUserDefaults standardUserDefaults] setInteger:self.currentWaterLevel forKey:@"currentWaterLevel"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    self.currentWaterLevel = [[NSUserDefaults standardUserDefaults] integerForKey:@"currentWaterLevel"];
+    NSLog(@"self.currentWaterLevel %ld", (long)self.currentWaterLevel);
+    self.currentGlassesCount = [[NSUserDefaults standardUserDefaults] integerForKey:@"currentGlassesCount"];
+    NSLog(@"self.currentGlassesCount %ld", (long)self.currentGlassesCount);
     
     self.firstTimeLoading = YES;
     [self setupBackground];
@@ -92,7 +106,7 @@
         self.fluidView.fillColor = [UIColor colorWithHex:0x397ebe];
         [self.fluidView keepStationary];
         
-        self.currentWaterLevel = 0;
+        //self.currentWaterLevel = 0;
         
         self.exampleContainerView = [self nextBAFluidViewExample];
         [self.view insertSubview:self.exampleContainerView belowSubview:self.swipeForNextExampleLabel];
@@ -177,6 +191,10 @@
     self.fadeOut.additive = NO;
 }
 
+#pragma mark - Overrides
+
+
+
 #pragma mark - Gestures
 
 - (void)handleSwipes:(UISwipeGestureRecognizer *)sender
@@ -185,8 +203,13 @@
     {
         CGPoint labelPosition = CGPointMake(self.swipeLabel.frame.origin.x - 100.0, self.swipeLabel.frame.origin.y);
         self.swipeLabel.frame = CGRectMake( labelPosition.x , labelPosition.y , self.swipeLabel.frame.size.width, self.swipeLabel.frame.size.height);
+        
         self.currentGlassesCount -= 1;
+        [[NSUserDefaults standardUserDefaults] setInteger:self.currentGlassesCount forKey:@"currentGlassesCount"];
         self.currentWaterLevel -= 1;
+        [[NSUserDefaults standardUserDefaults] setInteger:self.currentWaterLevel forKey:@"currentWaterLevel"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
         [self setupTitle];
         [self transitionToNextExample];
     }
@@ -194,8 +217,13 @@
     {
         CGPoint labelPosition = CGPointMake(self.swipeLabel.frame.origin.x + 100.0, self.swipeLabel.frame.origin.y);
         self.swipeLabel.frame = CGRectMake( labelPosition.x , labelPosition.y , self.swipeLabel.frame.size.width, self.swipeLabel.frame.size.height);
+        
         self.currentGlassesCount += 1;
+        [[NSUserDefaults standardUserDefaults] setInteger:self.currentGlassesCount forKey:@"currentGlassesCount"];
         self.currentWaterLevel += 1;
+        [[NSUserDefaults standardUserDefaults] setInteger:self.currentWaterLevel forKey:@"currentWaterLevel"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
         [self setupTitle];
         [self transitionToNextExample];
     }
@@ -255,15 +283,24 @@
 - (IBAction)plusButton:(UIBarButtonItem *)sender
 {
     self.currentGlassesCount += 1;
+    [[NSUserDefaults standardUserDefaults] setInteger:self.currentGlassesCount forKey:@"currentGlassesCount"];
     self.currentWaterLevel += 1;
+    [[NSUserDefaults standardUserDefaults] setInteger:self.currentWaterLevel forKey:@"currentWaterLevel"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     [self setupTitle];
     [self transitionToNextExample];
 }
 - (IBAction)minusButton:(UIBarButtonItem *)sender
 {
     if (self.currentGlassesCount) {
+
         self.currentGlassesCount -= 1;
+        [[NSUserDefaults standardUserDefaults] setInteger:self.currentGlassesCount forKey:@"currentGlassesCount"];
         self.currentWaterLevel -= 1;
+        [[NSUserDefaults standardUserDefaults] setInteger:self.currentWaterLevel forKey:@"currentWaterLevel"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
         [self setupTitle];
         [self transitionToNextExample];
     }
@@ -492,7 +529,7 @@
         {
             NSLog(@"DEFAULT is happening.");
 
-            self.currentWaterLevel = 0;
+            //self.currentWaterLevel = 0;
             
             return [self nextBAFluidViewExample];
         }
