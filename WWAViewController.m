@@ -38,8 +38,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self firstTimeOpenApp];
-    
     self.firstTimeLoading = YES;
     [self setupBackground];
     [self setupGestures];
@@ -52,16 +50,6 @@
 
 #pragma mark - Views
 
-- (void)firstTimeOpenApp
-{
-    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"hasBeenLaunched"]) {
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasBeenLaunched"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-    }
-    else {
-        [self performSegueWithIdentifier:@"segueToNav" sender:nil];
-    }
-}
 - (void)viewDidLayoutSubviews
 {
     if (self.firstTimeLoading)

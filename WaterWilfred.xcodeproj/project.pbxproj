@@ -27,6 +27,7 @@
 		E9CF9FFC1BD15B4A00D53079 /* WaterWilfredTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF9FFB1BD15B4A00D53079 /* WaterWilfredTests.m */; };
 		E9CFA0071BD15B4A00D53079 /* WaterWilfredUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CFA0061BD15B4A00D53079 /* WaterWilfredUITests.m */; };
 		E9CFA0191BD1748A00D53079 /* WWAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CFA0181BD1748A00D53079 /* WWAViewController.m */; };
+		E9F5B51B1C2E0BB2002A8122 /* WWAManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F5B51A1C2E0BB1002A8122 /* WWAManagerViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		E9CFA0081BD15B4A00D53079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9CFA0171BD1748A00D53079 /* WWAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WWAViewController.h; path = ../WWAViewController.h; sourceTree = "<group>"; };
 		E9CFA0181BD1748A00D53079 /* WWAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WWAViewController.m; path = ../WWAViewController.m; sourceTree = "<group>"; };
+		E9F5B5191C2E0BB1002A8122 /* WWAManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWAManagerViewController.h; sourceTree = "<group>"; };
+		E9F5B51A1C2E0BB1002A8122 /* WWAManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWAManagerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,8 @@
 				E9CF9FE21BD15B4A00D53079 /* AppDelegate.m */,
 				E9268A1F1BE16FF7004FA45F /* WWAUserData.h */,
 				E9268A201BE16FF7004FA45F /* WWAUserData.m */,
+				E9F5B5191C2E0BB1002A8122 /* WWAManagerViewController.h */,
+				E9F5B51A1C2E0BB1002A8122 /* WWAManagerViewController.m */,
 				E9CFA0171BD1748A00D53079 /* WWAViewController.h */,
 				E9CFA0181BD1748A00D53079 /* WWAViewController.m */,
 				E968F75C1BEE6E6E008B41CC /* WWAMainViewController.h */,
@@ -401,6 +406,7 @@
 				E968F74D1BED020D008B41CC /* CALayer+WiggleAnimationAdditions.m in Sources */,
 				E9CFA0191BD1748A00D53079 /* WWAViewController.m in Sources */,
 				E9CF9FE01BD15B4A00D53079 /* main.m in Sources */,
+				E9F5B51B1C2E0BB2002A8122 /* WWAManagerViewController.m in Sources */,
 				E95D90441BF03A1200B9A659 /* UIView+AnimationExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

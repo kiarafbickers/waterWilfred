@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bH8-95-udM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KUK-X6-TlB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -37,7 +37,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe downward for next example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3if-kV-JLa">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Swipe downward for next example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3if-kV-JLa">
                                 <rect key="frame" x="96" y="362" width="222" height="12"/>
                                 <fontDescription key="fontDescription" name="LoveloBlack" family="Lovelo" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -87,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PXH-Gp-Qaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2292" y="389"/>
+            <point key="canvasLocation" x="2292" y="381"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Kf4-zc-34R">
@@ -144,6 +144,42 @@
             </objects>
             <point key="canvasLocation" x="1254" y="381"/>
         </scene>
+        <!--Manager View Controller-->
+        <scene sceneID="iGw-jI-PUs">
+            <objects>
+                <viewController id="KUK-X6-TlB" customClass="WWAManagerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wbl-9t-ows"/>
+                        <viewControllerLayoutGuide type="bottom" id="NXQ-uk-LhZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="efy-hS-On8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80C-R3-4TA" userLabel="backgroundView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="80C-R3-4TA" firstAttribute="centerY" secondItem="efy-hS-On8" secondAttribute="centerY" id="2w0-Ts-pJA"/>
+                            <constraint firstItem="80C-R3-4TA" firstAttribute="width" secondItem="efy-hS-On8" secondAttribute="width" id="7WE-3Z-cPk"/>
+                            <constraint firstItem="80C-R3-4TA" firstAttribute="centerX" secondItem="efy-hS-On8" secondAttribute="centerX" id="Jrq-UF-wnO"/>
+                            <constraint firstItem="80C-R3-4TA" firstAttribute="height" secondItem="efy-hS-On8" secondAttribute="height" id="aqb-NJ-EpP"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="80C-R3-4TA" id="59A-Lp-yGR"/>
+                        <segue destination="bH8-95-udM" kind="show" identifier="showFirstLoad" id="b4B-Yr-3W6"/>
+                        <segue destination="anW-Mu-YvK" kind="show" identifier="showMainView" id="tcV-Gq-SLA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M6R-c7-BeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1510" y="-535"/>
+        </scene>
         <!--Navigation Controller Status Bar Style-->
         <scene sceneID="XE4-lp-ERg">
             <objects>
@@ -161,7 +197,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZL5-eA-P1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1780" y="389"/>
+            <point key="canvasLocation" x="1778" y="381"/>
         </scene>
     </scenes>
     <resources>
@@ -169,4 +205,7 @@
         <image name="menu" width="25" height="13"/>
         <image name="up" width="25" height="13"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tcV-Gq-SLA"/>
+    </inferredMetricsTieBreakers>
 </document>
