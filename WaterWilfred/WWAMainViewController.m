@@ -20,7 +20,7 @@
 @property (strong, nonatomic) UISwipeGestureRecognizer *upSwipeGestureRecognizer;
 @property (strong, nonatomic) UIView *swipeLabel;
 @property (assign, nonatomic) NSInteger currentWaterLevel;
-@property (assign, nonatomic) BOOL firstTimeLoading;
+//@property (assign, nonatomic) BOOL firstTimeLoading;
 @property (assign, nonatomic) CAGradientLayer *gradient;
 @property (strong, nonatomic) CAShapeLayer *backgroundLayer;
 @property (strong, nonatomic) UIDynamicAnimator *animator;
@@ -45,22 +45,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.theDefaults = [NSUserDefaults standardUserDefaults];
 
+//    NSLog(@"self.currentWaterLevel %ld", (long)self.currentWaterLevel);
+//    NSLog(@"self.currentGlassesCount %ld", (long)self.currentGlassesCount);
     
-    if (![[NSUserDefaults standardUserDefaults] integerForKey:@"currentWaterLevel"] || [[NSUserDefaults standardUserDefaults] integerForKey:@"currentGlassesCount"])
+    if (![self.theDefaults integerForKey:@"currentWaterLevel"] || ![self.theDefaults integerForKey:@"currentGlassesCount"])
     {
         self.currentGlassesCount = 0;
+        [self.theDefaults setInteger:self.currentGlassesCount forKey:@"currentGlassesCount"];
+        [self.theDefaults synchronize];
+        
         self.currentWaterLevel = 0;
-        [[NSUserDefaults standardUserDefaults] setInteger:self.currentGlassesCount forKey:@"currentGlassesCount"];
-        [[NSUserDefaults standardUserDefaults] setInteger:self.currentWaterLevel forKey:@"currentWaterLevel"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+        [self.theDefaults setInteger:self.currentWaterLevel forKey:@"currentWaterLevel"];
+        [self.theDefaults synchronize];
     }
-    self.currentWaterLevel = [[NSUserDefaults standardUserDefaults] integerForKey:@"currentWaterLevel"];
-    NSLog(@"self.currentWaterLevel %ld", (long)self.currentWaterLevel);
-    self.currentGlassesCount = [[NSUserDefaults standardUserDefaults] integerForKey:@"currentGlassesCount"];
-    NSLog(@"self.currentGlassesCount %ld", (long)self.currentGlassesCount);
+    self.currentGlassesCount = [self.theDefaults integerForKey:@"currentGlassesCount"];
+    self.currentWaterLevel = [self.theDefaults integerForKey:@"currentWaterLevel"];
     
-    self.firstTimeLoading = YES;
     [self setupBackground];
     [self setupNavigationController];
     [self setupTitle];
@@ -78,7 +80,6 @@
 }
 - (void) checkLaunch {
     NSUInteger launchCount;
-    self.theDefaults = [NSUserDefaults standardUserDefaults];
     launchCount = [self.theDefaults integerForKey:@"hasRun"] + 1;
     [self.theDefaults setInteger:launchCount forKey:@"hasRun"];
     [self.theDefaults synchronize];
@@ -98,21 +99,14 @@
 
 - (void)viewDidLayoutSubviews
 {
-    if (self.firstTimeLoading)
-    {
-        self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
-        self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame];
-        self.fluidView.startElavation = @0.250;
-        self.fluidView.fillColor = [UIColor colorWithHex:0x397ebe];
-        [self.fluidView keepStationary];
-        
-        //self.currentWaterLevel = 0;
-        
-        self.exampleContainerView = [self nextBAFluidViewExample];
-        [self.view insertSubview:self.exampleContainerView belowSubview:self.swipeForNextExampleLabel];
-        
-        self.firstTimeLoading = NO;
-    }
+    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame];
+    self.fluidView.startElavation = @0.250;
+    self.fluidView.fillColor = [UIColor colorWithHex:0x397ebe];
+    [self.fluidView keepStationary];
+    
+    self.exampleContainerView = [self nextBAFluidViewExample];
+    [self.view insertSubview:self.exampleContainerView belowSubview:self.swipeForNextExampleLabel];
 }
 - (void)setupBackground
 {
@@ -158,6 +152,7 @@
 }
 - (void)setupTitle
 {
+    self.currentGlassesCount = [self.theDefaults integerForKey:@"currentGlassesCount"];
     self.currentGlassesCountString = [NSString stringWithFormat:@"%lu", (long)self.currentGlassesCount];
     NSString *totalGlassesCount = @"/8";
     NSString *title = [self.currentGlassesCountString stringByAppendingString:totalGlassesCount];
@@ -204,11 +199,13 @@
         CGPoint labelPosition = CGPointMake(self.swipeLabel.frame.origin.x - 100.0, self.swipeLabel.frame.origin.y);
         self.swipeLabel.frame = CGRectMake( labelPosition.x , labelPosition.y , self.swipeLabel.frame.size.width, self.swipeLabel.frame.size.height);
         
-        self.currentGlassesCount -= 1;
-        [[NSUserDefaults standardUserDefaults] setInteger:self.currentGlassesCount forKey:@"currentGlassesCount"];
-        self.currentWaterLevel -= 1;
-        [[NSUserDefaults standardUserDefaults] setInteger:self.currentWaterLevel forKey:@"currentWaterLevel"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+        self.currentGlassesCount = [self.theDefaults integerForKey:@"currentGlassesCount"] - 1;
+        [self.theDefaults setInteger:self.currentGlassesCount  forKey:@"currentGlassesCount"];
+        [self.theDefaults synchronize];
+        
+        self.currentWaterLevel = [self.theDefaults integerForKey:@"currentWaterLevel"] - 1;
+        [self.theDefaults setInteger:self.currentWaterLevel  forKey:@"currentWaterLevel"];
+        [self.theDefaults synchronize];
         
         [self setupTitle];
         [self transitionToNextExample];
@@ -218,11 +215,13 @@
         CGPoint labelPosition = CGPointMake(self.swipeLabel.frame.origin.x + 100.0, self.swipeLabel.frame.origin.y);
         self.swipeLabel.frame = CGRectMake( labelPosition.x , labelPosition.y , self.swipeLabel.frame.size.width, self.swipeLabel.frame.size.height);
         
-        self.currentGlassesCount += 1;
-        [[NSUserDefaults standardUserDefaults] setInteger:self.currentGlassesCount forKey:@"currentGlassesCount"];
-        self.currentWaterLevel += 1;
-        [[NSUserDefaults standardUserDefaults] setInteger:self.currentWaterLevel forKey:@"currentWaterLevel"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+        self.currentGlassesCount = [self.theDefaults integerForKey:@"currentGlassesCount"] + 1;
+        [self.theDefaults setInteger:self.currentGlassesCount  forKey:@"currentGlassesCount"];
+        [self.theDefaults synchronize];
+        
+        self.currentWaterLevel = [self.theDefaults integerForKey:@"currentWaterLevel"] + 1;
+        [self.theDefaults setInteger:self.currentWaterLevel  forKey:@"currentWaterLevel"];
+        [self.theDefaults synchronize];
         
         [self setupTitle];
         [self transitionToNextExample];
@@ -282,24 +281,28 @@
 }
 - (IBAction)plusButton:(UIBarButtonItem *)sender
 {
-    self.currentGlassesCount += 1;
-    [[NSUserDefaults standardUserDefaults] setInteger:self.currentGlassesCount forKey:@"currentGlassesCount"];
-    self.currentWaterLevel += 1;
-    [[NSUserDefaults standardUserDefaults] setInteger:self.currentWaterLevel forKey:@"currentWaterLevel"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    self.currentGlassesCount = [self.theDefaults integerForKey:@"currentGlassesCount"] + 1;
+    [self.theDefaults setInteger:self.currentGlassesCount  forKey:@"currentGlassesCount"];
+    [self.theDefaults synchronize];
+    
+    self.currentWaterLevel = [self.theDefaults integerForKey:@"currentWaterLevel"] + 1;
+    [self.theDefaults setInteger:self.currentWaterLevel  forKey:@"currentWaterLevel"];
+    [self.theDefaults synchronize];
     
     [self setupTitle];
     [self transitionToNextExample];
 }
 - (IBAction)minusButton:(UIBarButtonItem *)sender
 {
-    if (self.currentGlassesCount) {
-
-        self.currentGlassesCount -= 1;
-        [[NSUserDefaults standardUserDefaults] setInteger:self.currentGlassesCount forKey:@"currentGlassesCount"];
-        self.currentWaterLevel -= 1;
-        [[NSUserDefaults standardUserDefaults] setInteger:self.currentWaterLevel forKey:@"currentWaterLevel"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+    if (self.currentGlassesCount)
+    {
+        self.currentGlassesCount = [self.theDefaults integerForKey:@"currentGlassesCount"] - 1;
+        [self.theDefaults setInteger:self.currentGlassesCount  forKey:@"currentGlassesCount"];
+        [self.theDefaults synchronize];
+        
+        self.currentWaterLevel = [self.theDefaults integerForKey:@"currentWaterLevel"] - 1;
+        [self.theDefaults setInteger:self.currentWaterLevel  forKey:@"currentWaterLevel"];
+        [self.theDefaults synchronize];
         
         [self setupTitle];
         [self transitionToNextExample];
@@ -424,22 +427,18 @@
             [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.250 fillTo:@0.250];
             
-            if (!self.fishView) {
-                // Initialize first fish image
-                self.fishView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 162.9, 120.6)];
-                self.fishImage = [UIImage imageNamed:@"Wilfred-Meh"];
-                self.fishImageView = [[UIImageView alloc] initWithImage:self.fishImage];
-                self.fishImageView.contentMode = UIViewContentModeScaleAspectFit; // Change size
-                self.fishImageView.frame = self.fishView.bounds;
-                [self.fishView addSubview:self.fishImageView];
-                [self.fluidView addSubview:self.fishView];
+            if (!self.fishView)
+            {
+                [self initializeFishImage];
             }
-            
-            CGRect viewBounds = self.fluidView.frame;
-            [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
-            [self.fishView.layer bts_startWiggling];
-            
-            [self swimFishWithDuration:8];
+            if (self.fishView)
+            {
+                CGRect viewBounds = self.fluidView.frame;
+                [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
+                [self.fishView.layer bts_startWiggling];
+                
+                [self swimFishWithDuration:8];
+            }
             
             return self.fluidView;
         }
@@ -449,6 +448,19 @@
             
             [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.250 fillTo:@0.325];
+            
+            if (!self.fishView)
+            {
+                [self initializeFishImage];
+            }
+            if (self.fishView)
+            {
+                CGRect viewBounds = self.fluidView.frame;
+                [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
+                [self.fishView.layer bts_startWiggling];
+                
+                [self swimFishWithDuration:8];
+            }
 
             return self.fluidView;
         }
@@ -458,6 +470,19 @@
             
             [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.325 fillTo:@0.400];
+            
+            if (!self.fishView)
+            {
+                [self initializeFishImage];
+            }
+            if (self.fishView)
+            {
+                CGRect viewBounds = self.fluidView.frame;
+                [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
+                [self.fishView.layer bts_startWiggling];
+                
+                [self swimFishWithDuration:8];
+            }
 
             
             return self.fluidView;
@@ -468,6 +493,19 @@
             
             [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.400 fillTo:@0.475];
+            
+            if (!self.fishView)
+            {
+                [self initializeFishImage];
+            }
+            if (self.fishView)
+            {
+                CGRect viewBounds = self.fluidView.frame;
+                [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
+                [self.fishView.layer bts_startWiggling];
+                
+                [self swimFishWithDuration:8];
+            }
          
             return self.fluidView;
         }
@@ -477,6 +515,19 @@
             
             [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.475 fillTo:@.550];
+            
+            if (!self.fishView)
+            {
+                [self initializeFishImage];
+            }
+            if (self.fishView)
+            {
+                CGRect viewBounds = self.fluidView.frame;
+                [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
+                [self.fishView.layer bts_startWiggling];
+                
+                [self swimFishWithDuration:8];
+            }
 
             return self.fluidView;
         }
@@ -486,6 +537,19 @@
             
             [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.550 fillTo:@.625];
+            
+            if (!self.fishView)
+            {
+                [self initializeFishImage];
+            }
+            if (self.fishView)
+            {
+                CGRect viewBounds = self.fluidView.frame;
+                [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
+                [self.fishView.layer bts_startWiggling];
+                
+                [self swimFishWithDuration:8];
+            }
 
             return self.fluidView;
         }
@@ -495,6 +559,19 @@
             
             [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.625 fillTo:@.700];
+            
+            if (!self.fishView)
+            {
+                [self initializeFishImage];
+            }
+            if (self.fishView)
+            {
+                CGRect viewBounds = self.fluidView.frame;
+                [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
+                [self.fishView.layer bts_startWiggling];
+                
+                [self swimFishWithDuration:8];
+            }
          
             return self.fluidView;
         }
@@ -504,6 +581,19 @@
             
             [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.700 fillTo:@.775];
+            
+            if (!self.fishView)
+            {
+                [self initializeFishImage];
+            }
+            if (self.fishView)
+            {
+                CGRect viewBounds = self.fluidView.frame;
+                [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
+                [self.fishView.layer bts_startWiggling];
+                
+                [self swimFishWithDuration:8];
+            }
 
             return self.fluidView;
         }
@@ -513,6 +603,19 @@
             
             [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.775 fillTo:@.850];
+            
+            if (!self.fishView)
+            {
+                [self initializeFishImage];
+            }
+            if (self.fishView)
+            {
+                CGRect viewBounds = self.fluidView.frame;
+                [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
+                [self.fishView.layer bts_startWiggling];
+                
+                [self swimFishWithDuration:8];
+            }
 
             return self.fluidView;
         }
@@ -523,15 +626,42 @@
             [self initializeWaterCoreMotion];
             [self waterLevelAnimationStart:@0.850 fillTo:@.925];
             
+            if (!self.fishView)
+            {
+                [self initializeFishImage];
+            }
+            if (self.fishView)
+            {
+                CGRect viewBounds = self.fluidView.frame;
+                [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
+                [self.fishView.layer bts_startWiggling];
+                
+                [self swimFishWithDuration:8];
+            }
+            
             return self.fluidView;
         }
         default:
         {
             NSLog(@"DEFAULT is happening.");
 
-            //self.currentWaterLevel = 0;
+            [self initializeWaterCoreMotion];
+            [self waterLevelAnimationStart:@0.250 fillTo:@0.250];
             
-            return [self nextBAFluidViewExample];
+            if (!self.fishView)
+            {
+                [self initializeFishImage];
+            }
+            if (self.fishView)
+            {
+                CGRect viewBounds = self.fluidView.frame;
+                [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
+                [self.fishView.layer bts_startWiggling];
+                
+                [self swimFishWithDuration:8];
+            }
+
+            return self.fluidView;
         }
     }
     return nil;
@@ -562,6 +692,18 @@
                                                 }];
     }
 
+}
+
+- (void) initializeFishImage
+{
+    // Initialize first fish image
+    self.fishView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 162.9, 120.6)];
+    self.fishImage = [UIImage imageNamed:@"Wilfred-Meh"];
+    self.fishImageView = [[UIImageView alloc] initWithImage:self.fishImage];
+    self.fishImageView.contentMode = UIViewContentModeScaleAspectFit; // Change size
+    self.fishImageView.frame = self.fishView.bounds;
+    [self.fishView addSubview:self.fishImageView];
+    [self.fluidView addSubview:self.fishView];
 }
 
 - (void) receiveTestNotification:(NSNotification *)notification
