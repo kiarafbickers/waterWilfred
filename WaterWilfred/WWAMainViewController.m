@@ -452,6 +452,9 @@
             if (!self.fishView)
             {
                 [self initializeFishImage];
+                
+                CGRect viewBounds = self.fluidView.frame;
+                [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
             }
             if (self.fishView)
             {
@@ -461,6 +464,23 @@
                 
                 [self swimFishWithDuration:8];
             }
+//            if (self.fishView)
+//            {
+//                CGRect postion = [self.fishImageView.layer.presentationLayer frame];
+//                CGPoint originalOrigin = postion.origin;//self.fishImageView.frame.origin;
+//                CGSize originalSize = self.fishImageView.frame.size;
+//                
+//                [UIView animateWithDuration:0.5 delay:0 options:0 animations:^{
+//                    self.fishImageView.frame = CGRectMake(originalOrigin.x,
+//                                                          originalOrigin.y,
+//                                                          originalSize.width,
+//                                                          originalSize.height);
+//                } completion:^(BOOL finished) {
+//                    NSLog(@"Did I animate?");
+//                    [self.fishView.layer bts_startWiggling];
+//                    [self swimFishWithDuration:8];
+//                }];
+//            }
 
             return self.fluidView;
         }
@@ -726,8 +746,6 @@
     
         
     CGPoint originalOrigin = self.fishImageView.frame.origin;
-    NSLog(@"self.fishImageView.frame.origin.x = %f", self.fishImageView.frame.origin.x);
-    NSLog(@"self.fishImageView.frame.origin.y = %f", self.fishImageView.frame.origin.y);
     CGSize originalSize = self.fishImageView.frame.size;
     
     [UIView animateKeyframesWithDuration:4
