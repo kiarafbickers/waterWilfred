@@ -430,14 +430,16 @@
             if (!self.fishView)
             {
                 [self initializeFishImage];
-            }
-            if (self.fishView)
-            {
+                
                 CGRect viewBounds = self.fluidView.frame;
                 [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
                 [self.fishView.layer bts_startWiggling];
                 
                 [self swimFishWithDuration:8];
+            }
+            if (self.fishView)
+            {
+
             }
             
             return self.fluidView;
@@ -455,14 +457,13 @@
                 
                 CGRect viewBounds = self.fluidView.frame;
                 [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
-            }
-            if (self.fishView)
-            {
-                CGRect viewBounds = self.fluidView.frame;
-                [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
                 [self.fishView.layer bts_startWiggling];
                 
                 [self swimFishWithDuration:8];
+            }
+            if (self.fishView)
+            {
+
             }
 //            if (self.fishView)
 //            {
@@ -494,14 +495,16 @@
             if (!self.fishView)
             {
                 [self initializeFishImage];
-            }
-            if (self.fishView)
-            {
+                
                 CGRect viewBounds = self.fluidView.frame;
                 [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
                 [self.fishView.layer bts_startWiggling];
                 
                 [self swimFishWithDuration:8];
+            }
+            if (self.fishView)
+            {
+
             }
 
             
@@ -517,14 +520,16 @@
             if (!self.fishView)
             {
                 [self initializeFishImage];
-            }
-            if (self.fishView)
-            {
+                
                 CGRect viewBounds = self.fluidView.frame;
                 [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
                 [self.fishView.layer bts_startWiggling];
                 
                 [self swimFishWithDuration:8];
+            }
+            if (self.fishView)
+            {
+
             }
          
             return self.fluidView;
@@ -539,14 +544,16 @@
             if (!self.fishView)
             {
                 [self initializeFishImage];
-            }
-            if (self.fishView)
-            {
+                
                 CGRect viewBounds = self.fluidView.frame;
                 [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
                 [self.fishView.layer bts_startWiggling];
                 
                 [self swimFishWithDuration:8];
+            }
+            if (self.fishView)
+            {
+
             }
 
             return self.fluidView;
@@ -561,14 +568,16 @@
             if (!self.fishView)
             {
                 [self initializeFishImage];
-            }
-            if (self.fishView)
-            {
+                
                 CGRect viewBounds = self.fluidView.frame;
                 [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
                 [self.fishView.layer bts_startWiggling];
                 
                 [self swimFishWithDuration:8];
+            }
+            if (self.fishView)
+            {
+
             }
 
             return self.fluidView;
@@ -583,14 +592,16 @@
             if (!self.fishView)
             {
                 [self initializeFishImage];
-            }
-            if (self.fishView)
-            {
+                
                 CGRect viewBounds = self.fluidView.frame;
                 [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
                 [self.fishView.layer bts_startWiggling];
                 
                 [self swimFishWithDuration:8];
+            }
+            if (self.fishView)
+            {
+
             }
          
             return self.fluidView;
@@ -605,14 +616,16 @@
             if (!self.fishView)
             {
                 [self initializeFishImage];
-            }
-            if (self.fishView)
-            {
+                
                 CGRect viewBounds = self.fluidView.frame;
                 [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
                 [self.fishView.layer bts_startWiggling];
                 
                 [self swimFishWithDuration:8];
+            }
+            if (self.fishView)
+            {
+
             }
 
             return self.fluidView;
@@ -627,14 +640,16 @@
             if (!self.fishView)
             {
                 [self initializeFishImage];
-            }
-            if (self.fishView)
-            {
+                
                 CGRect viewBounds = self.fluidView.frame;
                 [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
                 [self.fishView.layer bts_startWiggling];
                 
                 [self swimFishWithDuration:8];
+            }
+            if (self.fishView)
+            {
+
             }
 
             return self.fluidView;
@@ -649,14 +664,16 @@
             if (!self.fishView)
             {
                 [self initializeFishImage];
-            }
-            if (self.fishView)
-            {
+                
                 CGRect viewBounds = self.fluidView.frame;
                 [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
                 [self.fishView.layer bts_startWiggling];
                 
                 [self swimFishWithDuration:8];
+            }
+            if (self.fishView)
+            {
+
             }
             
             return self.fluidView;
@@ -671,14 +688,17 @@
             if (!self.fishView)
             {
                 [self initializeFishImage];
-            }
-            if (self.fishView)
-            {
+                
                 CGRect viewBounds = self.fluidView.frame;
                 [self.fishImageView.layer setPosition:CGPointMake(viewBounds.size.width / 2.0, viewBounds.size.height / 1.20 - viewBounds.origin.y)];
                 [self.fishView.layer bts_startWiggling];
                 
                 [self swimFishWithDuration:8];
+            }
+            if (self.fishView)
+            {
+                
+
             }
 
             return self.fluidView;
