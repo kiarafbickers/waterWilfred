@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '092F0162862AE91043C54B1C'
-               BlueprintName = 'ACPReminder'
+               BlueprintIdentifier = '5E5204FDC97318C32E421A79'
+               BlueprintName = 'MKStoreKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libACPReminder.a'>
+               BuildableName = 'libMKStoreKit.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

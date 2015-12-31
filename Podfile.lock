@@ -1,13 +1,16 @@
 PODS:
   - ACPReminder (1.0.2)
   - BAFluidView (0.2.0)
+  - MKStoreKit (4.99)
 
 DEPENDENCIES:
   - ACPReminder (~> 1.0.2)
   - BAFluidView
+  - MKStoreKit
 
 SPEC CHECKSUMS:
   ACPReminder: 67e475fe4d2a67da4c24e453b0a2c9acc53dd2c3
   BAFluidView: 572891753145874416810d03be1c2b542d09e2be
+  MKStoreKit: 748617e5f87ad1e0d3f075155047945248eccefc
 
 COCOAPODS: 0.39.0
