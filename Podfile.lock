@@ -2,15 +2,24 @@ PODS:
   - ACPReminder (1.0.2)
   - BAFluidView (0.2.0)
   - MKStoreKit (4.99)
+  - MZAppearance (1.1.6)
+  - MZFormSheetController (3.1.3):
+    - MZAppearance
+    - MZFormSheetController/Core (= 3.1.3)
+  - MZFormSheetController/Core (3.1.3):
+    - MZAppearance
 
 DEPENDENCIES:
   - ACPReminder (~> 1.0.2)
   - BAFluidView
   - MKStoreKit
+  - MZFormSheetController (~> 3.1)
 
 SPEC CHECKSUMS:
   ACPReminder: 67e475fe4d2a67da4c24e453b0a2c9acc53dd2c3
   BAFluidView: 572891753145874416810d03be1c2b542d09e2be
   MKStoreKit: 748617e5f87ad1e0d3f075155047945248eccefc
+  MZAppearance: 0c06d3fa9cc55142f1da14bc8631fbe8fd6e19d5
+  MZFormSheetController: da2df509805d757e04b052915057d8e1a338b050
 
 COCOAPODS: 0.39.0
