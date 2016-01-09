@@ -101,6 +101,8 @@
 {
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     self.fluidView = [[BAFluidView alloc] initWithFrame:self.view.frame];
+    self.fluidView.frame = CGRectMake(self.view.frame.origin.x - 50, self.view.frame.origin.y, self.view.frame.size.width + 100, self.view.frame.size.height);
+    
     self.fluidView.startElavation = @0.250;
     self.fluidView.fillColor = [UIColor colorWithHex:0x397ebe];
     [self.fluidView keepStationary];
@@ -777,7 +779,7 @@
                                   [UIView addKeyframeWithRelativeStartTime:0.0
                                                           relativeDuration:1/4.0
                                                                 animations:^{
-                                                                    self.fishImageView.frame = CGRectMake(0,
+                                                                    self.fishImageView.frame = CGRectMake(50,
                                                                                                           originalOrigin.y,
                                                                                                           originalSize.width,
                                                                                                           originalSize.height);
@@ -794,7 +796,7 @@
                                   [UIView addKeyframeWithRelativeStartTime:1/4.0
                                                           relativeDuration:2/4.0
                                                                 animations:^{
-                                                                    self.fishImageView.frame = CGRectMake(originalOrigin.x * 2,
+                                                                    self.fishImageView.frame = CGRectMake(originalOrigin.x * 2 - 50,
                                                                                                           originalOrigin.y,
                                                                                                           originalSize.width,
                                                                                                           originalSize.height);
@@ -807,7 +809,7 @@
                                                                     self.fishImageView.layer.transform = CATransform3DMakeScale(1, 1, 1);
                                                                 }];
                                   
-                                  // swim right
+                                  // swim left
                                   [UIView addKeyframeWithRelativeStartTime:3/4.0
                                                           relativeDuration:1/4.0
                                                                 animations:^{
