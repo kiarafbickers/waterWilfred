@@ -235,8 +235,7 @@
 
 
 - (IBAction)clickedMenu:(id)sender {
-    UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"nav"];
-    
+
 
 }
 
