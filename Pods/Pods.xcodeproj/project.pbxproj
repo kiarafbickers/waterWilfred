@@ -7,105 +7,115 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0376F4F2A2AF3ABD35F0F96DB9553F13 /* MZFormSheetBackgroundWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA35E6CFEE8344F81CA7A2445E02D729 /* MZFormSheetBackgroundWindowViewController.m */; };
-		03A92392783457C33E5E1A5CA3DAD79E /* MKStoreKitConfigs.h in Headers */ = {isa = PBXBuildFile; fileRef = 2279D818758C76FFE1B0BDD1C86DC8F8 /* MKStoreKitConfigs.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09C18D5343E2A3E07AB839B776BFE13E /* MKStoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5757B497FF59C53B41A40E67DDD3C156 /* MKStoreKit-dummy.m */; };
-		1375269E23005891D8EC436F7F5FEC72 /* MZFormSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F32A66390E848CC3B3FFAAA002345 /* MZFormSheetController.m */; };
-		1878785BDF0D5380BADC539AB61BA1BB /* MZFormSheetTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E0DB3548112EA65A1479A995A27135 /* MZFormSheetTransition.m */; };
-		23ACDDD4DB97E0FA4BFDF5B9CE73CE9F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C86230D723FE396B84468BBB67ACF3 /* Accelerate.framework */; };
-		268E0C67333AA650343BDC899947FF9F /* UIImage+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7B6C4C42228A951E370B8705D6033 /* UIImage+Additional.m */; };
-		27D4C3A4FF50FE78904F14F735644255 /* BAFluidView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9907C2B5D115CD2C16CBBE2D01A652D3 /* BAFluidView-dummy.m */; };
-		36B60B99E37FE2C5411D4F92050797FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DD7AE19FB724BF2FDE1EF886E2754A /* Foundation.framework */; };
-		3F27CA3AA98E37E90AAFCD27FD354171 /* BAFluidView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D49BE7F30D5ED92183C900B775E2774 /* BAFluidView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F400FA39D57EA315F597946FA40B011 /* NSData+MKBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = A21F11890B8BF5738964DDB1681BEE60 /* NSData+MKBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42E90112BF824A20052594F7B0A8E861 /* BAFluidView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD58D990A4DFEAB4364A62C315800C4C /* BAFluidView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		43A5481DB4832935AFC1B350C47A9C9F /* MZAppearance-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F600EB92B861D63C26D09497291A049D /* MZAppearance-dummy.m */; };
-		442E218E05173EFACAEDD3AA8314A1F3 /* MZFormSheetSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 1798AC48024685F0CA71CB47F6F2BF7C /* MZFormSheetSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BA7CB594B2419A25F8283E19E6C0DB9 /* MKStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCFB347712C10DA86220A7C38942C4B /* MKStoreManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5BA85ECD901CB6E4A5F2506AF703A572 /* UIImage+Additional.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CBA6DB627E99F669E0C38AB894E62D6 /* UIImage+Additional.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6365B0806DF0578E17522150BF7DFF61 /* MZFormSheetController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E52D444B538E93D4126278FA491DAE /* MZFormSheetController-dummy.m */; };
-		648021EF29495B326E5CB2492351304B /* UIViewController+TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AAB24D3EC35794AF6EE68AE59C9BC5 /* UIViewController+TargetViewController.m */; };
-		6AB1676968D001BCD1BDAD0B20E3C3DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DD7AE19FB724BF2FDE1EF886E2754A /* Foundation.framework */; };
-		6C9AABEC667FDD55786117634B27F5E2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6873ED611E45139300936922E10217CE /* Security.framework */; };
-		79A30D3516A1D41068D04223EBFD6780 /* MKSKProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B9372A4116A30195B285B659B8B326 /* MKSKProduct.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7A6CFC4F6D55184560500C24050DF3D1 /* MKSKProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 705076737D154F78766FF66E6677E895 /* MKSKProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C3346B992A4ABBBB123F2235E30BB63 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F196D111899D5284642F3332D6BD1EBC /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7C70954A82A59B64E6B2EAA0CC80840E /* UIViewController+TargetViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3050BD589AB2F38BC4EAFF6EB9FA12C5 /* UIViewController+TargetViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F3BBF6FCA129E393ADA58BA9C4098EF /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A5FC0601B724DF1AFE954237DAA288 /* MZAppearance.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8300663FBE498D9436FB66E2B94066F4 /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 60294E5A24A7E8B2B25783D5AFDA1825 /* NSData+MKBase64.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		86DC13A25A7963C1F54EC711828E8D00 /* MZMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7DD90B9A4EA118505829ABF25D9F5C /* MZMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9057B6CA66B9957039074EEE2B5977E8 /* MKSKSubscriptionProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C1F88E3E3C4A8F617C62D8B82A75B /* MKSKSubscriptionProduct.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A2AB549C2578E31797E39751251D5DE4 /* MKSKSubscriptionProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E4BBC565500EFAF47C3892A1810C196 /* MKSKSubscriptionProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9899C4011EEEB3D2E2D392FCFDB977A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DD7AE19FB724BF2FDE1EF886E2754A /* Foundation.framework */; };
-		A99472B61009D5B981797F98E755C346 /* MZFormSheetBackgroundWindowViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B8D67226CB4A6A9862B3FE2312DE0BA /* MZFormSheetBackgroundWindowViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC4EA54640C8165BF34947F1B5F300F0 /* ACPReminder.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E015ABC4237B4DB91805158DB3273C /* ACPReminder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B1561245C554710E0EC8D8C3187D84DB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B4129F51782CA62D25D2C7EF629CF6 /* QuartzCore.framework */; };
-		B2CB521062E34E25C1D3D93B7E12EC2A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B4129F51782CA62D25D2C7EF629CF6 /* QuartzCore.framework */; };
-		B65953EE800900385A832E99A4BBF217 /* NSInvocation+Copy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6668C285971ED0899868278B3B09DA0D /* NSInvocation+Copy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6E142DF6E7C5EE40F5E9846DE46388B /* MZFormSheetController.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF13233BD2829789D5D58C027002091 /* MZFormSheetController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB416F46760A56E95648C95C95A3F9B7 /* SFHFKeychainUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B32A88AD6E6BEE0D41507A5DEC9870 /* SFHFKeychainUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB7163282492E0ABF5B95CCF7D93B9D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DD7AE19FB724BF2FDE1EF886E2754A /* Foundation.framework */; };
-		C0CE36BE063B17BF9D2EAFFD93D099D8 /* MZFormSheetTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 78D5FBE3DEEDD9C470026537070D729E /* MZFormSheetTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C75EB5336D990200F533B7F6D67BDC58 /* MZAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = FE0B6B7E2863F547E2D26D3C19A14AD8 /* MZAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C819552B3292C0D52E624D7C603E4505 /* UIColor+ColorWithHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F4F1A5BE5297E1A1021FE7513698ED3 /* UIColor+ColorWithHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9876C56AD67B078E9C2E01E2AC5BEB5 /* Pods-WaterWilfred-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272AE5BCCC0CEDDA6E1939255E01EB0 /* Pods-WaterWilfred-dummy.m */; };
-		CCB603DCDAEAB48B15A7A07B23CA1A5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D417B8E834769F86C1B3A30C77D10DC2 /* UIKit.framework */; };
-		D0029135ECEF31BE2592DFAB461EE5B5 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = CF2DC42658882F8987960FCBFF6DF843 /* Constants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8A39922A7AD1BD9A86526982BC57B7E /* MZFormSheetSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC97FDB05585D37D2BF29129D384097 /* MZFormSheetSegue.m */; };
-		DB936BB07935F546DB103F30AC73705A /* MZFormSheetBackgroundWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E9FD9683AB4B20D77A4ECE415C8FB19 /* MZFormSheetBackgroundWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB97598CA89340A64E7E56EAC6B26BDC /* UIColor+ColorWithHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F858B047197C3B7B137C84FD51DA727 /* UIColor+ColorWithHex.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DC5BE6CDB9E1A1BDEEAAFB37501F06AC /* ACPReminder.h in Headers */ = {isa = PBXBuildFile; fileRef = 209EB9009EBF81D04CAD623D55DE2E74 /* ACPReminder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E02E9387B84549F26A05DE9F5C1A3517 /* MZFormSheetBackgroundWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E5C08E34A109C8ABB6B8F85570B5905 /* MZFormSheetBackgroundWindow.m */; };
-		E03948E393994BED37CB448037E19CFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DD7AE19FB724BF2FDE1EF886E2754A /* Foundation.framework */; };
-		E1877863D977CE730CEB2B90E595702C /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13781C6597DCB55F5725D4B326D24493 /* NSInvocation+Copy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		EA73A3BCAD25CC6F56E964F9988673C7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CEE3A6F8E3C102298BDF6439538C70 /* StoreKit.framework */; };
-		F12FCF6F415D6CA7C91CD734EBA593F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DD7AE19FB724BF2FDE1EF886E2754A /* Foundation.framework */; };
-		F3CA5242C8C5CD6D488921D377FFA8AA /* ACPReminder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C15B8D78120490E81A0379287FBA59 /* ACPReminder-dummy.m */; };
-		FB7ED845AF4BDEC3DDD22A73120F1BE3 /* MKStoreManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 961F00FF400DE640E35EFCF8767CDECB /* MKStoreManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03A174A2CCCEE89449722355245C5FDF /* MZTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 14322440A82CD31D6C656C79943DC8E0 /* MZTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03A92392783457C33E5E1A5CA3DAD79E /* MKStoreKitConfigs.h in Headers */ = {isa = PBXBuildFile; fileRef = 87FB7D2DABF318D43B77EDFEDAB7E740 /* MKStoreKitConfigs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09C18D5343E2A3E07AB839B776BFE13E /* MKStoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6E5524393101FA2DB5793B9A8F3F10 /* MKStoreKit-dummy.m */; };
+		27D4C3A4FF50FE78904F14F735644255 /* BAFluidView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5606560CB567AF4C5B0BF2FF8E346 /* BAFluidView-dummy.m */; };
+		2AC7D8D1143297AB58F54668A11AE82E /* MZFormSheetPresentationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC95DCF26B0F38E48A0A2191A62E2D9 /* MZFormSheetPresentationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31EE2E7C632324927726C452A3CBB93B /* MZBlurEffectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = AE66968D14DDF141403850BC40B9E86A /* MZBlurEffectAdapter.m */; };
+		3F27CA3AA98E37E90AAFCD27FD354171 /* BAFluidView.h in Headers */ = {isa = PBXBuildFile; fileRef = A0868821817712ABD9BEF0D84BAAF4ED /* BAFluidView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F400FA39D57EA315F597946FA40B011 /* NSData+MKBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A38306A17EC89B0C3D5D7C28D3B51E6 /* NSData+MKBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42E90112BF824A20052594F7B0A8E861 /* BAFluidView.m in Sources */ = {isa = PBXBuildFile; fileRef = C78C5E57C99A170D9A43D1E13B5F0ED2 /* BAFluidView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		433D5284505942BF4A95E37CDC08884C /* MZBlurEffectAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC6788943B792A178BB81E51DFA4417 /* MZBlurEffectAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43A5481DB4832935AFC1B350C47A9C9F /* MZAppearance-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9776CC108C7BEB6552347382B969FC /* MZAppearance-dummy.m */; };
+		4445AD102C8A9B88C3384782813F670D /* MZTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6319FB9F0CFC6E5F13C4F59C78ABAD /* MZTransition.m */; };
+		4A43CA422ADACE81A54DDACDE5F731AC /* MZFormSheetPresentationViewControllerAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = E6614CF84819E4BB2428063D6A409FAB /* MZFormSheetPresentationViewControllerAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BA7CB594B2419A25F8283E19E6C0DB9 /* MKStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28937AEDCB163C11999FA2B2D219C6B0 /* MKStoreManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4CF34AB79555159D0359630C8F703217 /* Pods-WaterWilfred-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272AE5BCCC0CEDDA6E1939255E01EB0 /* Pods-WaterWilfred-dummy.m */; };
+		57E75C807BD7A132449646A786D1FD35 /* MZFormSheetPresentationViewControllerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D7017299741B6300A498FCD0FACB79 /* MZFormSheetPresentationViewControllerSegue.m */; };
+		586FDF401CCD286AC32437E94C5CC374 /* MZFormSheetPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8826F2470EBD4BB17625236700C8C2 /* MZFormSheetPresentationViewController.m */; };
+		59068FCCD9CFF65D885ADEB8B74365B5 /* MZFormSheetContentSizingNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CC28DD49068DEF9E8686EDC95C10B79 /* MZFormSheetContentSizingNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A080B6F0F22C377542A7628E65393BE /* MZFormSheetContentSizingNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6865FF9563343531800102B55B99FE9B /* MZFormSheetContentSizingNavigationController.m */; };
+		6A1B2A1C885AFF2CEB8F4D6A38D80116 /* MZFormSheetPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8EA9A5495AD628A66A8A6900B00C11 /* MZFormSheetPresentationController.m */; };
+		6C9AABEC667FDD55786117634B27F5E2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08E1093F63CF80560DFAC3244BF2B44 /* Security.framework */; };
+		78395DD12A0D2AD654A5ABD2D665381F /* UIViewController+TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDA0F6545BAD67EA22934A8C17BE16B /* UIViewController+TargetViewController.m */; };
+		79A30D3516A1D41068D04223EBFD6780 /* MKSKProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6125FC87B880CE242102F5F9847050 /* MKSKProduct.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7A6CFC4F6D55184560500C24050DF3D1 /* MKSKProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C0521B3044A7BF2A422037C1AADB962 /* MKSKProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C3346B992A4ABBBB123F2235E30BB63 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6C0B83B588D2298628C78BBA92279F /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7F3BBF6FCA129E393ADA58BA9C4098EF /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2281F3DAB7BEBB107636F747E3B2A7 /* MZAppearance.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		809B6E0DA1C7469221B84AA621503B42 /* MZFormSheetPresentationViewControllerInteractiveAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8407FC55DC96D6E75B76566E3D7190BF /* MZFormSheetPresentationViewControllerInteractiveAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8300663FBE498D9436FB66E2B94066F4 /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BB29E88FA2DDE6A05249203B5207B /* NSData+MKBase64.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9057B6CA66B9957039074EEE2B5977E8 /* MKSKSubscriptionProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DEE4D944059CD1E07E856B23F94490 /* MKSKSubscriptionProduct.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		990F67DAF9EAC773B95BDEB74BD49DC1 /* MZMethodSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = B7BC8D761DE83A426B4E97D3CD0813B3 /* MZMethodSwizzler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A29BDB8F539360C750BC50F1A04BAB0 /* MZMethodSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F53CB8FFA15263C8FE6C8A7F23B92EC /* MZMethodSwizzler.m */; };
+		A2AB549C2578E31797E39751251D5DE4 /* MKSKSubscriptionProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FB36532B12829D62C01F4A2DB3B12E /* MKSKSubscriptionProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A32DB2DDD53C0851504006E414C81B39 /* MZFormSheetPresentationController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A74FB0A89AD56336CA50C766086E247 /* MZFormSheetPresentationController-dummy.m */; };
+		A9899C4011EEEB3D2E2D392FCFDB977A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18122D9CD55A7FD6EF2FA88460DFDFE8 /* Foundation.framework */; };
+		AAD971208BB2F52BE245B512A9899371 /* MZFormSheetPresentationViewControllerSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 571368CD492911BC3D20408F7991CAAD /* MZFormSheetPresentationViewControllerSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB4A470E76D6083C9DDE543A1FE7F250 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6210868525E8FDC39688F76241CC23C /* QuartzCore.framework */; };
+		AC4EA54640C8165BF34947F1B5F300F0 /* ACPReminder.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2B2D62FEAB75268F3E41F84FC6E7FC /* ACPReminder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B1561245C554710E0EC8D8C3187D84DB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6210868525E8FDC39688F76241CC23C /* QuartzCore.framework */; };
+		B2E42371763232F17C083B0C2CE2CE96 /* MZFormSheetContentSizingNavigationControllerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = A0548A6F6F7C9164842940A6A506A38F /* MZFormSheetContentSizingNavigationControllerAnimator.m */; };
+		B65953EE800900385A832E99A4BBF217 /* NSInvocation+Copy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFEBC5BC3D537A50E20B60A15DEDF7A /* NSInvocation+Copy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB416F46760A56E95648C95C95A3F9B7 /* SFHFKeychainUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DD4629503874AD6724AC7353725C5A40 /* SFHFKeychainUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB7163282492E0ABF5B95CCF7D93B9D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18122D9CD55A7FD6EF2FA88460DFDFE8 /* Foundation.framework */; };
+		BDB91254CDF09743E5985F87D8DE5DA7 /* MZFormSheetPresentationController Swift Example-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 509ECF56B006205C249D43250202638A /* MZFormSheetPresentationController Swift Example-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C58144267E03E94668386837B0BA285B /* MZFormSheetPresentationViewControllerInteractiveAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9C2D1F0FB2310AF0376EFE470D14FB /* MZFormSheetPresentationViewControllerInteractiveAnimator.m */; };
+		C75EB5336D990200F533B7F6D67BDC58 /* MZAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BD197398AEE2687D7D50245F9A134C2 /* MZAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C819552B3292C0D52E624D7C603E4505 /* UIColor+ColorWithHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 78FD66DDB260F069B3347C7805D449D3 /* UIColor+ColorWithHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8207D13DAB0D979FE703ED84DBB7FAA /* MZFormSheetContentSizingNavigationControllerAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 85CC865A89AAA7CC2BE842B5562DB282 /* MZFormSheetContentSizingNavigationControllerAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCB603DCDAEAB48B15A7A07B23CA1A5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7AD3106BE6968371AE5060DD812E5B9 /* UIKit.framework */; };
+		D0029135ECEF31BE2592DFAB461EE5B5 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = F92283D38910BE00A29E1E195B8286EE /* Constants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D753314D32DD19E81BCCBFB09633310A /* MZFormSheetPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E3574655E1DEE63A63F223068FF8C9F /* MZFormSheetPresentationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB97598CA89340A64E7E56EAC6B26BDC /* UIColor+ColorWithHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C98975039C348C1ED7C0EE5D120CBC0 /* UIColor+ColorWithHex.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DBF08F11CD26DDC2BAC95A97EE8932C4 /* MZFormSheetPresentationContentSizing.h in Headers */ = {isa = PBXBuildFile; fileRef = 254943887A0D5421259535A4BA68093B /* MZFormSheetPresentationContentSizing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC5BE6CDB9E1A1BDEEAAFB37501F06AC /* ACPReminder.h in Headers */ = {isa = PBXBuildFile; fileRef = 207A9B9D81A880E171E501E524A3180E /* ACPReminder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE7655E5A62B99289931F1FB977C7B25 /* UIViewController+TargetViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 958127D6CA34E3700B160AF4CFD256FA /* UIViewController+TargetViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E03948E393994BED37CB448037E19CFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18122D9CD55A7FD6EF2FA88460DFDFE8 /* Foundation.framework */; };
+		E0B4C8FFC284F930F9833578EE03370B /* MZFormSheetPresentationViewControllerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8425BBA9CB281FFE3C1EC3C30AE3A /* MZFormSheetPresentationViewControllerAnimator.m */; };
+		E1877863D977CE730CEB2B90E595702C /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B60DAB2EE2F8DFF996E2E6744ABE6B /* NSInvocation+Copy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E3411F89F8E4B7E575016C3AA8D1157B /* MZFormSheetPresentationViewControllerInteractiveTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FF6977403429501F0D8036BBB5D7CB /* MZFormSheetPresentationViewControllerInteractiveTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA73A3BCAD25CC6F56E964F9988673C7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 858BF2B1A372BE2C01867420F34D0FBA /* StoreKit.framework */; };
+		EEA86079289A98F53B2AA2EE88FFB1B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18122D9CD55A7FD6EF2FA88460DFDFE8 /* Foundation.framework */; };
+		F037381A2D9768F9DC77FEAD554725CD /* MZFormSheetPresentationViewControllerAnimatedTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = B07403D65EEC0C40CC7AB84BF824F571 /* MZFormSheetPresentationViewControllerAnimatedTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F12FCF6F415D6CA7C91CD734EBA593F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18122D9CD55A7FD6EF2FA88460DFDFE8 /* Foundation.framework */; };
+		F3CA5242C8C5CD6D488921D377FFA8AA /* ACPReminder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 666A3044E4F9BF00B87D13153DD19A7B /* ACPReminder-dummy.m */; };
+		F63B1116D2D953BED5F8F71B01C8C0A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18122D9CD55A7FD6EF2FA88460DFDFE8 /* Foundation.framework */; };
+		FB7ED845AF4BDEC3DDD22A73120F1BE3 /* MKStoreManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EC2B80177E0B97F7E06E7DBA363D7C1B /* MKStoreManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2E07EF2907A9B9B71F0540EC0F2AC9D4 /* PBXContainerItemProxy */ = {
+		00A7FA71D53B7B36A3905615EFDD3D03 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5F1D75D12B507347E43A6633CDD15A32;
 			remoteInfo = BAFluidView;
 		};
-		83EC2CBA4C4C278D4FF131A8F336C8FC /* PBXContainerItemProxy */ = {
+		22DFF7BAAF7FBD0DB15BDE3FB0BCD50A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1DAC2FF166EBB39D93C76C245CCD170C;
 			remoteInfo = MZAppearance;
 		};
-		9B1C805C984A64F0645B226757DA87C9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A6DB7A94477A4B25220873FB3B139E4;
-			remoteInfo = MZFormSheetController;
-		};
-		B3EAEA1C959A9855F2BE0FC748D35228 /* PBXContainerItemProxy */ = {
+		41F87B94778F1F44E938978784D5A825 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B3A8239ABA382A247836CD99036B1705;
 			remoteInfo = MKStoreKit;
 		};
-		BB0293FA5805FDE4E5F128E2442B58CF /* PBXContainerItemProxy */ = {
+		5919B40D2AA2FED8A14DA88D0AAF313E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE9C772F9310A9C7BF9051B69874F9A7;
+			remoteInfo = ACPReminder;
+		};
+		BAD6CCB9CFC2F495541297DF33A716E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1DAC2FF166EBB39D93C76C245CCD170C;
 			remoteInfo = MZAppearance;
 		};
-		F5447F5C0460CACD6B45FAFB80D2F3BD /* PBXContainerItemProxy */ = {
+		C6AE49D2E90019193FFD45398268D3D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BE9C772F9310A9C7BF9051B69874F9A7;
-			remoteInfo = ACPReminder;
+			remoteGlobalIDString = 34440D436B6519A357FFA66228EB4C96;
+			remoteInfo = MZFormSheetPresentationController;
 		};
 		F9F14B0146D1204689492E9352E2CCD8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -117,96 +127,106 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00BBB942427D8EE3D78E22A40A65D20A /* libPods-WaterWilfred.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WaterWilfred.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0272AE5BCCC0CEDDA6E1939255E01EB0 /* Pods-WaterWilfred-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WaterWilfred-dummy.m"; sourceTree = "<group>"; };
-		07AA0366D0635881930EAA72ED450EAB /* MZAppearance.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZAppearance.xcconfig; sourceTree = "<group>"; };
-		0DC97FDB05585D37D2BF29129D384097 /* MZFormSheetSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetSegue.m; path = MZFormSheetController/MZFormSheetSegue.m; sourceTree = "<group>"; };
-		0DE692EB5C1F6DBF3273C8E910C88009 /* MZFormSheetController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZFormSheetController-prefix.pch"; sourceTree = "<group>"; };
-		0E5C08E34A109C8ABB6B8F85570B5905 /* MZFormSheetBackgroundWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetBackgroundWindow.m; path = MZFormSheetController/MZFormSheetBackgroundWindow.m; sourceTree = "<group>"; };
-		11E015ABC4237B4DB91805158DB3273C /* ACPReminder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACPReminder.m; path = ACPReminder/ACPReminder.m; sourceTree = "<group>"; };
-		13781C6597DCB55F5725D4B326D24493 /* NSInvocation+Copy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+Copy.m"; path = "MZAppearance/NSInvocation+Copy.m"; sourceTree = "<group>"; };
-		1798AC48024685F0CA71CB47F6F2BF7C /* MZFormSheetSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetSegue.h; path = MZFormSheetController/MZFormSheetSegue.h; sourceTree = "<group>"; };
-		17B4129F51782CA62D25D2C7EF629CF6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		17E52D444B538E93D4126278FA491DAE /* MZFormSheetController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZFormSheetController-dummy.m"; sourceTree = "<group>"; };
-		209EB9009EBF81D04CAD623D55DE2E74 /* ACPReminder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPReminder.h; path = ACPReminder/ACPReminder.h; sourceTree = "<group>"; };
-		2279D818758C76FFE1B0BDD1C86DC8F8 /* MKStoreKitConfigs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MKStoreKitConfigs.h; sourceTree = "<group>"; };
-		2A5C1F88E3E3C4A8F617C62D8B82A75B /* MKSKSubscriptionProduct.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MKSKSubscriptionProduct.m; sourceTree = "<group>"; };
-		2B8D67226CB4A6A9862B3FE2312DE0BA /* MZFormSheetBackgroundWindowViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetBackgroundWindowViewController.h; path = MZFormSheetController/MZFormSheetBackgroundWindowViewController.h; sourceTree = "<group>"; };
-		2CBA6DB627E99F669E0C38AB894E62D6 /* UIImage+Additional.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Additional.h"; path = "MZFormSheetController/UIImage+Additional.h"; sourceTree = "<group>"; };
-		2CF121670CFBAE0DBE0E7AEC9A756B53 /* libBAFluidView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBAFluidView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3050BD589AB2F38BC4EAFF6EB9FA12C5 /* UIViewController+TargetViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TargetViewController.h"; path = "MZFormSheetController/UIViewController+TargetViewController.h"; sourceTree = "<group>"; };
-		33A4B236AA4A813CF7188E2830066426 /* libMZFormSheetController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMZFormSheetController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		34DD7AE19FB724BF2FDE1EF886E2754A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		37622F983394E50CE257B44D036F2FA6 /* MZFormSheetController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZFormSheetController.xcconfig; sourceTree = "<group>"; };
-		3B74B77C349EBCDE9A31463213B6520D /* libACPReminder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libACPReminder.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		45B32A88AD6E6BEE0D41507A5DEC9870 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SFHFKeychainUtils.h; path = Externals/SFHFKeychainUtils.h; sourceTree = "<group>"; };
-		45CEE3A6F8E3C102298BDF6439538C70 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
-		47617501F6D2881639926D31766A9D15 /* MZAppearance-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZAppearance-prefix.pch"; sourceTree = "<group>"; };
-		4B9F32A66390E848CC3B3FFAAA002345 /* MZFormSheetController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetController.m; path = MZFormSheetController/MZFormSheetController.m; sourceTree = "<group>"; };
-		5303FFE0C768AD984D666EDE6E07219E /* BAFluidView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BAFluidView-prefix.pch"; sourceTree = "<group>"; };
-		5757B497FF59C53B41A40E67DDD3C156 /* MKStoreKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKStoreKit-dummy.m"; sourceTree = "<group>"; };
-		57FF1C02D770D119E91FDB6E8C5563D6 /* MKStoreKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKStoreKit-prefix.pch"; sourceTree = "<group>"; };
+		0B6C0B83B588D2298628C78BBA92279F /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SFHFKeychainUtils.m; path = Externals/SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		0BE72F9FCCFCFE52C461965312A588BB /* libBAFluidView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBAFluidView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C4BB29E88FA2DDE6A05249203B5207B /* NSData+MKBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+MKBase64.m"; path = "Externals/NSData+MKBase64.m"; sourceTree = "<group>"; };
+		14322440A82CD31D6C656C79943DC8E0 /* MZTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZTransition.h; path = MZFormSheetPresentationController/MZTransition.h; sourceTree = "<group>"; };
+		15DEE4D944059CD1E07E856B23F94490 /* MKSKSubscriptionProduct.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MKSKSubscriptionProduct.m; sourceTree = "<group>"; };
+		16C1109EC5535EF9D775DBE2F358A184 /* BAFluidView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BAFluidView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C8425BBA9CB281FFE3C1EC3C30AE3A /* MZFormSheetPresentationViewControllerAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationViewControllerAnimator.m; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerAnimator.m; sourceTree = "<group>"; };
+		18122D9CD55A7FD6EF2FA88460DFDFE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1B8B8C109D658DB5EF50D05A87ECAA2D /* MKStoreKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKStoreKit-prefix.pch"; sourceTree = "<group>"; };
+		1CC28DD49068DEF9E8686EDC95C10B79 /* MZFormSheetContentSizingNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetContentSizingNavigationController.h; path = MZFormSheetPresentationController/MZFormSheetContentSizingNavigationController.h; sourceTree = "<group>"; };
+		207A9B9D81A880E171E501E524A3180E /* ACPReminder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPReminder.h; path = ACPReminder/ACPReminder.h; sourceTree = "<group>"; };
+		254943887A0D5421259535A4BA68093B /* MZFormSheetPresentationContentSizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationContentSizing.h; path = MZFormSheetPresentationController/MZFormSheetPresentationContentSizing.h; sourceTree = "<group>"; };
+		2671A592CFAE799547ED057DD851C23B /* MZFormSheetPresentationController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZFormSheetPresentationController-prefix.pch"; sourceTree = "<group>"; };
+		28937AEDCB163C11999FA2B2D219C6B0 /* MKStoreManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MKStoreManager.m; sourceTree = "<group>"; };
+		3E3574655E1DEE63A63F223068FF8C9F /* MZFormSheetPresentationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationController.h; path = MZFormSheetPresentationController/MZFormSheetPresentationController.h; sourceTree = "<group>"; };
+		490DE92D8B1A6D6995E03C43D3BD981F /* BAFluidView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BAFluidView-prefix.pch"; sourceTree = "<group>"; };
+		4C0521B3044A7BF2A422037C1AADB962 /* MKSKProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MKSKProduct.h; sourceTree = "<group>"; };
+		4D6125FC87B880CE242102F5F9847050 /* MKSKProduct.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MKSKProduct.m; sourceTree = "<group>"; };
+		509ECF56B006205C249D43250202638A /* MZFormSheetPresentationController Swift Example-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MZFormSheetPresentationController Swift Example-Bridging-Header.h"; path = "MZFormSheetPresentationController/MZFormSheetPresentationController Swift Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		571368CD492911BC3D20408F7991CAAD /* MZFormSheetPresentationViewControllerSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewControllerSegue.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerSegue.h; sourceTree = "<group>"; };
+		5A74FB0A89AD56336CA50C766086E247 /* MZFormSheetPresentationController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZFormSheetPresentationController-dummy.m"; sourceTree = "<group>"; };
+		5AF46008C8DAF6D9A76D0A719B3C93F4 /* BAFluidView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BAFluidView.xcconfig; sourceTree = "<group>"; };
 		5B795A6480C8523E8F01D7D981D0B070 /* Pods-WaterWilfred.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterWilfred.debug.xcconfig"; sourceTree = "<group>"; };
-		5F858B047197C3B7B137C84FD51DA727 /* UIColor+ColorWithHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ColorWithHex.m"; path = "Pod/Classes/UIColor+ColorWithHex.m"; sourceTree = "<group>"; };
-		60294E5A24A7E8B2B25783D5AFDA1825 /* NSData+MKBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+MKBase64.m"; path = "Externals/NSData+MKBase64.m"; sourceTree = "<group>"; };
-		6275F57B652FD634405B370BAECC03D1 /* BAFluidView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BAFluidView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		627D280DDD3A7801B451CCC6010D0910 /* MKStoreKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKStoreKit.xcconfig; sourceTree = "<group>"; };
-		636C80E020090DC4C2A131AFDF5FCDD1 /* BAFluidView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BAFluidView.xcconfig; sourceTree = "<group>"; };
-		6668C285971ED0899868278B3B09DA0D /* NSInvocation+Copy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+Copy.h"; path = "MZAppearance/NSInvocation+Copy.h"; sourceTree = "<group>"; };
-		6873ED611E45139300936922E10217CE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		6D49BE7F30D5ED92183C900B775E2774 /* BAFluidView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAFluidView.h; path = Pod/Classes/BAFluidView.h; sourceTree = "<group>"; };
-		6E9FD9683AB4B20D77A4ECE415C8FB19 /* MZFormSheetBackgroundWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetBackgroundWindow.h; path = MZFormSheetController/MZFormSheetBackgroundWindow.h; sourceTree = "<group>"; };
-		705076737D154F78766FF66E6677E895 /* MKSKProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MKSKProduct.h; sourceTree = "<group>"; };
-		78D5FBE3DEEDD9C470026537070D729E /* MZFormSheetTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetTransition.h; path = MZFormSheetController/MZFormSheetTransition.h; sourceTree = "<group>"; };
-		7DCFB347712C10DA86220A7C38942C4B /* MKStoreManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MKStoreManager.m; sourceTree = "<group>"; };
-		7E4BBC565500EFAF47C3892A1810C196 /* MKSKSubscriptionProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MKSKSubscriptionProduct.h; sourceTree = "<group>"; };
-		7F4F1A5BE5297E1A1021FE7513698ED3 /* UIColor+ColorWithHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ColorWithHex.h"; path = "Pod/Classes/UIColor+ColorWithHex.h"; sourceTree = "<group>"; };
-		8A21220132610B0EF972785CE7450DCD /* ACPReminder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPReminder-prefix.pch"; sourceTree = "<group>"; };
-		8BE7B6C4C42228A951E370B8705D6033 /* UIImage+Additional.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Additional.m"; path = "MZFormSheetController/UIImage+Additional.m"; sourceTree = "<group>"; };
-		8F144E1579D8C4AFA1A4F9EB8E7BBEDE /* ACPReminder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPReminder.xcconfig; sourceTree = "<group>"; };
+		5BD197398AEE2687D7D50245F9A134C2 /* MZAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZAppearance.h; path = MZAppearance/MZAppearance.h; sourceTree = "<group>"; };
+		5E6E5524393101FA2DB5793B9A8F3F10 /* MKStoreKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKStoreKit-dummy.m"; sourceTree = "<group>"; };
+		5F2281F3DAB7BEBB107636F747E3B2A7 /* MZAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZAppearance.m; path = MZAppearance/MZAppearance.m; sourceTree = "<group>"; };
+		62723CAA8722532C1896281E0632A7CE /* libMZAppearance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMZAppearance.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		666A3044E4F9BF00B87D13153DD19A7B /* ACPReminder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPReminder-dummy.m"; sourceTree = "<group>"; };
+		6865FF9563343531800102B55B99FE9B /* MZFormSheetContentSizingNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetContentSizingNavigationController.m; path = MZFormSheetPresentationController/MZFormSheetContentSizingNavigationController.m; sourceTree = "<group>"; };
+		6A38306A17EC89B0C3D5D7C28D3B51E6 /* NSData+MKBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+MKBase64.h"; path = "Externals/NSData+MKBase64.h"; sourceTree = "<group>"; };
+		6F53CB8FFA15263C8FE6C8A7F23B92EC /* MZMethodSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZMethodSwizzler.m; path = MZFormSheetPresentationController/MZMethodSwizzler.m; sourceTree = "<group>"; };
+		78FD66DDB260F069B3347C7805D449D3 /* UIColor+ColorWithHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ColorWithHex.h"; path = "Pod/Classes/UIColor+ColorWithHex.h"; sourceTree = "<group>"; };
+		7FFEBC5BC3D537A50E20B60A15DEDF7A /* NSInvocation+Copy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+Copy.h"; path = "MZAppearance/NSInvocation+Copy.h"; sourceTree = "<group>"; };
+		8407FC55DC96D6E75B76566E3D7190BF /* MZFormSheetPresentationViewControllerInteractiveAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewControllerInteractiveAnimator.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerInteractiveAnimator.h; sourceTree = "<group>"; };
+		8511E35E284344388F1E6ED34C2A6379 /* MZAppearance-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZAppearance-prefix.pch"; sourceTree = "<group>"; };
+		858BF2B1A372BE2C01867420F34D0FBA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		85CC865A89AAA7CC2BE842B5562DB282 /* MZFormSheetContentSizingNavigationControllerAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetContentSizingNavigationControllerAnimator.h; path = MZFormSheetPresentationController/MZFormSheetContentSizingNavigationControllerAnimator.h; sourceTree = "<group>"; };
+		87FB7D2DABF318D43B77EDFEDAB7E740 /* MKStoreKitConfigs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MKStoreKitConfigs.h; sourceTree = "<group>"; };
+		8C98975039C348C1ED7C0EE5D120CBC0 /* UIColor+ColorWithHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ColorWithHex.m"; path = "Pod/Classes/UIColor+ColorWithHex.m"; sourceTree = "<group>"; };
+		905F931AA75A00B49D4C250B06DA75AE /* MZAppearance.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZAppearance.xcconfig; sourceTree = "<group>"; };
+		90E26343128B9A025E1E1C0EC84D35FF /* ACPReminder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPReminder-prefix.pch"; sourceTree = "<group>"; };
+		915CF20B9A9DBED955D0A99759C46FF9 /* MZFormSheetPresentationController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZFormSheetPresentationController.xcconfig; sourceTree = "<group>"; };
+		93575505459D8579289596098377571B /* libMZFormSheetPresentationController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMZFormSheetPresentationController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9377946FD2AD3BA8BFE2A19969F64732 /* Pods-WaterWilfred-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WaterWilfred-resources.sh"; sourceTree = "<group>"; };
-		961F00FF400DE640E35EFCF8767CDECB /* MKStoreManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MKStoreManager.h; sourceTree = "<group>"; };
-		97E0DB3548112EA65A1479A995A27135 /* MZFormSheetTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetTransition.m; path = MZFormSheetController/MZFormSheetTransition.m; sourceTree = "<group>"; };
-		9907C2B5D115CD2C16CBBE2D01A652D3 /* BAFluidView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BAFluidView-dummy.m"; sourceTree = "<group>"; };
-		9D7DD90B9A4EA118505829ABF25D9F5C /* MZMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZMacro.h; path = MZFormSheetController/MZMacro.h; sourceTree = "<group>"; };
-		A21F11890B8BF5738964DDB1681BEE60 /* NSData+MKBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+MKBase64.h"; path = "Externals/NSData+MKBase64.h"; sourceTree = "<group>"; };
+		958127D6CA34E3700B160AF4CFD256FA /* UIViewController+TargetViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TargetViewController.h"; path = "MZFormSheetPresentationController/UIViewController+TargetViewController.h"; sourceTree = "<group>"; };
+		97D7017299741B6300A498FCD0FACB79 /* MZFormSheetPresentationViewControllerSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationViewControllerSegue.m; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerSegue.m; sourceTree = "<group>"; };
+		9E9776CC108C7BEB6552347382B969FC /* MZAppearance-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZAppearance-dummy.m"; sourceTree = "<group>"; };
+		9FC6788943B792A178BB81E51DFA4417 /* MZBlurEffectAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZBlurEffectAdapter.h; path = MZFormSheetPresentationController/MZBlurEffectAdapter.h; sourceTree = "<group>"; };
+		A0548A6F6F7C9164842940A6A506A38F /* MZFormSheetContentSizingNavigationControllerAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetContentSizingNavigationControllerAnimator.m; path = MZFormSheetPresentationController/MZFormSheetContentSizingNavigationControllerAnimator.m; sourceTree = "<group>"; };
+		A0868821817712ABD9BEF0D84BAAF4ED /* BAFluidView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAFluidView.h; path = Pod/Classes/BAFluidView.h; sourceTree = "<group>"; };
+		AC3D78C08ECB225761474C2D9737A2F4 /* ACPReminder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPReminder.xcconfig; sourceTree = "<group>"; };
+		AE66968D14DDF141403850BC40B9E86A /* MZBlurEffectAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZBlurEffectAdapter.m; path = MZFormSheetPresentationController/MZBlurEffectAdapter.m; sourceTree = "<group>"; };
+		B07403D65EEC0C40CC7AB84BF824F571 /* MZFormSheetPresentationViewControllerAnimatedTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewControllerAnimatedTransitioning.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerAnimatedTransitioning.h; sourceTree = "<group>"; };
+		B310E1A450435E9502BFA389835797AC /* MKStoreKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKStoreKit.xcconfig; sourceTree = "<group>"; };
+		B6210868525E8FDC39688F76241CC23C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		B7AD3106BE6968371AE5060DD812E5B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B7BC8D761DE83A426B4E97D3CD0813B3 /* MZMethodSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZMethodSwizzler.h; path = MZFormSheetPresentationController/MZMethodSwizzler.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BD58D990A4DFEAB4364A62C315800C4C /* BAFluidView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BAFluidView.m; path = Pod/Classes/BAFluidView.m; sourceTree = "<group>"; };
-		C0B9372A4116A30195B285B659B8B326 /* MKSKProduct.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MKSKProduct.m; sourceTree = "<group>"; };
+		BA92BA359CBC95105F734C71168999E6 /* libMKStoreKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMKStoreKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8826F2470EBD4BB17625236700C8C2 /* MZFormSheetPresentationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationViewController.m; path = MZFormSheetPresentationController/MZFormSheetPresentationViewController.m; sourceTree = "<group>"; };
+		BC9C2D1F0FB2310AF0376EFE470D14FB /* MZFormSheetPresentationViewControllerInteractiveAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationViewControllerInteractiveAnimator.m; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerInteractiveAnimator.m; sourceTree = "<group>"; };
+		C2FF6977403429501F0D8036BBB5D7CB /* MZFormSheetPresentationViewControllerInteractiveTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewControllerInteractiveTransitioning.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerInteractiveTransitioning.h; sourceTree = "<group>"; };
 		C472D12A19D143C3C289C1545C39D04E /* Pods-WaterWilfred-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WaterWilfred-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C5C86230D723FE396B84468BBB67ACF3 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		C7AAB24D3EC35794AF6EE68AE59C9BC5 /* UIViewController+TargetViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TargetViewController.m"; path = "MZFormSheetController/UIViewController+TargetViewController.m"; sourceTree = "<group>"; };
-		CAF13233BD2829789D5D58C027002091 /* MZFormSheetController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetController.h; path = MZFormSheetController/MZFormSheetController.h; sourceTree = "<group>"; };
-		CF2DC42658882F8987960FCBFF6DF843 /* Constants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Pod/Classes/Constants.h; sourceTree = "<group>"; };
-		D3A5FC0601B724DF1AFE954237DAA288 /* MZAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZAppearance.m; path = MZAppearance/MZAppearance.m; sourceTree = "<group>"; };
-		D417B8E834769F86C1B3A30C77D10DC2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C78C5E57C99A170D9A43D1E13B5F0ED2 /* BAFluidView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BAFluidView.m; path = Pod/Classes/BAFluidView.m; sourceTree = "<group>"; };
+		C79C1109FF32BBA35CD0C22121BF907C /* libPods-WaterWilfred.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WaterWilfred.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6319FB9F0CFC6E5F13C4F59C78ABAD /* MZTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZTransition.m; path = MZFormSheetPresentationController/MZTransition.m; sourceTree = "<group>"; };
+		CC8EA9A5495AD628A66A8A6900B00C11 /* MZFormSheetPresentationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationController.m; path = MZFormSheetPresentationController/MZFormSheetPresentationController.m; sourceTree = "<group>"; };
 		D59A67BF930722DE3C15225007281FFC /* Pods-WaterWilfred-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WaterWilfred-frameworks.sh"; sourceTree = "<group>"; };
-		D5C15B8D78120490E81A0379287FBA59 /* ACPReminder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPReminder-dummy.m"; sourceTree = "<group>"; };
-		DA35E6CFEE8344F81CA7A2445E02D729 /* MZFormSheetBackgroundWindowViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetBackgroundWindowViewController.m; path = MZFormSheetController/MZFormSheetBackgroundWindowViewController.m; sourceTree = "<group>"; };
-		F064CC1501A935135E1DFE592FEFD954 /* libMKStoreKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMKStoreKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F196D111899D5284642F3332D6BD1EBC /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SFHFKeychainUtils.m; path = Externals/SFHFKeychainUtils.m; sourceTree = "<group>"; };
-		F600EB92B861D63C26D09497291A049D /* MZAppearance-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZAppearance-dummy.m"; sourceTree = "<group>"; };
+		D5B60DAB2EE2F8DFF996E2E6744ABE6B /* NSInvocation+Copy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+Copy.m"; path = "MZAppearance/NSInvocation+Copy.m"; sourceTree = "<group>"; };
+		D7C4C9067E780E776EFB569766D49203 /* libACPReminder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libACPReminder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC95DCF26B0F38E48A0A2191A62E2D9 /* MZFormSheetPresentationViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewController.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewController.h; sourceTree = "<group>"; };
+		DC2B2D62FEAB75268F3E41F84FC6E7FC /* ACPReminder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACPReminder.m; path = ACPReminder/ACPReminder.m; sourceTree = "<group>"; };
+		DD4629503874AD6724AC7353725C5A40 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SFHFKeychainUtils.h; path = Externals/SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		DFB5606560CB567AF4C5B0BF2FF8E346 /* BAFluidView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BAFluidView-dummy.m"; sourceTree = "<group>"; };
+		E4FB36532B12829D62C01F4A2DB3B12E /* MKSKSubscriptionProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MKSKSubscriptionProduct.h; sourceTree = "<group>"; };
+		E6614CF84819E4BB2428063D6A409FAB /* MZFormSheetPresentationViewControllerAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewControllerAnimator.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerAnimator.h; sourceTree = "<group>"; };
+		EC2B80177E0B97F7E06E7DBA363D7C1B /* MKStoreManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MKStoreManager.h; sourceTree = "<group>"; };
+		EFDA0F6545BAD67EA22934A8C17BE16B /* UIViewController+TargetViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TargetViewController.m"; path = "MZFormSheetPresentationController/UIViewController+TargetViewController.m"; sourceTree = "<group>"; };
+		F08E1093F63CF80560DFAC3244BF2B44 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		F92283D38910BE00A29E1E195B8286EE /* Constants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Pod/Classes/Constants.h; sourceTree = "<group>"; };
 		FC2FC39FB00D8A12F12061AF30935E11 /* Pods-WaterWilfred-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterWilfred-acknowledgements.plist"; sourceTree = "<group>"; };
 		FCE785DB502FAFEF92D87A47B35BB965 /* Pods-WaterWilfred.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterWilfred.release.xcconfig"; sourceTree = "<group>"; };
-		FE0B6B7E2863F547E2D26D3C19A14AD8 /* MZAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZAppearance.h; path = MZAppearance/MZAppearance.h; sourceTree = "<group>"; };
-		FEEC090B2264E1CD6CC70944E70D7FE4 /* libMZAppearance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMZAppearance.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0D7931B0670B022080201F4477930B35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA86079289A98F53B2AA2EE88FFB1B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2B98F57537409DD4D892DBBC039D8CCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BB7163282492E0ABF5B95CCF7D93B9D8 /* Foundation.framework in Frameworks */,
 				CCB603DCDAEAB48B15A7A07B23CA1A5F /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		60205EA90DA816FE8EA25A1E07EDAB73 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				36B60B99E37FE2C5411D4F92050797FB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,16 +254,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8044C185BCFE752BB04286697A3F6127 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				23ACDDD4DB97E0FA4BFDF5B9CE73CE9F /* Accelerate.framework in Frameworks */,
-				6AB1676968D001BCD1BDAD0B20E3C3DB /* Foundation.framework in Frameworks */,
-				B2CB521062E34E25C1D3D93B7E12EC2A /* QuartzCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BBE82761196405021AD7219078B21174 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,70 +264,122 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7AD3011657846DF3988E0DC927CA03E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63B1116D2D953BED5F8F71B01C8C0A3 /* Foundation.framework in Frameworks */,
+				AB4A470E76D6083C9DDE543A1FE7F250 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
+		0232F3A8BF53A4F580FBB186CC7CB704 /* MKStoreKit */ = {
 			isa = PBXGroup;
 			children = (
-				38975EF5E841063B5EB15D18F5FD0FDA /* iOS */,
+				4C0521B3044A7BF2A422037C1AADB962 /* MKSKProduct.h */,
+				4D6125FC87B880CE242102F5F9847050 /* MKSKProduct.m */,
+				E4FB36532B12829D62C01F4A2DB3B12E /* MKSKSubscriptionProduct.h */,
+				15DEE4D944059CD1E07E856B23F94490 /* MKSKSubscriptionProduct.m */,
+				87FB7D2DABF318D43B77EDFEDAB7E740 /* MKStoreKitConfigs.h */,
+				EC2B80177E0B97F7E06E7DBA363D7C1B /* MKStoreManager.h */,
+				28937AEDCB163C11999FA2B2D219C6B0 /* MKStoreManager.m */,
+				6A38306A17EC89B0C3D5D7C28D3B51E6 /* NSData+MKBase64.h */,
+				0C4BB29E88FA2DDE6A05249203B5207B /* NSData+MKBase64.m */,
+				DD4629503874AD6724AC7353725C5A40 /* SFHFKeychainUtils.h */,
+				0B6C0B83B588D2298628C78BBA92279F /* SFHFKeychainUtils.m */,
+				0B91F78C321FE93BFD174A6DEEAD160C /* Support Files */,
+			);
+			path = MKStoreKit;
+			sourceTree = "<group>";
+		};
+		0B91F78C321FE93BFD174A6DEEAD160C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B310E1A450435E9502BFA389835797AC /* MKStoreKit.xcconfig */,
+				5E6E5524393101FA2DB5793B9A8F3F10 /* MKStoreKit-dummy.m */,
+				1B8B8C109D658DB5EF50D05A87ECAA2D /* MKStoreKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MKStoreKit";
+			sourceTree = "<group>";
+		};
+		0FC959EC43E8EB5E83FA52C067D289FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EA9FCA8B2AE1EE36DC3EBEBFEE17861 /* ACPReminder */,
+				9944C363B456DBD6C1FBA26281B63F1A /* BAFluidView */,
+				0232F3A8BF53A4F580FBB186CC7CB704 /* MKStoreKit */,
+				94E050A4F2FAD557D5AF611F8016DD03 /* MZAppearance */,
+				192F78E044AEB28D940F94DD4A038085 /* MZFormSheetPresentationController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		192F78E044AEB28D940F94DD4A038085 /* MZFormSheetPresentationController */ = {
+			isa = PBXGroup;
+			children = (
+				9FC6788943B792A178BB81E51DFA4417 /* MZBlurEffectAdapter.h */,
+				AE66968D14DDF141403850BC40B9E86A /* MZBlurEffectAdapter.m */,
+				1CC28DD49068DEF9E8686EDC95C10B79 /* MZFormSheetContentSizingNavigationController.h */,
+				6865FF9563343531800102B55B99FE9B /* MZFormSheetContentSizingNavigationController.m */,
+				85CC865A89AAA7CC2BE842B5562DB282 /* MZFormSheetContentSizingNavigationControllerAnimator.h */,
+				A0548A6F6F7C9164842940A6A506A38F /* MZFormSheetContentSizingNavigationControllerAnimator.m */,
+				254943887A0D5421259535A4BA68093B /* MZFormSheetPresentationContentSizing.h */,
+				3E3574655E1DEE63A63F223068FF8C9F /* MZFormSheetPresentationController.h */,
+				CC8EA9A5495AD628A66A8A6900B00C11 /* MZFormSheetPresentationController.m */,
+				509ECF56B006205C249D43250202638A /* MZFormSheetPresentationController Swift Example-Bridging-Header.h */,
+				DBC95DCF26B0F38E48A0A2191A62E2D9 /* MZFormSheetPresentationViewController.h */,
+				BB8826F2470EBD4BB17625236700C8C2 /* MZFormSheetPresentationViewController.m */,
+				B07403D65EEC0C40CC7AB84BF824F571 /* MZFormSheetPresentationViewControllerAnimatedTransitioning.h */,
+				E6614CF84819E4BB2428063D6A409FAB /* MZFormSheetPresentationViewControllerAnimator.h */,
+				16C8425BBA9CB281FFE3C1EC3C30AE3A /* MZFormSheetPresentationViewControllerAnimator.m */,
+				8407FC55DC96D6E75B76566E3D7190BF /* MZFormSheetPresentationViewControllerInteractiveAnimator.h */,
+				BC9C2D1F0FB2310AF0376EFE470D14FB /* MZFormSheetPresentationViewControllerInteractiveAnimator.m */,
+				C2FF6977403429501F0D8036BBB5D7CB /* MZFormSheetPresentationViewControllerInteractiveTransitioning.h */,
+				571368CD492911BC3D20408F7991CAAD /* MZFormSheetPresentationViewControllerSegue.h */,
+				97D7017299741B6300A498FCD0FACB79 /* MZFormSheetPresentationViewControllerSegue.m */,
+				B7BC8D761DE83A426B4E97D3CD0813B3 /* MZMethodSwizzler.h */,
+				6F53CB8FFA15263C8FE6C8A7F23B92EC /* MZMethodSwizzler.m */,
+				14322440A82CD31D6C656C79943DC8E0 /* MZTransition.h */,
+				CA6319FB9F0CFC6E5F13C4F59C78ABAD /* MZTransition.m */,
+				958127D6CA34E3700B160AF4CFD256FA /* UIViewController+TargetViewController.h */,
+				EFDA0F6545BAD67EA22934A8C17BE16B /* UIViewController+TargetViewController.m */,
+				6848D5A3D7A88532CFC15DA9D58AA213 /* Support Files */,
+			);
+			path = MZFormSheetPresentationController;
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF23C8D594328D16298E9338AF3D51F7 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		11839EA60AFFBA19D8905F154FF2BA38 /* ACPReminder */ = {
+		36245F5EC42F3A8C569CBACF2BB39E96 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				209EB9009EBF81D04CAD623D55DE2E74 /* ACPReminder.h */,
-				11E015ABC4237B4DB91805158DB3273C /* ACPReminder.m */,
-				FE846AB0253820B7353B26D7B0CF521F /* Support Files */,
-			);
-			path = ACPReminder;
-			sourceTree = "<group>";
-		};
-		38975EF5E841063B5EB15D18F5FD0FDA /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				C5C86230D723FE396B84468BBB67ACF3 /* Accelerate.framework */,
-				34DD7AE19FB724BF2FDE1EF886E2754A /* Foundation.framework */,
-				17B4129F51782CA62D25D2C7EF629CF6 /* QuartzCore.framework */,
-				6873ED611E45139300936922E10217CE /* Security.framework */,
-				45CEE3A6F8E3C102298BDF6439538C70 /* StoreKit.framework */,
-				D417B8E834769F86C1B3A30C77D10DC2 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		390417C0370614F2328D2FCA93759AD5 /* MZFormSheetController */ = {
-			isa = PBXGroup;
-			children = (
-				9BC8E1C7908888CC43A8F10A65D8C030 /* Core */,
-				C3772EA0EFDEFC1DA89499B0D52CAF97 /* Support Files */,
-			);
-			path = MZFormSheetController;
-			sourceTree = "<group>";
-		};
-		4E3C11FD96FFDB504858216688780F7A /* MZAppearance */ = {
-			isa = PBXGroup;
-			children = (
-				FE0B6B7E2863F547E2D26D3C19A14AD8 /* MZAppearance.h */,
-				D3A5FC0601B724DF1AFE954237DAA288 /* MZAppearance.m */,
-				6668C285971ED0899868278B3B09DA0D /* NSInvocation+Copy.h */,
-				13781C6597DCB55F5725D4B326D24493 /* NSInvocation+Copy.m */,
-				6F46B5DD2F4EA7109E9F4F03D5D58256 /* Support Files */,
-			);
-			path = MZAppearance;
-			sourceTree = "<group>";
-		};
-		6F46B5DD2F4EA7109E9F4F03D5D58256 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				07AA0366D0635881930EAA72ED450EAB /* MZAppearance.xcconfig */,
-				F600EB92B861D63C26D09497291A049D /* MZAppearance-dummy.m */,
-				47617501F6D2881639926D31766A9D15 /* MZAppearance-prefix.pch */,
+				AC3D78C08ECB225761474C2D9737A2F4 /* ACPReminder.xcconfig */,
+				666A3044E4F9BF00B87D13153DD19A7B /* ACPReminder-dummy.m */,
+				90E26343128B9A025E1E1C0EC84D35FF /* ACPReminder-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MZAppearance";
+			path = "../Target Support Files/ACPReminder";
+			sourceTree = "<group>";
+		};
+		6848D5A3D7A88532CFC15DA9D58AA213 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				915CF20B9A9DBED955D0A99759C46FF9 /* MZFormSheetPresentationController.xcconfig */,
+				5A74FB0A89AD56336CA50C766086E247 /* MZFormSheetPresentationController-dummy.m */,
+				2671A592CFAE799547ED057DD851C23B /* MZFormSheetPresentationController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MZFormSheetPresentationController";
 			sourceTree = "<group>";
 		};
 		7B344875907E2CB0868E0A71CA9A92F9 /* Targets Support Files */ = {
@@ -332,79 +394,71 @@
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
-				EB58F1A525E85799AF1640605B2C5B10 /* Pods */,
-				DB6E93B896826F8C07A495AE91077F5A /* Products */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				0FC959EC43E8EB5E83FA52C067D289FD /* Pods */,
+				952AC08E18AE17FD3997A659CEC3243E /* Products */,
 				7B344875907E2CB0868E0A71CA9A92F9 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9BC8E1C7908888CC43A8F10A65D8C030 /* Core */ = {
+		94E050A4F2FAD557D5AF611F8016DD03 /* MZAppearance */ = {
 			isa = PBXGroup;
 			children = (
-				6E9FD9683AB4B20D77A4ECE415C8FB19 /* MZFormSheetBackgroundWindow.h */,
-				0E5C08E34A109C8ABB6B8F85570B5905 /* MZFormSheetBackgroundWindow.m */,
-				2B8D67226CB4A6A9862B3FE2312DE0BA /* MZFormSheetBackgroundWindowViewController.h */,
-				DA35E6CFEE8344F81CA7A2445E02D729 /* MZFormSheetBackgroundWindowViewController.m */,
-				CAF13233BD2829789D5D58C027002091 /* MZFormSheetController.h */,
-				4B9F32A66390E848CC3B3FFAAA002345 /* MZFormSheetController.m */,
-				1798AC48024685F0CA71CB47F6F2BF7C /* MZFormSheetSegue.h */,
-				0DC97FDB05585D37D2BF29129D384097 /* MZFormSheetSegue.m */,
-				78D5FBE3DEEDD9C470026537070D729E /* MZFormSheetTransition.h */,
-				97E0DB3548112EA65A1479A995A27135 /* MZFormSheetTransition.m */,
-				9D7DD90B9A4EA118505829ABF25D9F5C /* MZMacro.h */,
-				2CBA6DB627E99F669E0C38AB894E62D6 /* UIImage+Additional.h */,
-				8BE7B6C4C42228A951E370B8705D6033 /* UIImage+Additional.m */,
-				3050BD589AB2F38BC4EAFF6EB9FA12C5 /* UIViewController+TargetViewController.h */,
-				C7AAB24D3EC35794AF6EE68AE59C9BC5 /* UIViewController+TargetViewController.m */,
+				5BD197398AEE2687D7D50245F9A134C2 /* MZAppearance.h */,
+				5F2281F3DAB7BEBB107636F747E3B2A7 /* MZAppearance.m */,
+				7FFEBC5BC3D537A50E20B60A15DEDF7A /* NSInvocation+Copy.h */,
+				D5B60DAB2EE2F8DFF996E2E6744ABE6B /* NSInvocation+Copy.m */,
+				E770B127919D8D4266D59C519BA35978 /* Support Files */,
 			);
-			name = Core;
+			path = MZAppearance;
 			sourceTree = "<group>";
 		};
-		9CFC9F37EF5A6C297BA16A5E1794D737 /* Support Files */ = {
+		952AC08E18AE17FD3997A659CEC3243E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				627D280DDD3A7801B451CCC6010D0910 /* MKStoreKit.xcconfig */,
-				5757B497FF59C53B41A40E67DDD3C156 /* MKStoreKit-dummy.m */,
-				57FF1C02D770D119E91FDB6E8C5563D6 /* MKStoreKit-prefix.pch */,
+				16C1109EC5535EF9D775DBE2F358A184 /* BAFluidView.bundle */,
+				D7C4C9067E780E776EFB569766D49203 /* libACPReminder.a */,
+				0BE72F9FCCFCFE52C461965312A588BB /* libBAFluidView.a */,
+				BA92BA359CBC95105F734C71168999E6 /* libMKStoreKit.a */,
+				62723CAA8722532C1896281E0632A7CE /* libMZAppearance.a */,
+				93575505459D8579289596098377571B /* libMZFormSheetPresentationController.a */,
+				C79C1109FF32BBA35CD0C22121BF907C /* libPods-WaterWilfred.a */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MKStoreKit";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		A99EF52297DF676AF70CEFCCA63FC734 /* BAFluidView */ = {
+		9944C363B456DBD6C1FBA26281B63F1A /* BAFluidView */ = {
 			isa = PBXGroup;
 			children = (
-				6D49BE7F30D5ED92183C900B775E2774 /* BAFluidView.h */,
-				BD58D990A4DFEAB4364A62C315800C4C /* BAFluidView.m */,
-				CF2DC42658882F8987960FCBFF6DF843 /* Constants.h */,
-				7F4F1A5BE5297E1A1021FE7513698ED3 /* UIColor+ColorWithHex.h */,
-				5F858B047197C3B7B137C84FD51DA727 /* UIColor+ColorWithHex.m */,
-				B09873DF7F7C58B86DCCF0843A3C0343 /* Support Files */,
+				A0868821817712ABD9BEF0D84BAAF4ED /* BAFluidView.h */,
+				C78C5E57C99A170D9A43D1E13B5F0ED2 /* BAFluidView.m */,
+				F92283D38910BE00A29E1E195B8286EE /* Constants.h */,
+				78FD66DDB260F069B3347C7805D449D3 /* UIColor+ColorWithHex.h */,
+				8C98975039C348C1ED7C0EE5D120CBC0 /* UIColor+ColorWithHex.m */,
+				CB3E12462A884129F9CAC5D554E64ABA /* Support Files */,
 			);
 			path = BAFluidView;
 			sourceTree = "<group>";
 		};
-		B09873DF7F7C58B86DCCF0843A3C0343 /* Support Files */ = {
+		9EA9FCA8B2AE1EE36DC3EBEBFEE17861 /* ACPReminder */ = {
 			isa = PBXGroup;
 			children = (
-				636C80E020090DC4C2A131AFDF5FCDD1 /* BAFluidView.xcconfig */,
-				9907C2B5D115CD2C16CBBE2D01A652D3 /* BAFluidView-dummy.m */,
-				5303FFE0C768AD984D666EDE6E07219E /* BAFluidView-prefix.pch */,
+				207A9B9D81A880E171E501E524A3180E /* ACPReminder.h */,
+				DC2B2D62FEAB75268F3E41F84FC6E7FC /* ACPReminder.m */,
+				36245F5EC42F3A8C569CBACF2BB39E96 /* Support Files */,
+			);
+			path = ACPReminder;
+			sourceTree = "<group>";
+		};
+		CB3E12462A884129F9CAC5D554E64ABA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AF46008C8DAF6D9A76D0A719B3C93F4 /* BAFluidView.xcconfig */,
+				DFB5606560CB567AF4C5B0BF2FF8E346 /* BAFluidView-dummy.m */,
+				490DE92D8B1A6D6995E03C43D3BD981F /* BAFluidView-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/BAFluidView";
-			sourceTree = "<group>";
-		};
-		C3772EA0EFDEFC1DA89499B0D52CAF97 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				37622F983394E50CE257B44D036F2FA6 /* MZFormSheetController.xcconfig */,
-				17E52D444B538E93D4126278FA491DAE /* MZFormSheetController-dummy.m */,
-				0DE692EB5C1F6DBF3273C8E910C88009 /* MZFormSheetController-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MZFormSheetController";
 			sourceTree = "<group>";
 		};
 		D87817EF1A194D2847E3C0F07AA73A8F /* Pods-WaterWilfred */ = {
@@ -422,60 +476,27 @@
 			path = "Target Support Files/Pods-WaterWilfred";
 			sourceTree = "<group>";
 		};
-		DB6E93B896826F8C07A495AE91077F5A /* Products */ = {
+		E770B127919D8D4266D59C519BA35978 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6275F57B652FD634405B370BAECC03D1 /* BAFluidView.bundle */,
-				3B74B77C349EBCDE9A31463213B6520D /* libACPReminder.a */,
-				2CF121670CFBAE0DBE0E7AEC9A756B53 /* libBAFluidView.a */,
-				F064CC1501A935135E1DFE592FEFD954 /* libMKStoreKit.a */,
-				FEEC090B2264E1CD6CC70944E70D7FE4 /* libMZAppearance.a */,
-				33A4B236AA4A813CF7188E2830066426 /* libMZFormSheetController.a */,
-				00BBB942427D8EE3D78E22A40A65D20A /* libPods-WaterWilfred.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EB58F1A525E85799AF1640605B2C5B10 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				11839EA60AFFBA19D8905F154FF2BA38 /* ACPReminder */,
-				A99EF52297DF676AF70CEFCCA63FC734 /* BAFluidView */,
-				EBBE0FF28F266901A351E65807D10291 /* MKStoreKit */,
-				4E3C11FD96FFDB504858216688780F7A /* MZAppearance */,
-				390417C0370614F2328D2FCA93759AD5 /* MZFormSheetController */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		EBBE0FF28F266901A351E65807D10291 /* MKStoreKit */ = {
-			isa = PBXGroup;
-			children = (
-				705076737D154F78766FF66E6677E895 /* MKSKProduct.h */,
-				C0B9372A4116A30195B285B659B8B326 /* MKSKProduct.m */,
-				7E4BBC565500EFAF47C3892A1810C196 /* MKSKSubscriptionProduct.h */,
-				2A5C1F88E3E3C4A8F617C62D8B82A75B /* MKSKSubscriptionProduct.m */,
-				2279D818758C76FFE1B0BDD1C86DC8F8 /* MKStoreKitConfigs.h */,
-				961F00FF400DE640E35EFCF8767CDECB /* MKStoreManager.h */,
-				7DCFB347712C10DA86220A7C38942C4B /* MKStoreManager.m */,
-				A21F11890B8BF5738964DDB1681BEE60 /* NSData+MKBase64.h */,
-				60294E5A24A7E8B2B25783D5AFDA1825 /* NSData+MKBase64.m */,
-				45B32A88AD6E6BEE0D41507A5DEC9870 /* SFHFKeychainUtils.h */,
-				F196D111899D5284642F3332D6BD1EBC /* SFHFKeychainUtils.m */,
-				9CFC9F37EF5A6C297BA16A5E1794D737 /* Support Files */,
-			);
-			path = MKStoreKit;
-			sourceTree = "<group>";
-		};
-		FE846AB0253820B7353B26D7B0CF521F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8F144E1579D8C4AFA1A4F9EB8E7BBEDE /* ACPReminder.xcconfig */,
-				D5C15B8D78120490E81A0379287FBA59 /* ACPReminder-dummy.m */,
-				8A21220132610B0EF972785CE7450DCD /* ACPReminder-prefix.pch */,
+				905F931AA75A00B49D4C250B06DA75AE /* MZAppearance.xcconfig */,
+				9E9776CC108C7BEB6552347382B969FC /* MZAppearance-dummy.m */,
+				8511E35E284344388F1E6ED34C2A6379 /* MZAppearance-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/ACPReminder";
+			path = "../Target Support Files/MZAppearance";
+			sourceTree = "<group>";
+		};
+		EF23C8D594328D16298E9338AF3D51F7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				18122D9CD55A7FD6EF2FA88460DFDFE8 /* Foundation.framework */,
+				B6210868525E8FDC39688F76241CC23C /* QuartzCore.framework */,
+				F08E1093F63CF80560DFAC3244BF2B44 /* Security.framework */,
+				858BF2B1A372BE2C01867420F34D0FBA /* StoreKit.framework */,
+				B7AD3106BE6968371AE5060DD812E5B9 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -502,27 +523,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4FC3584A24F855216E20AB3588CBBE67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433D5284505942BF4A95E37CDC08884C /* MZBlurEffectAdapter.h in Headers */,
+				59068FCCD9CFF65D885ADEB8B74365B5 /* MZFormSheetContentSizingNavigationController.h in Headers */,
+				C8207D13DAB0D979FE703ED84DBB7FAA /* MZFormSheetContentSizingNavigationControllerAnimator.h in Headers */,
+				DBF08F11CD26DDC2BAC95A97EE8932C4 /* MZFormSheetPresentationContentSizing.h in Headers */,
+				BDB91254CDF09743E5985F87D8DE5DA7 /* MZFormSheetPresentationController Swift Example-Bridging-Header.h in Headers */,
+				D753314D32DD19E81BCCBFB09633310A /* MZFormSheetPresentationController.h in Headers */,
+				2AC7D8D1143297AB58F54668A11AE82E /* MZFormSheetPresentationViewController.h in Headers */,
+				F037381A2D9768F9DC77FEAD554725CD /* MZFormSheetPresentationViewControllerAnimatedTransitioning.h in Headers */,
+				4A43CA422ADACE81A54DDACDE5F731AC /* MZFormSheetPresentationViewControllerAnimator.h in Headers */,
+				809B6E0DA1C7469221B84AA621503B42 /* MZFormSheetPresentationViewControllerInteractiveAnimator.h in Headers */,
+				E3411F89F8E4B7E575016C3AA8D1157B /* MZFormSheetPresentationViewControllerInteractiveTransitioning.h in Headers */,
+				AAD971208BB2F52BE245B512A9899371 /* MZFormSheetPresentationViewControllerSegue.h in Headers */,
+				990F67DAF9EAC773B95BDEB74BD49DC1 /* MZMethodSwizzler.h in Headers */,
+				03A174A2CCCEE89449722355245C5FDF /* MZTransition.h in Headers */,
+				DE7655E5A62B99289931F1FB977C7B25 /* UIViewController+TargetViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E8640CD0AC3549FED2AF5559EB14E1C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C75EB5336D990200F533B7F6D67BDC58 /* MZAppearance.h in Headers */,
 				B65953EE800900385A832E99A4BBF217 /* NSInvocation+Copy.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9793A1889AABFF54D5565D02DD5A9517 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB936BB07935F546DB103F30AC73705A /* MZFormSheetBackgroundWindow.h in Headers */,
-				A99472B61009D5B981797F98E755C346 /* MZFormSheetBackgroundWindowViewController.h in Headers */,
-				B6E142DF6E7C5EE40F5E9846DE46388B /* MZFormSheetController.h in Headers */,
-				442E218E05173EFACAEDD3AA8314A1F3 /* MZFormSheetSegue.h in Headers */,
-				C0CE36BE063B17BF9D2EAFFD93D099D8 /* MZFormSheetTransition.h in Headers */,
-				86DC13A25A7963C1F54EC711828E8D00 /* MZMacro.h in Headers */,
-				5BA85ECD901CB6E4A5F2506AF703A572 /* UIImage+Additional.h in Headers */,
-				7C70954A82A59B64E6B2EAA0CC80840E /* UIViewController+TargetViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,27 +567,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1524653681F2779F96F2E9BC2F1468A9 /* Pods-WaterWilfred */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0ADEB4AA3A76497738C6A7CF52333F6C /* Build configuration list for PBXNativeTarget "Pods-WaterWilfred" */;
-			buildPhases = (
-				054F5BCFBF7C0FB77008CD650FD1C49F /* Sources */,
-				60205EA90DA816FE8EA25A1E07EDAB73 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				256425573BF9D60D253008530FB72885 /* PBXTargetDependency */,
-				FAA090591C813FA906060B61CD00C9EA /* PBXTargetDependency */,
-				0656D3CA9E42AB8FCD9D627C3E05F872 /* PBXTargetDependency */,
-				18F680EC9E4EBD53DBECC6C32A5AAA15 /* PBXTargetDependency */,
-				7220E7BC1651B7F5158D88902D3482B0 /* PBXTargetDependency */,
-			);
-			name = "Pods-WaterWilfred";
-			productName = "Pods-WaterWilfred";
-			productReference = 00BBB942427D8EE3D78E22A40A65D20A /* libPods-WaterWilfred.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		1DAC2FF166EBB39D93C76C245CCD170C /* MZAppearance */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A49F83A3E51BDEB4F85CDECEA6F296AE /* Build configuration list for PBXNativeTarget "MZAppearance" */;
@@ -574,25 +581,25 @@
 			);
 			name = MZAppearance;
 			productName = MZAppearance;
-			productReference = FEEC090B2264E1CD6CC70944E70D7FE4 /* libMZAppearance.a */;
+			productReference = 62723CAA8722532C1896281E0632A7CE /* libMZAppearance.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		5A6DB7A94477A4B25220873FB3B139E4 /* MZFormSheetController */ = {
+		34440D436B6519A357FFA66228EB4C96 /* MZFormSheetPresentationController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59B3B11CE6B7B344BFC21A37A679DC44 /* Build configuration list for PBXNativeTarget "MZFormSheetController" */;
+			buildConfigurationList = 890C3474CE0FFDFF0D36CC905ABE34C3 /* Build configuration list for PBXNativeTarget "MZFormSheetPresentationController" */;
 			buildPhases = (
-				45DFFA267BF81A6F70B426DB816CDE9B /* Sources */,
-				8044C185BCFE752BB04286697A3F6127 /* Frameworks */,
-				9793A1889AABFF54D5565D02DD5A9517 /* Headers */,
+				6974D78CA154542CD53A22DD27D4595F /* Sources */,
+				C7AD3011657846DF3988E0DC927CA03E /* Frameworks */,
+				4FC3584A24F855216E20AB3588CBBE67 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BBD467ED157482FD4921E6AD76AF4223 /* PBXTargetDependency */,
+				CFE28DCE7423949A5381487983605F4A /* PBXTargetDependency */,
 			);
-			name = MZFormSheetController;
-			productName = MZFormSheetController;
-			productReference = 33A4B236AA4A813CF7188E2830066426 /* libMZFormSheetController.a */;
+			name = MZFormSheetPresentationController;
+			productName = MZFormSheetPresentationController;
+			productReference = 93575505459D8579289596098377571B /* libMZFormSheetPresentationController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		5F1D75D12B507347E43A6633CDD15A32 /* BAFluidView */ = {
@@ -610,7 +617,7 @@
 			);
 			name = BAFluidView;
 			productName = BAFluidView;
-			productReference = 2CF121670CFBAE0DBE0E7AEC9A756B53 /* libBAFluidView.a */;
+			productReference = 0BE72F9FCCFCFE52C461965312A588BB /* libBAFluidView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		7832BE7CBBE6FE88B7D91D83AF452283 /* BAFluidView-BAFluidView */ = {
@@ -627,7 +634,7 @@
 			);
 			name = "BAFluidView-BAFluidView";
 			productName = "BAFluidView-BAFluidView";
-			productReference = 6275F57B652FD634405B370BAECC03D1 /* BAFluidView.bundle */;
+			productReference = 16C1109EC5535EF9D775DBE2F358A184 /* BAFluidView.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		B3A8239ABA382A247836CD99036B1705 /* MKStoreKit */ = {
@@ -644,7 +651,7 @@
 			);
 			name = MKStoreKit;
 			productName = MKStoreKit;
-			productReference = F064CC1501A935135E1DFE592FEFD954 /* libMKStoreKit.a */;
+			productReference = BA92BA359CBC95105F734C71168999E6 /* libMKStoreKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		BE9C772F9310A9C7BF9051B69874F9A7 /* ACPReminder */ = {
@@ -661,7 +668,28 @@
 			);
 			name = ACPReminder;
 			productName = ACPReminder;
-			productReference = 3B74B77C349EBCDE9A31463213B6520D /* libACPReminder.a */;
+			productReference = D7C4C9067E780E776EFB569766D49203 /* libACPReminder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F25D30977A049ED7F28CDD7D3B71279D /* Pods-WaterWilfred */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADD0E0751E27BB2CF0CA60AE6B3A9B04 /* Build configuration list for PBXNativeTarget "Pods-WaterWilfred" */;
+			buildPhases = (
+				A28A3EBAF8B0217705F357022F303A54 /* Sources */,
+				0D7931B0670B022080201F4477930B35 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				616FD992A754FD00A4CAA7A4E3C49F05 /* PBXTargetDependency */,
+				A309D810153D54F1223F36A04898C822 /* PBXTargetDependency */,
+				32754253B93B12C44D25A7B2C90E2263 /* PBXTargetDependency */,
+				5DCA463D0BFDDF16CBCAE334A86841BD /* PBXTargetDependency */,
+				A172208FE9BB1EFD9417999A3CD716AF /* PBXTargetDependency */,
+			);
+			name = "Pods-WaterWilfred";
+			productName = "Pods-WaterWilfred";
+			productReference = C79C1109FF32BBA35CD0C22121BF907C /* libPods-WaterWilfred.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -681,7 +709,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DB6E93B896826F8C07A495AE91077F5A /* Products */;
+			productRefGroup = 952AC08E18AE17FD3997A659CEC3243E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -690,8 +718,8 @@
 				7832BE7CBBE6FE88B7D91D83AF452283 /* BAFluidView-BAFluidView */,
 				B3A8239ABA382A247836CD99036B1705 /* MKStoreKit */,
 				1DAC2FF166EBB39D93C76C245CCD170C /* MZAppearance */,
-				5A6DB7A94477A4B25220873FB3B139E4 /* MZFormSheetController */,
-				1524653681F2779F96F2E9BC2F1468A9 /* Pods-WaterWilfred */,
+				34440D436B6519A357FFA66228EB4C96 /* MZFormSheetPresentationController */,
+				F25D30977A049ED7F28CDD7D3B71279D /* Pods-WaterWilfred */,
 			);
 		};
 /* End PBXProject section */
@@ -707,35 +735,12 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		054F5BCFBF7C0FB77008CD650FD1C49F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9876C56AD67B078E9C2E01E2AC5BEB5 /* Pods-WaterWilfred-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		439055BE6ADC049509BC1607914E664D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F3CA5242C8C5CD6D488921D377FFA8AA /* ACPReminder-dummy.m in Sources */,
 				AC4EA54640C8165BF34947F1B5F300F0 /* ACPReminder.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		45DFFA267BF81A6F70B426DB816CDE9B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E02E9387B84549F26A05DE9F5C1A3517 /* MZFormSheetBackgroundWindow.m in Sources */,
-				0376F4F2A2AF3ABD35F0F96DB9553F13 /* MZFormSheetBackgroundWindowViewController.m in Sources */,
-				6365B0806DF0578E17522150BF7DFF61 /* MZFormSheetController-dummy.m in Sources */,
-				1375269E23005891D8EC436F7F5FEC72 /* MZFormSheetController.m in Sources */,
-				D8A39922A7AD1BD9A86526982BC57B7E /* MZFormSheetSegue.m in Sources */,
-				1878785BDF0D5380BADC539AB61BA1BB /* MZFormSheetTransition.m in Sources */,
-				268E0C67333AA650343BDC899947FF9F /* UIImage+Additional.m in Sources */,
-				648021EF29495B326E5CB2492351304B /* UIViewController+TargetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -756,6 +761,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6974D78CA154542CD53A22DD27D4595F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31EE2E7C632324927726C452A3CBB93B /* MZBlurEffectAdapter.m in Sources */,
+				5A080B6F0F22C377542A7628E65393BE /* MZFormSheetContentSizingNavigationController.m in Sources */,
+				B2E42371763232F17C083B0C2CE2CE96 /* MZFormSheetContentSizingNavigationControllerAnimator.m in Sources */,
+				A32DB2DDD53C0851504006E414C81B39 /* MZFormSheetPresentationController-dummy.m in Sources */,
+				6A1B2A1C885AFF2CEB8F4D6A38D80116 /* MZFormSheetPresentationController.m in Sources */,
+				586FDF401CCD286AC32437E94C5CC374 /* MZFormSheetPresentationViewController.m in Sources */,
+				E0B4C8FFC284F930F9833578EE03370B /* MZFormSheetPresentationViewControllerAnimator.m in Sources */,
+				C58144267E03E94668386837B0BA285B /* MZFormSheetPresentationViewControllerInteractiveAnimator.m in Sources */,
+				57E75C807BD7A132449646A786D1FD35 /* MZFormSheetPresentationViewControllerSegue.m in Sources */,
+				9A29BDB8F539360C750BC50F1A04BAB0 /* MZMethodSwizzler.m in Sources */,
+				4445AD102C8A9B88C3384782813F670D /* MZTransition.m in Sources */,
+				78395DD12A0D2AD654A5ABD2D665381F /* UIViewController+TargetViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92BAAE05DFEF2DEAE3430AC0C149537B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -763,6 +787,14 @@
 				43A5481DB4832935AFC1B350C47A9C9F /* MZAppearance-dummy.m in Sources */,
 				7F3BBF6FCA129E393ADA58BA9C4098EF /* MZAppearance.m in Sources */,
 				E1877863D977CE730CEB2B90E595702C /* NSInvocation+Copy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28A3EBAF8B0217705F357022F303A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF34AB79555159D0359630C8F703217 /* Pods-WaterWilfred-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,35 +814,35 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0656D3CA9E42AB8FCD9D627C3E05F872 /* PBXTargetDependency */ = {
+		32754253B93B12C44D25A7B2C90E2263 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MKStoreKit;
 			target = B3A8239ABA382A247836CD99036B1705 /* MKStoreKit */;
-			targetProxy = B3EAEA1C959A9855F2BE0FC748D35228 /* PBXContainerItemProxy */;
+			targetProxy = 41F87B94778F1F44E938978784D5A825 /* PBXContainerItemProxy */;
 		};
-		18F680EC9E4EBD53DBECC6C32A5AAA15 /* PBXTargetDependency */ = {
+		5DCA463D0BFDDF16CBCAE334A86841BD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MZAppearance;
 			target = 1DAC2FF166EBB39D93C76C245CCD170C /* MZAppearance */;
-			targetProxy = 83EC2CBA4C4C278D4FF131A8F336C8FC /* PBXContainerItemProxy */;
+			targetProxy = BAD6CCB9CFC2F495541297DF33A716E3 /* PBXContainerItemProxy */;
 		};
-		256425573BF9D60D253008530FB72885 /* PBXTargetDependency */ = {
+		616FD992A754FD00A4CAA7A4E3C49F05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ACPReminder;
 			target = BE9C772F9310A9C7BF9051B69874F9A7 /* ACPReminder */;
-			targetProxy = F5447F5C0460CACD6B45FAFB80D2F3BD /* PBXContainerItemProxy */;
+			targetProxy = 5919B40D2AA2FED8A14DA88D0AAF313E /* PBXContainerItemProxy */;
 		};
-		7220E7BC1651B7F5158D88902D3482B0 /* PBXTargetDependency */ = {
+		A172208FE9BB1EFD9417999A3CD716AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MZFormSheetController;
-			target = 5A6DB7A94477A4B25220873FB3B139E4 /* MZFormSheetController */;
-			targetProxy = 9B1C805C984A64F0645B226757DA87C9 /* PBXContainerItemProxy */;
+			name = MZFormSheetPresentationController;
+			target = 34440D436B6519A357FFA66228EB4C96 /* MZFormSheetPresentationController */;
+			targetProxy = C6AE49D2E90019193FFD45398268D3D5 /* PBXContainerItemProxy */;
 		};
-		BBD467ED157482FD4921E6AD76AF4223 /* PBXTargetDependency */ = {
+		A309D810153D54F1223F36A04898C822 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MZAppearance;
-			target = 1DAC2FF166EBB39D93C76C245CCD170C /* MZAppearance */;
-			targetProxy = BB0293FA5805FDE4E5F128E2442B58CF /* PBXContainerItemProxy */;
+			name = BAFluidView;
+			target = 5F1D75D12B507347E43A6633CDD15A32 /* BAFluidView */;
+			targetProxy = 00A7FA71D53B7B36A3905615EFDD3D03 /* PBXContainerItemProxy */;
 		};
 		C4809FF51CF1D2E0E20ED31082C2760A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -818,18 +850,18 @@
 			target = 7832BE7CBBE6FE88B7D91D83AF452283 /* BAFluidView-BAFluidView */;
 			targetProxy = F9F14B0146D1204689492E9352E2CCD8 /* PBXContainerItemProxy */;
 		};
-		FAA090591C813FA906060B61CD00C9EA /* PBXTargetDependency */ = {
+		CFE28DCE7423949A5381487983605F4A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BAFluidView;
-			target = 5F1D75D12B507347E43A6633CDD15A32 /* BAFluidView */;
-			targetProxy = 2E07EF2907A9B9B71F0540EC0F2AC9D4 /* PBXContainerItemProxy */;
+			name = MZAppearance;
+			target = 1DAC2FF166EBB39D93C76C245CCD170C /* MZAppearance */;
+			targetProxy = 22DFF7BAAF7FBD0DB15BDE3FB0BCD50A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		22001BD6676C712754FA438D972BE9F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 636C80E020090DC4C2A131AFDF5FCDD1 /* BAFluidView.xcconfig */;
+			baseConfigurationReference = 5AF46008C8DAF6D9A76D0A719B3C93F4 /* BAFluidView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = BAFluidView;
@@ -841,7 +873,7 @@
 		};
 		33072B950E8C7208BE9D94AC97D83113 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 636C80E020090DC4C2A131AFDF5FCDD1 /* BAFluidView.xcconfig */;
+			baseConfigurationReference = 5AF46008C8DAF6D9A76D0A719B3C93F4 /* BAFluidView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/BAFluidView/BAFluidView-prefix.pch";
@@ -859,7 +891,7 @@
 		};
 		40A9B052A8915EF6247FCFE22AEE702B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 627D280DDD3A7801B451CCC6010D0910 /* MKStoreKit.xcconfig */;
+			baseConfigurationReference = B310E1A450435E9502BFA389835797AC /* MKStoreKit.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MKStoreKit/MKStoreKit-prefix.pch";
@@ -875,14 +907,14 @@
 			};
 			name = Release;
 		};
-		49E459DB6C96CFF8CC57B5F4A9EA11A7 /* Release */ = {
+		48BA7E819C0D23AA9793CC52901F48D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37622F983394E50CE257B44D036F2FA6 /* MZFormSheetController.xcconfig */;
+			baseConfigurationReference = 915CF20B9A9DBED955D0A99759C46FF9 /* MZFormSheetPresentationController.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MZFormSheetController/MZFormSheetController-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -891,45 +923,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
-		};
-		4F4B437C1B88C8CE85536996D7019E08 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCE785DB502FAFEF92D87A47B35BB965 /* Pods-WaterWilfred.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		5033B568F45B6D752A914A9D2D9BFE55 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B795A6480C8523E8F01D7D981D0B070 /* Pods-WaterWilfred.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
 			name = Debug;
 		};
 		54FE0513090875CB623FD0B4EA0F6920 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07AA0366D0635881930EAA72ED450EAB /* MZAppearance.xcconfig */;
+			baseConfigurationReference = 905F931AA75A00B49D4C250B06DA75AE /* MZAppearance.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MZAppearance/MZAppearance-prefix.pch";
@@ -947,7 +945,7 @@
 		};
 		55DBE322F25BD92578772B255484FE51 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07AA0366D0635881930EAA72ED450EAB /* MZAppearance.xcconfig */;
+			baseConfigurationReference = 905F931AA75A00B49D4C250B06DA75AE /* MZAppearance.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MZAppearance/MZAppearance-prefix.pch";
@@ -1002,9 +1000,27 @@
 			};
 			name = Debug;
 		};
+		5EFB4EA4BD13F6F3176DED364A2D02E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 915CF20B9A9DBED955D0A99759C46FF9 /* MZFormSheetPresentationController.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		61FF2137095721F9F8897756E238458B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F144E1579D8C4AFA1A4F9EB8E7BBEDE /* ACPReminder.xcconfig */;
+			baseConfigurationReference = AC3D78C08ECB225761474C2D9737A2F4 /* ACPReminder.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ACPReminder/ACPReminder-prefix.pch";
@@ -1054,9 +1070,26 @@
 			};
 			name = Release;
 		};
+		96AEEDFF23796FA85642034CD90E81C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCE785DB502FAFEF92D87A47B35BB965 /* Pods-WaterWilfred.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		9CC6ADA2C6980FC722C69D46C575B8FA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 636C80E020090DC4C2A131AFDF5FCDD1 /* BAFluidView.xcconfig */;
+			baseConfigurationReference = 5AF46008C8DAF6D9A76D0A719B3C93F4 /* BAFluidView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = BAFluidView;
@@ -1068,7 +1101,7 @@
 		};
 		B4C09C0490F0803F51656525DFA6BE49 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F144E1579D8C4AFA1A4F9EB8E7BBEDE /* ACPReminder.xcconfig */;
+			baseConfigurationReference = AC3D78C08ECB225761474C2D9737A2F4 /* ACPReminder.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ACPReminder/ACPReminder-prefix.pch";
@@ -1086,7 +1119,7 @@
 		};
 		B5C8F7C4B5BCA21051D9433788C50747 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 636C80E020090DC4C2A131AFDF5FCDD1 /* BAFluidView.xcconfig */;
+			baseConfigurationReference = 5AF46008C8DAF6D9A76D0A719B3C93F4 /* BAFluidView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/BAFluidView/BAFluidView-prefix.pch";
@@ -1102,12 +1135,12 @@
 			};
 			name = Debug;
 		};
-		D4FC235B4461E3D41C0A90A90EB07CE4 /* Debug */ = {
+		E3F76C3580F7051FD40BB8AFCD88A29E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37622F983394E50CE257B44D036F2FA6 /* MZFormSheetController.xcconfig */;
+			baseConfigurationReference = B310E1A450435E9502BFA389835797AC /* MKStoreKit.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MZFormSheetController/MZFormSheetController-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/MKStoreKit/MKStoreKit-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -1120,19 +1153,18 @@
 			};
 			name = Debug;
 		};
-		E3F76C3580F7051FD40BB8AFCD88A29E /* Debug */ = {
+		E5B190BD635BFAB3BEE4F35C328661AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 627D280DDD3A7801B451CCC6010D0910 /* MKStoreKit.xcconfig */;
+			baseConfigurationReference = 5B795A6480C8523E8F01D7D981D0B070 /* Pods-WaterWilfred.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MKStoreKit/MKStoreKit-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -1150,29 +1182,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0ADEB4AA3A76497738C6A7CF52333F6C /* Build configuration list for PBXNativeTarget "Pods-WaterWilfred" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5033B568F45B6D752A914A9D2D9BFE55 /* Debug */,
-				4F4B437C1B88C8CE85536996D7019E08 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
 				74857149DC1E0D599B8A01A78349A926 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		59B3B11CE6B7B344BFC21A37A679DC44 /* Build configuration list for PBXNativeTarget "MZFormSheetController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D4FC235B4461E3D41C0A90A90EB07CE4 /* Debug */,
-				49E459DB6C96CFF8CC57B5F4A9EA11A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1186,11 +1200,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		890C3474CE0FFDFF0D36CC905ABE34C3 /* Build configuration list for PBXNativeTarget "MZFormSheetPresentationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48BA7E819C0D23AA9793CC52901F48D4 /* Debug */,
+				5EFB4EA4BD13F6F3176DED364A2D02E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A49F83A3E51BDEB4F85CDECEA6F296AE /* Build configuration list for PBXNativeTarget "MZAppearance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55DBE322F25BD92578772B255484FE51 /* Debug */,
 				54FE0513090875CB623FD0B4EA0F6920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADD0E0751E27BB2CF0CA60AE6B3A9B04 /* Build configuration list for PBXNativeTarget "Pods-WaterWilfred" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5B190BD635BFAB3BEE4F35C328661AE /* Debug */,
+				96AEEDFF23796FA85642034CD90E81C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

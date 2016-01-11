@@ -61,6 +61,9 @@
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" image="menu" style="plain" id="2rw-US-GEQ">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="clickedMenu:" destination="x23-D7-faz" id="iFA-3B-kUz"/>
+                            </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem image="up" id="7ZB-CR-8HH">

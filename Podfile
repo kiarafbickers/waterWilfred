@@ -4,7 +4,7 @@
 target 'WaterWilfred' do
 
    pod 'ACPReminder', '~> 1.0.2'
-   pod 'MZFormSheetController', '~> 3.1'
+   pod 'MZFormSheetPresentationController', '~> 2.2'
    pod 'BAFluidView'
    pod 'MKStoreKit'
 

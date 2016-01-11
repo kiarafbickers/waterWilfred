@@ -14,6 +14,7 @@
 #import "UIView+AnimationExtensions.h"
 #import <CoreMotion/CoreMotion.h>
 
+
 @interface WWAMainViewController ()
 
 @property (strong, nonatomic) UISwipeGestureRecognizer *downSwipeGestureRecognizer;
@@ -231,6 +232,14 @@
 }
 
 #pragma mark - Actions
+
+
+- (IBAction)clickedMenu:(id)sender {
+    UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"nav"];
+    
+
+}
+
 
 -(void) presentWeightInputAlert
 {
