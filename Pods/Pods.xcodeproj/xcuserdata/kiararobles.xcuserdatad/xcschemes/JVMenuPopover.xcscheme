@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E0E9765158220F5AE21F98E5'
-               BlueprintName = 'MKStoreKit'
+               BlueprintIdentifier = '5D974D01064CA7F70EA41113'
+               BlueprintName = 'JVMenuPopover'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libMKStoreKit.a'>
+               BuildableName = 'libJVMenuPopover.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -1,22 +1,19 @@
 PODS:
   - ACPReminder (1.0.2)
   - BAFluidView (0.2.0)
+  - JVMenuPopover (1.1)
   - MKStoreKit (4.99)
-  - MZAppearance (1.1.6)
-  - MZFormSheetPresentationController (2.2.0):
-    - MZAppearance
 
 DEPENDENCIES:
   - ACPReminder (~> 1.0.2)
   - BAFluidView
+  - JVMenuPopover (~> 1.1)
   - MKStoreKit
-  - MZFormSheetPresentationController (~> 2.2)
 
 SPEC CHECKSUMS:
   ACPReminder: 67e475fe4d2a67da4c24e453b0a2c9acc53dd2c3
   BAFluidView: 572891753145874416810d03be1c2b542d09e2be
+  JVMenuPopover: 92b16b59a3249ac9e115ece1d2bdc5e31a5d22a0
   MKStoreKit: 748617e5f87ad1e0d3f075155047945248eccefc
-  MZAppearance: 0c06d3fa9cc55142f1da14bc8631fbe8fd6e19d5
-  MZFormSheetPresentationController: 3405c52eb182abfb8fa2b635981930eeeec37396
 
 COCOAPODS: 0.39.0

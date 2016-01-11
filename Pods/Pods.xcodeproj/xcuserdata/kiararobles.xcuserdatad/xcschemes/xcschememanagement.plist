@@ -19,17 +19,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JVMenuPopover-JVMenuPopover.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>JVMenuPopover.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MKStoreKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>MZAppearance.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>MZFormSheetPresentationController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,12 +42,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1DAC2FF166EBB39D93C76C245CCD170C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>34440D436B6519A357FFA66228EB4C96</key>
+		<key>25CEB6A7ABE1EE9817C37917EA1916F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,7 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6FEAFED09AF8ED5B1930B579EA0B2C88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7832BE7CBBE6FE88B7D91D83AF452283</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8AE20EE092AB687F81E85D28A5E9CB2D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -68,11 +73,6 @@
 			<true/>
 		</dict>
 		<key>BE9C772F9310A9C7BF9051B69874F9A7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F25D30977A049ED7F28CDD7D3B71279D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
