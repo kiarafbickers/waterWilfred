@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2550588525A979388FBE48A8 /* libPods-WaterWilfred.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A700DE07E92BC1CC6122B7 /* libPods-WaterWilfred.a */; };
+		E91F81DF1C43FE6E00355051 /* WWAMenuRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91F81DE1C43FE6E00355051 /* WWAMenuRootViewController.m */; settings = {ASSET_TAGS = (); }; };
 		E9268A211BE16FF7004FA45F /* WWAUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = E9268A201BE16FF7004FA45F /* WWAUserData.m */; };
 		E95D90411BEFD10700B9A659 /* UINavigationController+StatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E95D90401BEFD10700B9A659 /* UINavigationController+StatusBarStyle.m */; };
 		E95D90441BF03A1200B9A659 /* UIView+AnimationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E95D90431BF03A1200B9A659 /* UIView+AnimationExtensions.m */; };
@@ -51,6 +52,8 @@
 		368BA2917B2B36F79B912DCE /* Pods-WaterWilfred.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterWilfred.release.xcconfig"; path = "Pods/Target Support Files/Pods-WaterWilfred/Pods-WaterWilfred.release.xcconfig"; sourceTree = "<group>"; };
 		B2A700DE07E92BC1CC6122B7 /* libPods-WaterWilfred.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WaterWilfred.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E826E97FC22D1A178D95A78F /* Pods-WaterWilfred.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterWilfred.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WaterWilfred/Pods-WaterWilfred.debug.xcconfig"; sourceTree = "<group>"; };
+		E91F81DD1C43FE6E00355051 /* WWAMenuRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWAMenuRootViewController.h; sourceTree = "<group>"; };
+		E91F81DE1C43FE6E00355051 /* WWAMenuRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWAMenuRootViewController.m; sourceTree = "<group>"; };
 		E9268A1F1BE16FF7004FA45F /* WWAUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWAUserData.h; sourceTree = "<group>"; };
 		E9268A201BE16FF7004FA45F /* WWAUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWAUserData.m; sourceTree = "<group>"; };
 		E93A60A41C0A185E0053524B /* UIView+AnimationExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationExtensions.h"; sourceTree = "<group>"; };
@@ -157,18 +160,16 @@
 			children = (
 				E9CF9FE11BD15B4A00D53079 /* AppDelegate.h */,
 				E9CF9FE21BD15B4A00D53079 /* AppDelegate.m */,
-				E9268A1F1BE16FF7004FA45F /* WWAUserData.h */,
-				E9268A201BE16FF7004FA45F /* WWAUserData.m */,
-				E9F5B5191C2E0BB1002A8122 /* WWAManagerViewController.h */,
-				E9F5B51A1C2E0BB1002A8122 /* WWAManagerViewController.m */,
 				E9CFA0171BD1748A00D53079 /* WWAViewController.h */,
 				E9CFA0181BD1748A00D53079 /* WWAViewController.m */,
 				E968F75C1BEE6E6E008B41CC /* WWAMainViewController.h */,
 				E968F75D1BEE6E6E008B41CC /* WWAMainViewController.m */,
-				E93A60A41C0A185E0053524B /* UIView+AnimationExtensions.h */,
-				E95D90431BF03A1200B9A659 /* UIView+AnimationExtensions.m */,
-				E95D903F1BEFD10700B9A659 /* UINavigationController+StatusBarStyle.h */,
-				E95D90401BEFD10700B9A659 /* UINavigationController+StatusBarStyle.m */,
+				E9268A1F1BE16FF7004FA45F /* WWAUserData.h */,
+				E9268A201BE16FF7004FA45F /* WWAUserData.m */,
+				E9F5B5191C2E0BB1002A8122 /* WWAManagerViewController.h */,
+				E9F5B51A1C2E0BB1002A8122 /* WWAManagerViewController.m */,
+				E91F81DD1C43FE6E00355051 /* WWAMenuRootViewController.h */,
+				E91F81DE1C43FE6E00355051 /* WWAMenuRootViewController.m */,
 				E9CF9FE71BD15B4A00D53079 /* Main.storyboard */,
 				E9CF9FED1BD15B4A00D53079 /* Assets.xcassets */,
 				E9CF9FEF1BD15B4A00D53079 /* LaunchScreen.storyboard */,
@@ -183,6 +184,10 @@
 			children = (
 				E968F74B1BED020D008B41CC /* CALayer+WiggleAnimationAdditions.h */,
 				E968F74C1BED020D008B41CC /* CALayer+WiggleAnimationAdditions.m */,
+				E93A60A41C0A185E0053524B /* UIView+AnimationExtensions.h */,
+				E95D90431BF03A1200B9A659 /* UIView+AnimationExtensions.m */,
+				E95D903F1BEFD10700B9A659 /* UINavigationController+StatusBarStyle.h */,
+				E95D90401BEFD10700B9A659 /* UINavigationController+StatusBarStyle.m */,
 				E968F75A1BEE5490008B41CC /* Wilfred-DeadFloat.png */,
 				E968F7431BECFA24008B41CC /* Wilfred-Dead.png */,
 				E968F7441BECFA24008B41CC /* Wilfred-Happy.png */,
@@ -402,6 +407,7 @@
 				E9268A211BE16FF7004FA45F /* WWAUserData.m in Sources */,
 				E95D90411BEFD10700B9A659 /* UINavigationController+StatusBarStyle.m in Sources */,
 				E968F75E1BEE6E6E008B41CC /* WWAMainViewController.m in Sources */,
+				E91F81DF1C43FE6E00355051 /* WWAMenuRootViewController.m in Sources */,
 				E9CF9FE31BD15B4A00D53079 /* AppDelegate.m in Sources */,
 				E968F74D1BED020D008B41CC /* CALayer+WiggleAnimationAdditions.m in Sources */,
 				E9CFA0191BD1748A00D53079 /* WWAViewController.m in Sources */,

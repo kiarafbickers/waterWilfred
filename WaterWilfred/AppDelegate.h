@@ -7,14 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreData/CoreData.h>
+
+@class JVMenuRootViewController, JVMenuNavigationController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) JVMenuRootViewController *rootViewController;
 
-@property (nonatomic) NSUInteger numberOfCups;
-@property (nonatomic) NSUInteger numberOfOunces;
+@property (strong, nonatomic) JVMenuNavigationController *navigationController;
+
+@property (strong, nonatomic) UIWindow *window;
 
 @end
 

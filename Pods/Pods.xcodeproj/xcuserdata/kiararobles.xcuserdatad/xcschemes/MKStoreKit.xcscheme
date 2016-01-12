@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E0E9765158220F5AE21F98E5'
+               BlueprintIdentifier = 'D42B495D63DF1B69D5B2DB7E'
                BlueprintName = 'MKStoreKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libMKStoreKit.a'>
